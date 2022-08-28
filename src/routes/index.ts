@@ -7,6 +7,6 @@ export const register = (app: express.Application) => {
     });
 
     app.get("/who-are-you", (req: any, res) => {
-        res.render("guitars");
+        res.render("who-are-you");
     });
 };
