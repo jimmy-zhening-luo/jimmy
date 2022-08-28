@@ -1,0 +1,21 @@
+### Directories ###
+
+## Intention: ignore packages, which should be re-installed on each deployment or dev build based on dependencies and versions listed in package.json and package-lock.json
+node_modules/
+
+## Intention: ignore any app secrets, intentionally stored in secrets/
+secrets/
+
+## Intention: ignore logging, intentionally stored in log/
+log/
+
+## Intention: ignore IDE-specific settings re: auto-deployment when build
+.vscode/
+
+### Files ###
+
+## Intention: ignore any .log files accidentally misplaced or thoughtlessly output in some lower directory, which may contain secrets
+*.log
+
+## Intention: ignore any .env files, which contain environment-specific values such as database passwords or API keys.
+*.env
