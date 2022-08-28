@@ -1,6 +1,5 @@
+# VERSION
 v6.0.1
-
-
 
 # WHAT AM I?
 Jimmy Luo's personal website, as of August 28, 2022 hosted at jimm.my.
