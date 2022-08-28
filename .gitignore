@@ -12,6 +12,9 @@ log/
 ## Intention: ignore IDE-specific settings re: auto-deployment when build
 .vscode/
 
+## Intention: ignore anything GitHub-specific build and deployment configs
+.github/
+
 ### Files ###
 
 ## Intention: ignore any .log files accidentally misplaced or thoughtlessly output in some lower directory, which may contain secrets

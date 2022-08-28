@@ -47,4 +47,10 @@ npm run dev
 ```
 
 # LIVE (PRODUCTION) DEPLOYMENT INSTRUCTIONS
-Not sure. If you've gotten this far you'll probably figure it out for yourself.
+If you have successfully built and deployed this web app locally, then you would successfully build and deploy this web app LIVE in PRODUCTION on Microsoft Azure by following these exact instructions:
+
+## Step 1: Download Visual Studio Code
+Download [Visual Studio Code](https://code.visualstudio.com/download).
+
+## Step 2: Follow the Visual Studio Code tutorial for deploying a Node.js web app in Azure.
+Follow the Visual Studio Code tutorial ["Create a Node.js web app in Azure"](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=windows&pivots=development-environment-vscode).
