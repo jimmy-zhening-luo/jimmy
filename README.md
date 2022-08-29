@@ -2,7 +2,7 @@
 <details><summary><b>Version</b></summary>
 <p>
 
-v7.0.0
+v7.0.1
 
 </p></details>
 <br/><br/>
