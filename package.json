@@ -2,9 +2,6 @@
 	"name": "jimmy-sveltekit-test",
 	"version": "0.0.1",
 	"private": true,
-	"engine": {
-		"node": "^16.17.0"
-	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -12,6 +9,10 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint ."
+	},
+	"engine": {
+		"npm": ">=8.18.0",
+		"node": ">=16.17.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
