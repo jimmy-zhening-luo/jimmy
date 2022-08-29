@@ -1,47 +1,37 @@
 {
-  "name": "jimmy",
-  "version": "6.0.1",
-  "description": "jimm.my personal website",
-  "main": "./dist/index.js",
-  "scripts": {
-    "clean": "rimraf dist/*",
-    "copy-assets": "ts-node tools/copyAssets",
-    "tsc": "tsc",
-    "build": "npm-run-all clean tsc copy-assets",
-    "dev:start": "npm-run-all build start",
-    "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
-    "prod:start": "npm-run-all dev:start",
-    "prod": "npm-run-all dev",
-    "start": "node ./dist/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/jimmy.git"
-  },
-  "author": "Zhening Luo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/jimmy/issues"
-  },
-  "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
-  "dependencies": {
-    "dotenv": "^16.0.1",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "node": "^16.17.0",
-    "npm": "^8.18.0"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/fs-extra": "^9.0.13",
-    "@types/node": "^18.7.13",
-    "@types/shelljs": "^0.8.11",
-    "fs-extra": "^10.1.0",
-    "nodemon": "^2.0.19",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2",
-    "shelljs": "^0.8.5",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.2"
-  }
+	"name": "jimmy-sveltekit-test",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "eslint ."
+	},
+	"engines": {
+		"npm": ">=8.18.0",
+		"node": ">=16.17.0"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "^5.27.0",
+		"@typescript-eslint/parser": "^5.27.0",
+		"eslint": "^8.16.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"svelte": "^3.44.0",
+		"svelte-adapter-azure-swa": "^0.10.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.6",
+		"tslib": "^2.3.1",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.4"
+	},
+	"type": "module",
+	"dependencies": {
+		"node": "^16.17.0",
+		"npm": "^8.18.0"
+	}
 }

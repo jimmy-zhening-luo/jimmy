@@ -1,56 +1,90 @@
-# VERSION
-v6.0.1
+<br/>
+<details><summary><b>Version</b></summary>
+<p>
+
+v7.0.0
+
+</p></details>
+<br/><br/>
 
 # WHAT AM I?
-Jimmy Luo's personal website, as of August 28, 2022 hosted at jimm.my.
+Jimmy Luo's personal website, as of August 28, 2022 hosted at [jimm.my](https://jimm.my/).
 
-This is a Node.js web application built on the Express.js framework.
+This is a [Node.js](https://nodejs.org/en/) static web app built on [Svelte](https://svelte.dev/).
 
-The core app logic is transpired from TypeScript into JavaScript.
 
-The core user interaction framework is built on EJS and Materialize.
+<br/>
+<details><summary><b>Development Platform</b></summary>
+<p>
+
+Key | Value
+--- | ---
+Platform | Windows 11
+Architecture | amd64
+IDE | [Visual Studio Code](https://code.visualstudio.com/)
+Dependencies | [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode); [svelte-kit v1.0.0](https://kit.svelte.dev/docs/)
+
+</p>
+</details>
+
+<br/>
+
+<details><summary><b>Deployment Platform</b></summary>
+<p>
+
+Key | Value
+--- | ---
+Cloud Service Provider | Microsft Azure
+Cloud App | [Azure Static Web App](https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-app-api/)
+CI-CD Connector | GitHub Actions
+
+</p>
+</details>
+
+<br/>
+<br/>
 
 # LOCAL DEPLOYMENT INSTRUCTIONS
-## .env
-This project uses the npm package `dotenv` 
+<details><summary><b>Step 1:</b> Prepare your development environment.</summary>
+<p>
 
-In the root directory, a file named `.env` can be placed to specify environmental parameters like minimum builds, ports, hostnames, keys, objects, etc.
+1. If you don't already have Node.js, [install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-However, this application code SHALL NOT override any environment variables already at the time the website launches on the server.
+2. Save this Git repository on your local machine.
 
-Example `.env` content (this exact example should allow the web app to build and run on your local machine):
-```
-NODE_ENV=development
+3. Open a terminal at the root of the repository.
 
-SERVER_PORT=8080
-```
+4. Run the following command:
 
-## Step 1: Build Required Dependencies
-If you don't already have Node.js, [install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
-
-Save this Git repository on your local machine.
-
-Open a terminal at the root of the repository.
-
-Run the following command:
 ```
 npm ci
 ```
 
-You now have all the necessary dependencies installed for this website to run.
+You now have:
+* ... all the necessary project files downloaded to your local directory.
+* ... all the necessary dependencies installed to locally build and deploy (test) this web app.
 
-## Step 2: Run
 
-You will now run this web app's `dev` script, which builds and launches the website.
+</p></details>
+
+<br/>
+
+<details><summary><b>Step 2:</b> Build and run the web app.</summary>
+<p>
+
+1. You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine, and finally outputs a link that you can click to view the web app in your default browser:
+
 ```
 npm run dev
 ```
 
+2. After running the above command, you can click the resulting output link.
+
+</p>
+</details>
+
+<br/>
+<br/>
+
 # LIVE (PRODUCTION) DEPLOYMENT INSTRUCTIONS
-If you have successfully built and deployed this web app locally, then you would successfully build and deploy this web app LIVE in PRODUCTION on Microsoft Azure by following these exact instructions:
-
-## Step 1: Download Visual Studio Code
-Download [Visual Studio Code](https://code.visualstudio.com/download).
-
-## Step 2: Follow the Visual Studio Code tutorial for deploying a Node.js web app in Azure.
-Follow the Visual Studio Code tutorial ["Create a Node.js web app in Azure"](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=windows&pivots=development-environment-vscode).
+TBD at some point after the minimum deployable version is checked in to this repository.
