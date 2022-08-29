@@ -1,5 +1,6 @@
 import preprocess from 'svelte-preprocess';
-import adapter_azure_static from 'svelte-adapter-azure-swa';
+// import adapter_azure_static from 'svelte-adapter-azure-swa';
+import adapter_node from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +9,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter_azure_static()
+		adapter: adapter_node()
 	}
 };
 
