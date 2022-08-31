@@ -14,6 +14,8 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint .",
+    "browser": "",
+    "prod:local": "npm-run-all build:prod preview:prod browser",
     "start": "node ./build/index.js"
   },
   "engines": {
