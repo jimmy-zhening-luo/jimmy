@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
 import preprocess from "svelte-preprocess";
-import adapter_node from "@sveltejs/adapter-node";
+import adapter from "@sveltejs/adapter-node";
 
 dotenv.config();
 
@@ -11,7 +11,10 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    adapter: adapter_node(),
+    adapter: adapter({
+      out: "dist",
+      envPrefix: "LOCAL_TEST_",
+    }),
   },
 };
 

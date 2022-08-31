@@ -49,6 +49,7 @@ log/
 
 ## Intention: ignore build files, because they should be re-built anyway upon deployment for a specific environment
 build/
+dist/
 
 ## Intention: ignore IDE-specific settings re: auto-deployment when build
 .vscode/
