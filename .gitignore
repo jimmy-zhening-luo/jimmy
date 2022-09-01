@@ -4,9 +4,9 @@
 
 
 ##### BEGIN Project-Specific Files to .gitignore #####
-.DS_Store
-/.svelte-kit
-/package
+
+
+
 #####   END Project-Specific Files to .gitignore #####
 
 
@@ -24,12 +24,14 @@ secrets/
 ## Intention: ignore logging, intentionally stored in log/
 log/
 
-## Intention: ignore build files, because they should be re-built anyway upon deployment for a specific environment
-build/
-dist/
-
 ## Intention: ignore IDE-specific settings re: auto-deployment when build
 .vscode/
+
+###########################
+### IGNORE IN ROOT ONLY ###
+###########################
+## Intention: ignore build files, because they should be re-built anyway upon deployment for a specific environment
+./dist/
 
 ############################
 ### FILE PATTERN OR TYPE ###
