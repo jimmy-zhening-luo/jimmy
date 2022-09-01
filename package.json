@@ -21,11 +21,9 @@
     "build": "npm run tsc",
     "postbuild": "npm run copy-assets",
     "start": "node ./dist/index.js",
-    "open-in-browser": "open http://localhost:8080/",
     "predev:start": "npm run build",
     "dev:start": "npm run start",
-    "postdev:start": "npm run open-in-browser",
-    "dev:": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
+    "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
   },
   "engines": {
     "npm": ">=8.11.0",
