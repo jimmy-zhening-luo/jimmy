@@ -14,7 +14,18 @@
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
-
+    "clean": "rimraf ./dist/*",
+    "tsc": "tsc",
+    "copy-assets": "ts-node tools/copyAssets",
+    "prebuild": "npm run clean",
+    "build": "npm run tsc",
+    "postbuild": "npm run copy-assets",
+    "start": "node ./dist/index.js",
+    "open-in-browser": "open http://localhost/",
+    "predev:start": "npm run build",
+    "dev:start": "npm run start",
+    "postdev:start": "npm run open-in-browser",
+    "dev:": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
   },
   "engines": {
     "npm": ">=8.11.0",
