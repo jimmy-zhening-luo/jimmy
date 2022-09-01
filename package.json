@@ -21,7 +21,7 @@
     "build": "npm run tsc",
     "postbuild": "npm run copy-assets",
     "start": "node ./dist/index.js",
-    "open-in-browser": "open http://localhost/",
+    "open-in-browser": "open http://localhost:8080/",
     "predev:start": "npm run build",
     "dev:start": "npm run start",
     "postdev:start": "npm run open-in-browser",
