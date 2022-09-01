@@ -8,4 +8,8 @@ export const register = (app: express.Application) => {
     app.get("/debug", (req: any, res) => {
         res.render("debug");
     });
+
+    app.get("/purposeful-bork", (req: any, res) => {
+        res.render("purposeful-bork");
+    });
 };

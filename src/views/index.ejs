@@ -5,10 +5,15 @@
 </head>
 <body>
     <%- include("./partials/body.ejs", {
-        container_title: "Jimmy",
-        button: {
-            target: "/debug",
-            text: "Debug"
+        content: {
+            title: "Jimmy Luo",
+            template: "search-homepage",
+            fill: {
+                button: {
+                    target: "/debug",
+                    text: "Debug"
+                }
+            }
         }
     }) %>
 </body>
