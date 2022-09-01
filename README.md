@@ -1,48 +1,39 @@
 # jimm.my
 
-<details><summary>Version</summary>
+v8.0.0
 
-<br/>
-
-v7.0.1
-
-</details>
-
-<br/>
 <br/>
 
 ## What am I?
 
-Jimmy Luo's personal website, as of August 28, 2022 hosted at [jimm.my](https://jimm.my/).
-
-This is a [Node.js](https://nodejs.org/en/) static web app built on [Svelte](https://svelte.dev/).
+This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this website is continuously deployed to [jimm.my](https://jimm.my/).
 
 <br/>
 
-<details><summary>Development Platform</summary>
+<details><summary>Dev Tools</summary>
 
-<br/>
+This is a web app with a server built on [Express](https://expressjs.com/) [Node.js](https://nodejs.org/en/) and a presentation layer built on [Embedded Javascript templating](https://ejs.co/) and the [Materialize] UX framework. The source is written in [TypeScript](https://typescriptlang.org/).
 
 | Key          | Value                                                                                                                                             |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Platform     | Windows 11                                                                                                                                        |
 | Architecture | amd64                                                                                                                                             |
 | IDE          | [Visual Studio Code](https://code.visualstudio.com/)                                                                                              |
-| Dependencies | [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode); [svelte-kit v1.0.0](https://kit.svelte.dev/docs/) |
+| Dependencies | See `package.json` |
 
 </details>
 
 <br/>
 
-<details><summary>Deployment Platform</summary>
+<details><summary>Deployment Infra</summary>
 
-<br/>
+The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) instance using [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel).
 
 | Key                    | Value                                                                                                          |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Cloud Service Provider | Microsft Azure                                                                                                 |
-| Cloud App              | [Azure Static Web App](https://docs.microsoft.com/en-us/learn/modules/publish-app-service-static-web-app-api/) |
-| CI-CD Connector        | GitHub Actions                                                                                                 |
+| Cloud App              | [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) |
+| CI/CD Connector        | [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)      |
 
 </details>
 
@@ -54,9 +45,9 @@ This is a [Node.js](https://nodejs.org/en/) static web app built on [Svelte](htt
 
 ### Local testing
 
-<details><summary>Step 1: Prepare your development environment.</summary>
-
 <br/>
+
+<details><summary>Step 1: Prepare your development environment.</summary>
 
 1. If you don't already have Node.js, [install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
@@ -64,7 +55,7 @@ This is a [Node.js](https://nodejs.org/en/) static web app built on [Svelte](htt
 
 3. Open a terminal at the root of the repository.
 
-4. Run the following command:
+4. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json:
 
         ```powershell
         npm ci
@@ -81,13 +72,11 @@ You now have:
 
 <details><summary>Step 2: Build and run the web app.</summary>
 
-1. You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine, and finally outputs a link that you can click to view the web app in your default browser:
+You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine, and opens a browser to the local host so you can preview the app. It also continuously rebuilds when any changes are detected.
 
         ```powershell
         npm run dev
         ```
-
-2. After running the above command, you can click the resulting output link.
 
 </details>
 
@@ -96,4 +85,10 @@ You now have:
 
 ### Deploying to production
 
-TBD at some point after the minimum deployable version is checked in to this repository.
+<details><summary>TBD</summary>
+
+<br/>
+
+Placeholder for deployment instructions once on a stable minor build with continuously deplying commits.
+
+</details>
