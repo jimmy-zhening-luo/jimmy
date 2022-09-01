@@ -38,7 +38,6 @@
     "npm": "^8.11.0"
   },
   "devDependencies": {
-    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/express-session": "^1.17.5",
     "@types/fs-extra": "^9.0.13",
