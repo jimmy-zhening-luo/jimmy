@@ -1,4 +1,25 @@
 {
+  "name": "jimmy",
+  "description": "Jimmy Luo personal website",
+  "version": "8.0.0",
+  "author": "Zhening Luo",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmy-zhening-luo/jimmy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimmy-zhening-luo/jimmy/issues"
+  },
+  "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
+  "scripts": {
+
+  },
+  "engines": {
+    "npm": ">=8.11.0",
+    "node": ">=16.16.0"
+  },
   "dependencies": {
     "dotenv": "^10.0.0",
     "ejs": "^3.1.8",
@@ -7,23 +28,6 @@
     "node": "^16.16.0",
     "npm": "^8.11.0"
   },
-  "name": "jimmy",
-  "description": "<details><summary>Version</summary>",
-  "version": "8.0.0",
-  "main": "./dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/jimmy.git"
-  },
-  "author": "Zhening Luo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/jimmy/issues"
-  },
-  "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
