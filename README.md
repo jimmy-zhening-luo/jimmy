@@ -1,6 +1,6 @@
 # jimm.my
 
-v8.0.4
+v8.1.0
 
 <br/>
 
@@ -12,7 +12,7 @@ This repository contains Jimmy Luo's personal website. As of August 31, 2022, th
 
 <details><summary>Dev Tools</summary>
 
-This is a web app with a server built on [Express](https://expressjs.com/) [Node.js](https://nodejs.org/en/) and a presentation layer built on [Embedded Javascript templating](https://ejs.co/) and the [Materialize](https://materializecss.com/) UX framework. The source is written in [TypeScript](https://typescriptlang.org/).
+This is a web app with a server built on [Express](https://expressjs.com/) [Node.js](https://nodejs.org/en/) and a presentation layer built on [Svelte](https://svelte.dev/) templating and handrolled styles. The source is written in [TypeScript](https://typescriptlang.org/).
 
 | Key          | Value                                                                                                                                             |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
