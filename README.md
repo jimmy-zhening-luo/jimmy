@@ -31,7 +31,7 @@ The source contained in this repository's `main` branch is continuously built an
 
 | Key                    | Value                                                                                                          |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Cloud Service Provider | Microsft Azure                                                                                                 |
+| Cloud Service Provider | Microsoft Azure                                                                                                 |
 | Cloud App              | [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) |
 | CI/CD Connector        | [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)      |
 
@@ -55,11 +55,9 @@ The source contained in this repository's `main` branch is continuously built an
 
 3. Open a terminal at the root of the repository.
 
-4. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json:
+4. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json):
 
-        ```powershell
         npm ci
-        ```
 
 You now have:
 
@@ -74,9 +72,7 @@ You now have:
 
 You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine, and opens a browser to the local host so you can preview the app. It also continuously rebuilds when any changes are detected.
 
-        ```powershell
-        npm run dev
-        ```
+    npm run dev
 
 </details>
 
@@ -89,6 +85,6 @@ You can now run this web app's `dev` script, which prepares a local build of the
 
 <br/>
 
-Placeholder for deployment instructions once on a stable minor build with continuously deplying commits.
+Placeholder for deployment instructions once on a stable minor build with continuously deploying commits.
 
 </details>
