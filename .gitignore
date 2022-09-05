@@ -32,7 +32,7 @@ log/
 ###########################
 ## Intention: ignore build files, because they should be re-built anyway upon deployment for a specific environment
 /dist/
-/local/
+/.local/
 
 ############################
 ### FILE PATTERN OR TYPE ###
