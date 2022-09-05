@@ -1,4 +1,4 @@
-import * as express from "express";
+import type express from "express";
 
 export const register = (app: express.Application) => {
     app.get("/", (_req: any, res) => {
