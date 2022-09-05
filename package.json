@@ -28,10 +28,12 @@
     "node": ">=16.16.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
+    "fs-extra": "^10.1.0",
     "node": "^16.16.0",
     "npm": "^8.11.0",
     "sirv-cli": "^2.0.2"
@@ -41,13 +43,13 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.4.0",
     "@tsconfig/svelte": "^3.0.0",
+    "@types/cors": "^2.8.12",
     "@types/ejs": "^3.1.1",
     "@types/express": "^4.17.13",
     "@types/express-session": "^1.17.5",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^16.11.56",
     "@types/shelljs": "^0.8.11",
-    "fs-extra": "^10.1.0",
     "nodemon": "^2.0.19",
     "rimraf": "^3.0.2",
     "rollup": "^2.79.0",
