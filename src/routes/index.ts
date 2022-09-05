@@ -5,11 +5,11 @@ export const register = (app: express.Application) => {
         res.render("index");
     });
 
-    app.get("/debug", (_req: any, res) => {
-        res.render("debug");
-    });
+    // app.get("/debug", (_req: any, res) => {
+    //     res.render("debug");
+    // });
 
-    app.get("/purposeful-bork", (_req: any, res) => {
-        res.render("purposeful-bork");
-    });
+    // app.get("/purposeful-bork", (_req: any, res) => {
+    //     res.render("purposeful-bork");
+    // });
 };
