@@ -16,10 +16,8 @@
   "scripts": {
     "clean": "rimraf ./dist/*",
     "tsc": "tsc",
-    "copy-assets": "ts-node tools/copyAssets",
     "prebuild": "npm run clean",
     "build": "npm run tsc",
-    "postbuild": "npm run copy-assets",
     "start": "node ./dist/index.js",
     "predev:start": "npm run build",
     "dev:start": "npm run start",
@@ -57,7 +55,6 @@
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "shelljs": "^0.8.5",
     "svelte": "^3.50.0",
     "svelte-check": "^2.9.0",
     "svelte-preprocess": "^4.10.7",
