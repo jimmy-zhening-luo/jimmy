@@ -2,4 +2,6 @@
     export const name: string = "Jimmy Luo, the Default Value";
 </script>
 
-<p>Hello {name}</p>
+<main>
+    <p>Hello {name}</p>
+</main>
