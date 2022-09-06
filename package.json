@@ -15,6 +15,7 @@
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
     "clean": "rimraf ./dist/*",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
     "prebuild": "npm run clean",
     "build:server": "tsc",
     "build:client": "rollup -c",
