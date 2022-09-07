@@ -19,7 +19,7 @@ This is a web app with a server built on [Express](https://expressjs.com/) [Node
 | Platform     | Windows 11                                                 |
 | Architecture | amd64                                                      |
 | IDE          | [Visual Studio Code](https://code.visualstudio.com/)       |
-| Dependencies | See `package.json`                                         |
+| Dependencies | See `./package.json`                                         |
 
 </details>
 
@@ -34,6 +34,7 @@ The source contained in this repository's `main` branch is continuously built an
 | Cloud Service Provider | Microsoft Azure                                   |
 | Cloud App              | [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) |
 | CI/CD Connector        | [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel) |
+| Build/Deploy Config    | See `./.github/workflows` |
 
 </details>
 
