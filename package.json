@@ -19,14 +19,14 @@
     "prebuild": "npm run clean",
     "build:server": "tsc",
     "build:client": "rollup -c",
+    "build:client:watch": "rollup -c -w",
     "build": "npm run build:server",
     "postbuild": "npm run build:client",
     "start": "node ./dist/server.js",
     "predev:start": "npm run build",
     "dev:start": "npm run start",
     "dev": "nodemon --watch src -e ts,svelte --exec npm run dev:start",
-    "premock": "npm run mock:client",
-    "mock:client": "rollup -c -w",
+    "premock": "npm run build:client:watch"
     "mock": "sirv dist --no-clear"
   },
   "engines": {

@@ -56,7 +56,7 @@ The source contained in this repository's `main` branch is continuously built an
 
 3. Open a terminal at the root of the repository.
 
-4. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json):
+4. Run the following command to install all the required Node.js packages (specified in your project root directory by `package.json`):
 
         npm ci
 
@@ -71,9 +71,13 @@ You now have:
 
 <details><summary>Step 2: Build and run the web app.</summary>
 
-You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine, and opens a browser to the local host so you can preview the app. It also continuously rebuilds when any changes are detected.
+You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine. It also continuously rebuilds when any changes are detected.
 
     npm run dev
+
+Running the above command outputs to terminal an URL, similar to http://localhost:8080. The port number at the end varies depending on your local environment configuration.
+
+To preview the web app, open a browser and copy-paste the output URL. (Or, in some terminals, you can directly click the URL to open a browser to that URL.)
 
 </details>
 

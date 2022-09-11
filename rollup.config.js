@@ -16,7 +16,7 @@
  * You can see `tsconfig.json`, particularly the `extends` statement at the
  * top of the config (as of v8.1.0), for more context on those Svelte-
  * specific `tsconfig.json` requirements. Anything not in the base config
- * being extended by this projects `tsconfig.json` is my own original
+ * being extended by this project's `tsconfig.json` is my own original
  * configuration used for developing and building the Express.js server, not
  * related to Svelte development and build requirements.
  */
