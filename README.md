@@ -71,7 +71,7 @@ You now have:
 
 <details><summary>Step 2: Build and run the web app.</summary>
 
-You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine. It also continuously rebuilds when any changes are detected.
+You can now run this web app's `dev` script, which prepares a local build of the web app and deploys the build on your local host machine. It also continuously rebuilds when any changes are detected.
 
     npm run dev
 
