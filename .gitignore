@@ -21,8 +21,9 @@ node_modules/
 ## Intention: ignore any app secrets, intentionally stored in secrets/
 secrets/
 
-## Intention: ignore logging, intentionally stored in log/
+## Intention: ignore logging, intentionally stored in log/ or logs/
 log/
+logs/
 
 ## Intention: ignore IDE-specific settings re: auto-deployment when build
 .vscode/
