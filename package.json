@@ -4,7 +4,7 @@
   "version": "8.1.0",
   "author": "Zhening Jimmy Luo",
   "license": "MIT",
-  "main": "./dist/index.js",
+  "main": "./dist/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jimmy-zhening-luo/jimmy.git"
