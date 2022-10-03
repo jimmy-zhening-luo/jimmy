@@ -1,16 +1,14 @@
 /**
- * This file theoretically fully configures the Svelte client app
- * runtime and build.
+ * The intention of this file in a Svelte project is to fully configure
+ * the Svelte client app runtime and build.
  *
- * However, some Svelte configuration leaks into the mysterious
- * `svelte.config.js` and into the TypeScript config `tsconfig.json`.
+ * However, some Svelte configuration leaks into `svelte.config.js`
+ * and into the TypeScript config `tsconfig.json`.
  *
- * See `svelte.config.js` for context on why that file even exists at all
- * in this project, considering Svelte, at the time of its rollup integration
- * development, considered itself "zero config".
+ * See `svelte.config.js` for why that file exists.
  *
- * To get Svelte to play along with TypeScript nicely, there's also some
- * highly Svelte-specific TypeScript typechecking logic that has leaked
+ * To get Svelte to compile from TypeScript, there's also some
+ * Svelte-specific TypeScript typechecking logic that has leaked
  * into `tsconfig.json`.
  *
  * You can see `tsconfig.json`, particularly the `extends` statement at the
@@ -36,12 +34,10 @@ import resolve from "@rollup/plugin-node-resolve";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import css from "rollup-plugin-css-only";
-// TBD: Figure out why the `css` import shows as unused despite L84.
 
 // TypeScript-specific imports
 import typescript from "@rollup/plugin-typescript";
 import sveltePreprocess from "svelte-preprocess";
-import preprocessOptions from "./svelte.config";
 
 // Hydrating my environmental variables into `process.env`, then getting them.
 dotenv.config();
@@ -85,27 +81,23 @@ export default {
                 css.write("./dist/views/styles/bundle.css");
             },
             preprocess: sveltePreprocess({
-                ...preprocessOptions,
-                sourceMap: !production
-
-                /**
-                 * Commented out the below because this file is propagating the
-                 * preprocessOptions from `svelte.config.js`, two lines above.
-                 */
-
-                // ,
-                // scss: {
-                //     prependData: `@import "./src/views/styles/variables.scss";`
-                // },
-                // postcss: {
-                //     plugins: [
-                //         require("autoprefixer")()
-                //     ]
-                // },
-                // typescript: {
-                //     tsconfigDirectory: "./",
-                //     tsconfigFile: "./tsconfig.json"
-                // }
+                sourceMap: !production,
+                defaults: {
+                    script: "typescript",
+                    style: "scss"
+                },
+                scss: {
+                    prependData: `@import "./src/views/styles/variables.scss";`
+                },
+                postcss: {
+                    plugins: [
+                        require('autoprefixer')()
+                    ]
+                },
+                typescript: {
+                    tsconfigDirectory: "./",
+                    tsconfigFile: "./tsconfig.json"
+                }
             })
         }),
         resolve({
