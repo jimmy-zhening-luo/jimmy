@@ -27,7 +27,7 @@
     "dev:start": "npm run start",
     "dev": "nodemon --watch src -e ts,svelte --exec npm run dev:start",
     "premock": "npm run build:client:watch",
-    "mock": "sirv dist --no-clear"
+    "mock": "sirv dist --no-clear --single"
   },
   "engines": {
     "npm": ">=8.11.0",
