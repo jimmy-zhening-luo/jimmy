@@ -71,14 +71,14 @@ export default {
         sourcemap: true,
         format: "iife",
         name: "app",
-        file: "./dist/views/bundle.js"
+        file: "./dist/bundle.js"
     },
     plugins: [
         svelte({
             dev: !production,
             include: "./src/**/*.svelte",
             css: css => {
-                css.write("./dist/views/styles/bundle.css");
+                css.write("./dist/styles/bundle.css");
             },
             preprocess: sveltePreprocess({
                 sourceMap: !production,
