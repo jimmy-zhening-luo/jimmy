@@ -40,6 +40,10 @@ logs/
 ### FILE PATTERN OR TYPE ###
 ############################
 
+## Intention: ignore any app secrets stored in .secret files possibly used for testing; this is bad practice but pragmatically may happen on low-risk personal projects.
+*.secret
+*.secrets
+
 ## Intention: ignore any .log files accidentally misplaced or thoughtlessly output in some lower directory, which may contain secrets
 *.log
 *.logs
