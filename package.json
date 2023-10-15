@@ -26,8 +26,8 @@
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
   },
   "engines": {
-    "npm": ">=8.11.0",
-    "node": ">=16.16.0"
+    "npm": ">=10.2.0",
+    "node": ">=18.18.0"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
