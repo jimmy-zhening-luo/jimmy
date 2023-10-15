@@ -2,7 +2,7 @@
   "name": "jimmy",
   "description": "Jimmy Luo personal website",
   "version": "8.1.2",
-  "author": "Zhening Luo",
+  "author": "Jimmy Zhening Luo",
   "license": "MIT",
   "main": "./dist/index.js",
   "repository": {
