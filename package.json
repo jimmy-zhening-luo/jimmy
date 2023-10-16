@@ -1,7 +1,7 @@
 {
   "name": "jimmy",
   "description": "Jimmy Luo personal website",
-  "version": "8.2.1",
+  "version": "8.3.0",
   "author": "Jimmy Zhening Luo",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -26,16 +26,14 @@
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
   },
   "engines": {
-    "npm": ">=10.2.0",
+    "npm": ">=9.8.1",
     "node": ">=18.18.0"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "node": "^18.18.0",
-    "npm": "^10.2.0"
+    "express-session": "^1.17.3"
   },
   "devDependencies": {
     "@types/ejs": "^3.1.3",
