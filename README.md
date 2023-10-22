@@ -1,6 +1,6 @@
 # jimm.my
 
-v8.3.1
+v8.3.2
 
 <br/>
 
@@ -14,12 +14,12 @@ This repository contains Jimmy Luo's personal website. As of August 31, 2022, th
 
 This is a web app with a server built on [Express](https://expressjs.com/) [Node.js](https://nodejs.org/en/) and a presentation layer built on [Svelte](https://svelte.dev/) templating and handrolled styles. The source is written in [TypeScript](https://typescriptlang.org/).
 
-| Key          | Value                                                                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Platform     | Windows 11                                                                                                                                        |
-| Architecture | amd64                                                                                                                                             |
-| IDE          | [Visual Studio Code](https://code.visualstudio.com/)                                                                                              |
-| Dependencies | See `package.json` |
+| Key          | Value                                                |
+| ------------ | ---------------------------------------------------- |
+| Platform     | Windows 11                                           |
+| Architecture | amd64                                                |
+| IDE          | [Visual Studio Code](https://code.visualstudio.com/) |
+| Dependencies | See `package.json`                                   |
 
 </details>
 
@@ -29,11 +29,11 @@ This is a web app with a server built on [Express](https://expressjs.com/) [Node
 
 The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) instance using [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel).
 
-| Key                    | Value                                                                                                          |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Cloud Service Provider | Microsoft Azure                                                                                                 |
-| Cloud App              | [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) |
-| CI/CD Connector        | [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)      |
+| Key                    | Value                                                                                                    |
+| ---------------------- | -------------------------------------------------------------------------------------------------------- |
+| Cloud Service Provider | Microsoft Azure                                                                                          |
+| Cloud App              | [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/)                             |
+| CI/CD Connector        | [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel) |
 
 </details>
 
@@ -49,13 +49,13 @@ The source contained in this repository's `main` branch is continuously built an
 
 <details><summary>Step 1: Prepare your development environment.</summary>
 
-1. If you don't already have Node.js, [install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+1.  If you don't already have Node.js, [install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-2. Save this Git repository on your local machine.
+2.  Save this Git repository on your local machine.
 
-3. Open a terminal at the root of the repository.
+3.  Open a terminal at the root of the repository.
 
-4. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json):
+4.  Run the following command to install all the required Node.js packages (specified in your project root directory by package.json):
 
         npm ci
 
