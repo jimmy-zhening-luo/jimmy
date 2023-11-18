@@ -14,20 +14,20 @@
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
-    "clean": "rimraf --glob ./dist/*",
+    "clean": "shx rm -rf dist",
     "tsc": "tsc",
-    "copy-assets": "shx cp -r ./src/views ./dist",
+    "copy-assets": "shx cp -r src/views dist",
     "prebuild": "npm run clean",
     "build": "npm run tsc",
     "postbuild": "npm run copy-assets",
-    "start": "node ./dist/index.js",
+    "start": "node dist/index.js",
     "predev:start": "npm run build",
     "dev:start": "npm run start",
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
   },
   "engines": {
-    "npm": ">=9.8.1",
-    "node": ">=18.18.0"
+    "npm": ">=10.2.4",
+    "node": ">=18.18.2"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
@@ -42,7 +42,6 @@
     "@types/node": "^18.18.0",
     "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^5.0.5",
     "shx": "^0.3.4",
     "typescript": "^5.2.2"
   }

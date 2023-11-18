@@ -1,9 +1,4 @@
 # jimm.my
-
-v8.3.3
-
-<br/>
-
 ## What am I?
 
 This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this repository is continuously deployed to [jimm.my](https://jimm.my/).
