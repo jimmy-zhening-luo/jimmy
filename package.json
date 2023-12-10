@@ -1,6 +1,6 @@
 {
   "name": "jimmy",
-  "version": "8.4.1",
+  "version": "8.5.0",
   "description": "Jimmy Luo personal website",
   "main": "./dist/index.cjs",
   "type": "module",
