@@ -84,21 +84,8 @@
 
   menu img {
     height: 100%;
-    width: 100%;
-  }
-
-  menu a {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    height: 100%;
-    color: var(--color-text);
-    font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.2s linear;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 
   a:hover {
