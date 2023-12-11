@@ -29,7 +29,7 @@
   "devDependencies": {
     "@eslint/js": "^8.55.0",
     "@fontsource/fira-mono": "^4.5.10",
-    "@jimbojet/lint": "^2.0.2",
+    "@jimbojet/lint": "^2.1.0",
     "@neoconfetti/svelte": "^1.0.0",
     "@stylistic/eslint-plugin": "^1.5.0",
     "@sveltejs/adapter-static": "^2.0.3",
