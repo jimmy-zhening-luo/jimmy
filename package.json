@@ -2,7 +2,6 @@
   "name": "jimmy",
   "version": "9.0.0-alpha.0",
   "description": "Jimmy Luo personal website",
-  "main": "./dist/index.cjs",
   "type": "module",
   "repository": {
     "type": "git",
@@ -15,42 +14,35 @@
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
-    "clean": "npm run clean:dist",
-    "clean:dist": "shx rm -rf dist",
-    "lint": "eslint --cache --cache-strategy content -c eslint.config.js src/**/*.cts",
+    "lint": "eslint --cache --cache-strategy content -c eslint.config.js src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
-    "prebuild": "npm run clean && npm run lint:fix",
-    "build": "tsc",
-    "postbuild": "npm run copy-assets",
-    "copy-assets": "shx cp -r src/views dist",
-    "start": "node .",
-    "predev:start": "npm run build",
-    "dev:start": "npm run start",
-    "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start"
-  },
-  "engines": {
-    "npm": ">=10.2.5",
-    "node": ">=20.10.0"
-  },
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3"
+    "predev": "npm run lint:fix",
+    "dev": "vite dev",
+    "prebuild": "npm run lint:fix",
+    "build": "vite build",
+    "postbuild": "npm run check",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "prepreview": "npm run build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@eslint/js": "^8.55.0",
+    "@fontsource/fira-mono": "^4.5.10",
     "@jimbojet/lint": "^2.0.2",
+    "@neoconfetti/svelte": "^1.0.0",
     "@stylistic/eslint-plugin": "^1.5.0",
-    "@types/ejs": "^3.1.5",
-    "@types/express": "^4.17.21",
-    "@types/express-session": "^1.17.10",
-    "@types/node": "^20.10.4",
+    "@sveltejs/adapter-auto": "^2.1.1",
+    "@sveltejs/kit": "^1.27.7",
+    "@types/cookie": "^0.6.0",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "eslint": "^8.55.0",
-    "nodemon": "^3.0.2",
-    "shx": "^0.3.4",
-    "typescript": "^5.3.3"
+    "eslint-plugin-svelte": "^2.35.1",
+    "svelte": "^4.2.8",
+    "svelte-check": "^3.6.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.1"
   }
 }

@@ -12,11 +12,15 @@ export default [
     tsLintParser,
     [
       "eslint.config.js",
+      "svelte.config.js",
     ],
     [
+      "vite.config.ts",
       "src/**/*.ts",
-      "src/**/*.cts",
-      "src/**/*.mts",
     ],
+    undefined,
+    {
+      "@typescript-eslint/require-await": "off",
+    },
   ).configs,
 ];

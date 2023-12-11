@@ -13,7 +13,14 @@
 
 ##### BEGIN Project-Specific Files to .gitignore #####
 
-
+.DS_Store
+/build
+/.svelte-kit
+/package
+.vercel
+.output
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
 #####   END Project-Specific Files to .gitignore #####
 
