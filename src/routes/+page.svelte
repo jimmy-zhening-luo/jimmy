@@ -18,9 +18,9 @@
     Why does the caged bird sing?
   </h1>
 </section>
-<span class="social-media-nav-bar">
+<section>
   <Socials />
-</span>
+</section>
 
 <style>
   section {
@@ -33,13 +33,6 @@
 
   h1 {
     width: 100%;
-  }
-
-  .social-media-nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   .welcome {

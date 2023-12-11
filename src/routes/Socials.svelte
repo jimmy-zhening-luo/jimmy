@@ -69,6 +69,7 @@
   menu {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2.4rem;
@@ -79,16 +80,14 @@
   }
 
   li {
+    flex: 0 0 auto;
     height: 2.4rem;
+    width: 2.4rem;
   }
 
   menu img {
     height: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-  }
-
-  a:hover {
-    color: var(--color-theme-2);
   }
 </style>
