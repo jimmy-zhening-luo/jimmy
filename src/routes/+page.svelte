@@ -1,5 +1,5 @@
 <script>
-  import jimmy_logo from "$lib/images/jimmy-logo.svg";
+  import jimmy_logo from "$lib/images/site/jimmy-logo.svg";
 </script>
 
 <svelte:head>
@@ -14,7 +14,6 @@
         <img src="{jimmy_logo}" alt="Jimmy" />
       </picture>
     </span>
-
     Why does the caged bird sing?
   </h1>
 </section>
