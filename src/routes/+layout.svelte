@@ -11,8 +11,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 Jimmy Zhening Luo</p>
-    <p><a href="https://github.com/jimmy-zhening-luo/jimmy">View Source</a></p>
+    <span class="copyright">
+      <p>&copy; 2023 Jimmy Zhening Luo</p>
+    </span>
+    <span class="view-source">
+      <p><code><a href="https://github.com/jimmy-zhening-luo/jimmy">View Source</a></code></p>
+    </span>
   </footer>
 </div>
 
@@ -40,16 +44,20 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 12px;
+    padding: 12px 12px 48px 12px;
   }
 
   footer p {
     font-size: 0.8rem;
   }
 
+  footer .copyright p {
+    font-weight: 600;
+  }
+
   @media (min-width: 480px) {
     footer {
-      padding: 12px 0;
+      padding: 12px 0px 48px 0px;
     }
   }
 </style>

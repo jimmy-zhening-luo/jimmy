@@ -1,7 +1,7 @@
 @import '@fontsource/fira-mono';
 
 :root {
-  --font-body: 'Segoe UI Semibold', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Open Sans', sans-serif, Oxygen, Ubuntu,
+  --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Open Sans', sans-serif, Oxygen, Ubuntu,
     Cantarell;
   --font-mono: 'Lucida Console', 'Fira Mono', monospace;
   --color-bg-0: hsl(127, 20%, 80%);
@@ -28,7 +28,10 @@ body {
     linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
-h1,
+h1 {
+  font-weight: 600;
+}
+
 h2,
 p {
   font-weight: 400;
@@ -65,6 +68,10 @@ pre {
   padding: 0.5em;
   overflow-x: auto;
   color: var(--color-text);
+}
+
+code {
+  font-family: var(--font-mono);
 }
 
 .text-column {

@@ -33,6 +33,7 @@
 
   h1 {
     width: 100%;
+    font-weight: 600;
   }
 
   .welcome {
@@ -40,7 +41,7 @@
     position: relative;
     width: 100%;
     height: 0;
-    padding: 0 0 calc(100% * 495 / 1024) 0;
+    padding: 0 0 calc(100% * 495 / 550) 0;
   }
 
   .welcome img {
