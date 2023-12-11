@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 12px 12px 70px 12px;
+    padding: 12px 12px 85px 12px;
   }
 
   footer p {
@@ -57,7 +57,7 @@
 
   @media (min-width: 480px) {
     footer {
-      padding: 12px 0px 70px 0px;
+      padding: 12px 0px 85px 0px;
     }
   }
 </style>

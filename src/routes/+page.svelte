@@ -41,7 +41,7 @@
     position: relative;
     width: 100%;
     height: 0;
-    padding: 0 0 calc(100% * 495 / 920) 0;
+    padding: 0 0 calc(100% * 495 / 935) 0;
   }
 
   .welcome img {
