@@ -1,31 +1,22 @@
 <script>
-  import Counter from "./Counter.svelte";
-  import welcome from "$lib/images/svelte-welcome.webp";
-  import welcome_fallback from "$lib/images/svelte-welcome.png";
+  import jimmy_logo from "$lib/images/jimmy-logo.svg";
 </script>
 
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Jimmy</title>
+  <meta name="description" content="Jimmy Luo's personal website" />
 </svelte:head>
 
 <section>
   <h1>
     <span class="welcome">
       <picture>
-        <source srcset="{welcome}" type="image/webp" />
-        <img src="{welcome_fallback}" alt="Welcome" />
+        <img src="{jimmy_logo}" alt="Jimmy" />
       </picture>
     </span>
 
-    to your new<br />SvelteKit app
+    Why does the caged bird sing?
   </h1>
-
-  <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
-  </h2>
-
-  <Counter />
 </section>
 
 <style>
@@ -34,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 0.6;
+    flex: 0.2;
   }
 
   h1 {
@@ -46,7 +37,7 @@
     position: relative;
     width: 100%;
     height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
+    padding: 0 0 calc(100% * 495 / 1024) 0;
   }
 
   .welcome img {

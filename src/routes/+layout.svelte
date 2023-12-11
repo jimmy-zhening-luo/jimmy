@@ -11,7 +11,7 @@
   </main>
 
   <footer>
-    <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+    <p>&copy; 2023 Jimmy Zhening Luo</p>
   </footer>
 </div>
 
@@ -41,8 +41,8 @@
     padding: 12px;
   }
 
-  footer a {
-    font-weight: bold;
+  footer p {
+    font-size: 0.8rem;
   }
 
   @media (min-width: 480px) {
