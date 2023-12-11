@@ -1,5 +1,6 @@
 <script>
   import jimmy_logo from "$lib/images/site/jimmy-logo.svg";
+  import Socials from "./Socials.svelte";
 </script>
 
 <svelte:head>
@@ -16,6 +17,12 @@
     </span>
     Why does the caged bird sing?
   </h1>
+</section>
+
+<section>
+  <span class="content">
+    <Socials />
+  </span>
 </section>
 
 <style>
