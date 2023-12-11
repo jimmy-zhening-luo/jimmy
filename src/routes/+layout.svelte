@@ -12,6 +12,7 @@
 
   <footer>
     <p>&copy; 2023 Jimmy Zhening Luo</p>
+    <p><a href="https://github.com/jimmy-zhening-luo/jimmy">View Source</a></p>
   </footer>
 </div>
 
@@ -35,9 +36,10 @@
 
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     padding: 12px;
   }
 
