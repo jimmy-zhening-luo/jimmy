@@ -10,13 +10,13 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     environment: dev
-    name: Build and Deploy Job (dev)
+    name: Build/Deploy Job (dev)
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
-      - name: Build And Deploy Step (dev)
+      - name: Build/Deploy Step (dev)
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
