@@ -1,10 +1,12 @@
 <script>
-  import jimmy_logo from "$lib/images/site/jimmy-logo.svg";
+  import site_logo from "$lib/images/site/logo.svg";
   import Socials from "./Socials.svelte";
 </script>
 
 <svelte:head>
-  <title>Jimmy</title>
+  <title>
+    Jimmy
+  </title>
   <meta name="description" content="Jimmy Luo's personal website" />
 </svelte:head>
 
@@ -12,12 +14,13 @@
   <h1>
     <span class="welcome">
       <picture>
-        <img src="{jimmy_logo}" alt="Jimmy" />
+        <img src="{site_logo}" alt="Jimmy" />
       </picture>
     </span>
     Why does the caged bird sing?
   </h1>
 </section>
+
 <section>
   <Socials />
 </section>
@@ -26,9 +29,9 @@
   section {
     display: flex;
     flex-direction: column;
+    flex: 0.2;
     justify-content: center;
     align-items: center;
-    flex: 0.2;
   }
 
   h1 {
@@ -37,18 +40,18 @@
   }
 
   .welcome {
-    display: block;
     position: relative;
+    display: block;
+    padding: 0 0 calc(100% * 495 / 935) 0;
     width: 100%;
     height: 0;
-    padding: 0 0 calc(100% * 495 / 935) 0;
   }
 
   .welcome img {
     position: absolute;
+    display: block;
+    top: 0;
     width: 100%;
     height: 100%;
-    top: 0;
-    display: block;
   }
 </style>

@@ -12,10 +12,18 @@
 
   <footer>
     <span class="copyright">
-      <p>&copy; 2023 Jimmy Zhening Luo</p>
+      <p>
+        &copy; 2023 Jimmy Zhening Luo
+      </p>
     </span>
     <span class="view-source">
-      <p><code><a href="https://github.com/jimmy-zhening-luo/jimmy">View Source</a></code></p>
+      <p>
+        <code>
+          <a href="https://github.com/jimmy-zhening-luo/jimmy">
+            View Source
+          </a>
+        </code>
+      </p>
     </span>
   </footer>
 </div>
@@ -28,14 +36,14 @@
   }
 
   main {
-    flex: 1;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    margin: 0 auto;
     padding: 1rem;
     width: 100%;
     max-width: 64rem;
-    margin: 0 auto;
-    box-sizing: border-box;
   }
 
   footer {
