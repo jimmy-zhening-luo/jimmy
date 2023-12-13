@@ -33,7 +33,7 @@
     "@neoconfetti/svelte": "^1.0.0",
     "@stylistic/eslint-plugin": "^1.5.1",
     "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.29.1",
+    "@sveltejs/kit": "^1.30.3",
     "@types/cookie": "^0.6.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
