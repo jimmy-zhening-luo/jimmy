@@ -7,7 +7,12 @@ This repository contains Jimmy Luo's personal website. As of August 31, 2022, th
 
 <details><summary>Dev Tools</summary>
 
-This is a web app with a server built on [Express](https://expressjs.com/) [Node.js](https://nodejs.org/en/) and a presentation layer built on [Svelte](https://svelte.dev/) templating and handrolled styles. The source is written in [TypeScript](https://typescriptlang.org/).
+This is a static web app built on [Node.js](https://nodejs.org/en/) using [SvelteKit](https://kit.svelte.dev), a helper that bundles [Svelte](https://svelte.dev/) and [Vite](https://vitejs.dev). 
+
+- **Svelte** enables concise, descriptive, and modular syntax for site content, routing, style, and logic.
+- **Vite** provides a self-contained, minimal-config test and build environment, capable of adapting Svelte code into a compact servable static bundle.
+
+The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
 
 | Key          | Value                                                |
 | ------------ | ---------------------------------------------------- |
@@ -22,13 +27,13 @@ This is a web app with a server built on [Express](https://expressjs.com/) [Node
 
 <details><summary>Deployment Infra</summary>
 
-The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/) instance using [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel).
+The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static) instance using [GitHub Actions](https://github.com/features/actions).
 
 | Key                    | Value                                                                                                    |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- |
 | Cloud Service Provider | Microsoft Azure                                                                                          |
-| Cloud App              | [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/)                             |
-| CI/CD Connector        | [GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel) |
+| Cloud App              | [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static)                             |
+| CI/CD Connector        | [GitHub Actions](https://github.com/features/actions) |
 
 </details>
 
@@ -65,7 +70,7 @@ You now have:
 
 <details><summary>Step 2: Build and run the web app.</summary>
 
-You can now run this web app's `dev` script, which prepares a local build of the web app, deploys it on your local host machine, and opens a browser to the local host so you can preview the app. It also continuously rebuilds when any changes are detected.
+You can now run this web app's `dev` script, which builds a local (unoptimized) static web app bundle and serves it from your local host machine. It also continuously rebuilds when any code changes are detected, so you can see your changes in real-time.
 
     npm run dev
 
@@ -80,6 +85,6 @@ You can now run this web app's `dev` script, which prepares a local build of the
 
 <br/>
 
-Placeholder for deployment instructions once on a stable minor build with continuously deploying commits.
+TBD some point in the future. 
 
 </details>
