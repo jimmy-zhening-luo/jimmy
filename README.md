@@ -9,8 +9,8 @@ This repository contains Jimmy Luo's personal website. As of August 31, 2022, th
 
 This is a static web app built on [Node.js](https://nodejs.org/en/) using [SvelteKit](https://kit.svelte.dev), a helper that bundles [Svelte](https://svelte.dev/) and [Vite](https://vitejs.dev). 
 
-- **Svelte** enables concise, descriptive, and modular syntax for site content, routing, style, and logic.
-- **Vite** provides a self-contained, minimal-config test and build environment, capable of adapting Svelte code into a compact servable static bundle.
+- **[Svelte](https://svelte.dev/)** enables concise, descriptive, and modular syntax for site content, routing, style, and logic.
+- **[Vite](https://vitejs.dev)** provides a self-contained, minimal-config test and build environment, capable of adapting Svelte code into a compact servable static bundle.
 
 The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
 
@@ -70,7 +70,7 @@ You now have:
 
 <details><summary>Step 2: Build and run the web app.</summary>
 
-You can now run this web app's `dev` script, which builds a local (unoptimized) static web app bundle and serves it from your local host machine. It also continuously rebuilds when any code changes are detected, so you can see your changes in real-time.
+You can now run this web app's `dev` script, which uses Vite to build a local (unoptimized) static web app bundle and serve the built bundle from your local host machine. It also continuously rebuilds when any code changes are detected, so you can see your changes in real-time.
 
     npm run dev
 
