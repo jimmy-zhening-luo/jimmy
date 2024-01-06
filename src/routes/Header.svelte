@@ -20,6 +20,11 @@
           Debug
         </a>
       </li>
+      <li aria-current="false">
+        <a href="https://read.jimm.my">
+          Essays
+        </a>
+      </li>
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
       <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z"></path>
