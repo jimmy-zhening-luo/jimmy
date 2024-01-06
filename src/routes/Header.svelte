@@ -15,7 +15,7 @@
           Home
         </a>
       </li>
-      <li aria-current="{$page.url.pathname === '/debug' ? 'page' : undefined}">
+      <li aria-current="{$page.url.pathname === '/debug/' ? 'page' : undefined}">
         <a href="/debug">
           Debug
         </a>
