@@ -12,13 +12,29 @@ jobs:
     environment:
       name: dev
       url: https://dev.jimm.my
-    name: Build/Deploy Job (dev)
+    name: Build and Deploy (dev)
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
-      - name: Build/Deploy Step (dev)
+      - name: Install Nodejs
+        uses: NodeTool@0
+        with:
+          versionSource: 'spec'
+          versionSpec: '18.x'
+          checkLatest: true
+      - name: Install Dependencies
+        uses: Npm@1
+        with:
+          command: 'install'
+      - name: Build app
+        uses: Npm@1
+        with:
+          command: 'custom'
+          customCommand: 'run build'
+      - name: Deploy (skip build)
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -31,3 +47,8 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+          ###### WORKAROUND Node 18 unsupported by Oryx: Build separately using NodeTool@0 and Npm@1; skip build & use external build in Azure SWA Deploy ######
+          skip_api_build: true
+          skip_app_build: true
+          is_static_export: true
+          ###### End of WORKAROUND Node 18 unsupported by Oryx ######
