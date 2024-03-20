@@ -72,7 +72,7 @@ You now have:
 
 You can now run this web app's `dev` script, which uses Vite to build a local (unoptimized) static web app bundle and serve the built bundle from your local host machine. It also continuously rebuilds when any code changes are detected, so you can see your changes in real-time.
 
-    npm dev
+    npm run dev
 
 </details>
 
