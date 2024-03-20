@@ -19,21 +19,14 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Install Nodejs
-        uses: NodeTool@0
+      - name: Setup Node v18
+        uses: actions/setup-node@v4
         with:
-          versionSource: 'spec'
-          versionSpec: '18.x'
-          checkLatest: true
+          node-version: 18
       - name: Install Dependencies
-        uses: Npm@1
-        with:
-          command: 'install'
-      - name: Build app
-        uses: Npm@1
-        with:
-          command: 'custom'
-          customCommand: 'run build'
+        run: npm ci
+      - name: Build SWA
+        run: npm run build
       - name: Deploy (skip build)
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
