@@ -4,9 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>
-    Jimmy
-  </title>
+  <title>Jimmy</title>
   <meta name="description" content="Jimmy Luo's personal website" />
 </svelte:head>
 
