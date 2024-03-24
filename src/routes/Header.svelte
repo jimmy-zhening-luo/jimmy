@@ -10,20 +10,14 @@
       <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z"></path>
     </svg>
     <ul>
-      <li aria-current="{$page.url.pathname === '/' ? 'page' : undefined}">
-        <a href="/">
-          Home
-        </a>
+      <li aria-current="{$page.url.pathname === '/' ? 'page' : 'false'}">
+        <a href="/"> Home </a>
       </li>
-      <li aria-current="{$page.url.pathname === '/debug/' ? 'page' : undefined}">
-        <a href="/debug">
-          Debug
-        </a>
+      <li aria-current="{$page.url.pathname === '/debug/' || $page.url.pathname === '/debug' ? 'page' : 'false'}">
+        <a href="/debug"> Debug </a>
       </li>
       <li aria-current="false">
-        <a href="https://read.jimm.my">
-          Essays
-        </a>
+        <a href="https://read.jimm.my"> Essays </a>
       </li>
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
