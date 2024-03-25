@@ -12,7 +12,7 @@ jobs:
     environment:
       name: Production
       url: https://jimm.my
-    name: Build/Deploy (Production - main)
+    name: Build/Deploy [PRODUCTION] (main)
     steps:
       - name: Checkout
         id: checkout
