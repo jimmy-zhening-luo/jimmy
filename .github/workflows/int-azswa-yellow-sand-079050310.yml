@@ -6,7 +6,7 @@ on:
       - int
 
 jobs:
-  deploy:
+  deploy-int:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     environment:
