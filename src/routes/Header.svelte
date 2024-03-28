@@ -13,9 +13,6 @@
       <li aria-current="{$page.url.pathname === '/' ? 'page' : 'false'}">
         <a href="/"> Jimmy </a>
       </li>
-      <li aria-current="{$page.url.pathname === '/debug/' || $page.url.pathname === '/debug' ? 'page' : 'false'}">
-        <a href="/debug"> Debug </a>
-      </li>
       <li aria-current="false">
         <a href="https://read.jimm.my"> Essays </a>
       </li>
