@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Debug</title>
+  <title>Debug : Jimmy</title>
   <meta name="description" content="A website route for debugging" />
 </svelte:head>
 
