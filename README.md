@@ -49,7 +49,7 @@ The source contained in this repository's `main` branch is continuously built an
 
 <details><summary>Step 1: Prepare your development environment.</summary>
 
-1.  If you don't already have Node.js, [install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+1.  If you don't already have Node.js, [install Node.js](https://nodejs.org).
 
 2.  Save this Git repository on your local machine.
 
