@@ -22,7 +22,7 @@
     "build": "vite build",
     "postbuild": "npm run check",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "check:watch": "npm run check -- --watch",
     "prepreview": "npm run build",
     "preview": "vite preview"
   },
