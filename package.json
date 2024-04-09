@@ -28,9 +28,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^8.57.0",
-    "@fontsource/open-sans": "^5.0.27",
-    "@fontsource/overpass-mono": "^5.0.17",
-    "@fontsource/oxygen": "^5.0.12",
     "@jimbojet/lint": "^3.0.0",
     "@stylistic/eslint-plugin": "^1.7.0",
     "@sveltejs/adapter-static": "^3.0.1",
@@ -45,5 +42,10 @@
     "tslib": "^2.6.2",
     "typescript": "^5.4.4",
     "vite": "^5.2.8"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^5.0.27",
+    "@fontsource/overpass-mono": "^5.0.17",
+    "@fontsource/oxygen": "^5.0.12"
   }
 }
