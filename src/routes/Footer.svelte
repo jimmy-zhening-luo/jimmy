@@ -1,6 +1,6 @@
 <footer>
   <span class="copyright">
-    <p>&copy; 2023 Jimmy Zhening Luo</p>
+    <p>&copy; 2024 Jimmy Zhening Luo</p>
   </span>
   <span class="view-source">
     <p>
