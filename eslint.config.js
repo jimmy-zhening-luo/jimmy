@@ -11,8 +11,8 @@ export default [
     tsLintPlugin,
     tsLintParser,
     [
-      "eslint.config.js",
       "svelte.config.js",
+      "eslint.config.js",
     ],
     [
       "vite.config.ts",
