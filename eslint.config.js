@@ -19,8 +19,6 @@ export default [
       "src/**/*.ts",
     ],
     undefined,
-    {
-      "@typescript-eslint/require-await": "off",
-    },
+    { "@typescript-eslint/require-await": "off" },
   ).configs,
 ];
