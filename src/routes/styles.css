@@ -1,7 +1,6 @@
 @import '@fontsource/open-sans';
 @import '@fontsource/oxygen';
 @import '@fontsource/overpass-mono/500.css';
-
 :root {
   --column-margin-top: 4rem;
   --column-width: 42rem;
@@ -16,7 +15,6 @@
   --color-bg-1: hsl(127, 10%, 90%);
   --color-bg-2: hsl(127, 5%, 95%);
 }
-
 body {
   margin: 0;
   min-height: 100vh;
@@ -28,38 +26,30 @@ body {
       rgba(255, 255, 255, 0) 100%),
     linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
-
 h1 {
   font-weight: 600;
 }
-
 h2,
 p {
   font-weight: 400;
 }
-
 p {
   line-height: 1.5;
 }
-
 a {
   text-decoration: none;
   color: var(--color-theme-1);
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 h1 {
   text-align: center;
   font-size: 2rem;
 }
-
 h2 {
   font-size: 1rem;
 }
-
 pre {
   padding: 0.5em;
   overflow-x: auto;
@@ -70,11 +60,9 @@ pre {
   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
   background-color: rgba(255, 255, 255, 0.45);
 }
-
 code {
   font-family: var(--font-mono);
 }
-
 .text-column {
   display: flex;
   flex: 0.6;
@@ -83,23 +71,19 @@ code {
   margin: 0 auto;
   max-width: 48rem;
 }
-
 input,
 button {
   font-family: inherit;
   font-size: inherit;
 }
-
 button:focus:not(:focus-visible) {
   outline: none;
 }
-
 @media (min-width: 720px) {
   h1 {
     font-size: 2.4rem;
   }
 }
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
