@@ -2,7 +2,7 @@
   <span class="copyright">
     <p>&copy; 2024 Jimmy Zhening Luo</p>
   </span>
-  <span class="view-source">
+  <span>
     <p>
       <code>
         <a href="https://github.com/jimmy-zhening-luo/jimmy"> View Source </a>
@@ -10,6 +10,10 @@
     </p>
   </span>
 </footer>
+
+<script
+  lang="ts"
+  strictEvents></script>
 
 <style>
   footer {

@@ -1,7 +1,13 @@
-<script>
+<script
+  lang="ts"
+  strictEvents>
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
   import "./styles.css";
+
+  type $$Slots = {
+    "default": Record<string, never>;
+  };
 </script>
 
 <div class="app">

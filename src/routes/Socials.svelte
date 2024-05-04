@@ -1,4 +1,6 @@
-<script>
+<script
+  lang="ts"
+  strictEvents>
   import i_fb from "$lib/images/socials/0-facebook-rd.svg";
   import i_ig from "$lib/images/socials/1-instagram-rd.svg";
   import i_gh from "$lib/images/socials/2-github-rd.svg";
@@ -14,47 +16,65 @@
   <menu>
     <li>
       <a href="https://facebook.com/jimbojet">
-        <img src="{i_fb}" alt="Facebook" />
+        <img
+          alt="Facebook"
+          src={i_fb} />
       </a>
     </li>
     <li>
       <a href="https://instagram.com/_jimbojet">
-        <img src="{i_ig}" alt="Instagram" />
+        <img
+          alt="Instagram"
+          src={i_ig} />
       </a>
     </li>
     <li>
       <a href="https://github.com/jimmy-zhening-luo">
-        <img src="{i_gh}" alt="GitHub" />
+        <img
+          alt="GitHub"
+          src={i_gh} />
       </a>
     </li>
     <li>
       <a href="https://open.spotify.com/user/1215989421">
-        <img src="{i_sp}" alt="Spotify" />
+        <img
+          alt="Spotify"
+          src={i_sp} />
       </a>
     </li>
     <li>
       <a href="https://soundcloud.com/jimmyluo">
-        <img src="{i_sc}" alt="SoundCloud" />
+        <img
+          alt="SoundCloud"
+          src={i_sc} />
       </a>
     </li>
     <li>
       <a href="https://youtube.com/@jimbojet">
-        <img src="{i_yt}" alt="YouTube" />
+        <img
+          alt="YouTube"
+          src={i_yt} />
       </a>
     </li>
     <li>
       <a href="https://duolingo.com/profile/jimbojet">
-        <img src="{i_du}" alt="Duolingo" />
+        <img
+          alt="Duolingo"
+          src={i_du} />
       </a>
     </li>
     <li>
       <a href="https://read.jimm.my">
-        <img src="{i_su}" alt="Substack" />
+        <img
+          alt="Substack"
+          src={i_su} />
       </a>
     </li>
     <li>
       <a href="https://linkedin.com/in/jimmy-zhening-luo">
-        <img src="{i_li}" alt="LinkedIn" />
+        <img
+          alt="LinkedIn"
+          src={i_li} />
       </a>
     </li>
   </menu>

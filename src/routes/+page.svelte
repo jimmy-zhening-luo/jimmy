@@ -1,18 +1,24 @@
-<script>
+<script
+  lang="ts"
+  strictEvents>
   import site_logo from "$lib/images/site/logo.svg";
   import Socials from "./Socials.svelte";
 </script>
 
 <svelte:head>
   <title>Jimmy</title>
-  <meta name="description" content="Jimmy Luo's personal website" />
+  <meta
+    name="description"
+    content="Jimmy Luo's personal website" />
 </svelte:head>
 
 <section>
   <h1>
     <span class="welcome">
       <picture>
-        <img src="{site_logo}" alt="Jimmy" />
+        <img
+          alt="Jimmy"
+          src={site_logo} />
       </picture>
     </span>
     Why does the caged bird sing?
