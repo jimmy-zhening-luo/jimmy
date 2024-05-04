@@ -25,7 +25,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@jimbojet/lint": "^8.0.0",
+    "@jimbojet/lint": "^8.0.1",
     "@stylistic/eslint-plugin": "^1.8.0",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.5.7",
