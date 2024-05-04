@@ -22,23 +22,10 @@ export default [
         "src/**/*.ts",
       ],
     },
-    {
-      overrideSvelte: {
-        "svelte/block-lang": [
-          "error",
-          {
-            enforceScriptPresent: true,
-            enforceStylePresent: false,
-            script: ["ts"],
-          },
-        ],
-        "@typescript-eslint/no-unused-vars": "off",
-      },
-    },
+    { },
     {
       svelte,
       parser: svelteParser,
-      processor: "svelte/svelte",
       files: ["src/**/*.svelte"],
     },
   ).configs,
