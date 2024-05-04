@@ -17,7 +17,6 @@
     "lint": "eslint --cache --cache-strategy content -c eslint.config.js svelte.config.js vite.config.ts src/**/*.ts src/**/*.svelte",
     "lint:fix": "npm run lint -- --fix",
     "dev": "vite dev",
-    "prebuild": "npm run lint:fix",
     "build": "vite build",
     "postbuild": "npm run check",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
