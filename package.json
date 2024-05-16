@@ -1,8 +1,10 @@
 {
   "name": "jimmy",
   "version": "9.13.7",
-  "description": "Jimmy Luo personal website",
+  "description": "jimm.my",
   "type": "module",
+  "private": false,
+  "main": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jimmy-zhening-luo/jimmy.git"
@@ -16,13 +18,13 @@
   "scripts": {
     "lint": "eslint --cache --cache-strategy content -c eslint.config.js svelte.config.js vite.config.ts src/**/*.ts src/**/*.svelte",
     "lint:fix": "npm run lint -- --fix",
-    "dev": "vite dev",
-    "build": "vite build",
-    "postbuild": "npm run check",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "npm run check -- --watch",
+    "build": "vite build",
+    "postbuild": "npm run check",
     "prepreview": "npm run build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev": "vite dev"
   },
   "devDependencies": {
     "@jimbojet/lint": "~8.0.11",
