@@ -1,4 +1,4 @@
-name: Deploy Azure SWA (Production - main)
+name: Azure Deploy (PROD/main)
 
 on:
   push:

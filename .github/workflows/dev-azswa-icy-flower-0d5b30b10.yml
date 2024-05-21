@@ -1,4 +1,4 @@
-name: Deploy Azure SWA (dev)
+name: Azure Deploy (dev)
 
 on:
   push:

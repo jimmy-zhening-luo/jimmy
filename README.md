@@ -1,11 +1,11 @@
 # jimm.my
 ## What am I?
 
-[![Deploy Azure SWA (Production - main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml)
-
 This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this repository is continuously deployed to [jimm.my](https://jimm.my/).
 
 <br/>
+
+[![Azure Deploy (PROD/main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml)
 
 <details><summary>Dev Tools</summary>
 

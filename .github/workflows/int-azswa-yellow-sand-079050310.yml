@@ -1,4 +1,4 @@
-name: Deploy Azure SWA (int)
+name: Azure Deploy (int)
 
 on:
   push:
