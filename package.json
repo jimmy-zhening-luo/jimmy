@@ -16,12 +16,15 @@
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
-    "lint": "eslint --cache --cache-strategy content -c eslint.config.js svelte.config.js vite.config.ts src/**/*.ts src/**/*.svelte",
+    "lint": "npm run lint:ts",
     "lint:fix": "npm run lint -- --fix",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "npm run check -- --watch",
+    "lint:ts": "eslint --cache --cache-strategy content -c eslint.config.js svelte.config.js vite.config.ts src/**/*.ts",
+    "lint:svelte": "eslint --cache --cache-strategy content -c eslint.config.js --parser-options project:tsconfig.json src/**/*.svelte",
+    "prebuild": "npm run lint:fix",
     "build": "vite build",
     "postbuild": "npm run check",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "npm run check -- --watch",
     "prepreview": "npm run build",
     "preview": "vite preview",
     "dev": "vite dev"
