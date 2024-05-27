@@ -9,16 +9,13 @@ export default [
   ...new Configs(
     {
       stylistic,
-      files: [
-        "svelte.config.js",
-        "eslint.config.js",
-      ],
+      files: ["*.config.js"],
     },
     {
       ts,
       parser: tsParser,
       files: [
-        "vite.config.ts",
+        "*.config.ts",
         "src/**/*.ts",
       ],
     },
