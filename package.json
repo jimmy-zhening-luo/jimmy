@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
-    "lint": "eslint --cache --cache-strategy content -c eslint.config.js eslint.config.js svelte.config.js vite.config.ts src/**/*.svelte src/**/*.ts",
+    "lint": "eslint --cache --cache-strategy content src/**/*.svelte -c eslint.config.js --parser-options project:tsconfig.json eslint.config.js svelte.config.js vite.config.ts src/**/*.svelte src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "prebuild": "npm run lint:fix",
     "build": "vite build",
