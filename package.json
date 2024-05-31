@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
   "scripts": {
-    "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js --parser-options project:tsconfig.json",
+    "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
     "lint": "npm run lint:config && npm run lint:src",
     "lint:config": "npm run lint:config:js && npm run lint:config:ts",
     "lint:src": "npm run lint:src:ts && npm run lint:src:svelte",
