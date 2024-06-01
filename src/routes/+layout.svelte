@@ -10,13 +10,15 @@
   };
 </script>
 
-<div class="app">
+<div
+  class="app">
   <Header />
   <main><slot /></main>
   <Footer />
 </div>
 
-<style>
+<style
+  lang="css">
   .app {
     display: flex;
     flex-direction: column;

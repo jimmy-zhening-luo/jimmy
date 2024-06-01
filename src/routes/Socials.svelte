@@ -12,66 +12,76 @@
   import i_li from "$lib/images/socials/8-linkedin-rd.svg";
 </script>
 
-<div class="socials">
+<div
+  class="socials">
   <menu>
     <li>
-      <a href="https://facebook.com/jimbojet">
+      <a
+        href="https://facebook.com/jimbojet">
         <img
           alt="Facebook"
           src={i_fb} />
       </a>
     </li>
     <li>
-      <a href="https://instagram.com/_jimbojet">
+      <a
+        href="https://instagram.com/_jimbojet">
         <img
           alt="Instagram"
           src={i_ig} />
       </a>
     </li>
     <li>
-      <a href="https://github.com/jimmy-zhening-luo">
+      <a
+        href="https://github.com/jimmy-zhening-luo">
         <img
           alt="GitHub"
           src={i_gh} />
       </a>
     </li>
     <li>
-      <a href="https://open.spotify.com/user/1215989421">
+      <a
+        href="https://open.spotify.com/user/1215989421">
         <img
           alt="Spotify"
           src={i_sp} />
       </a>
     </li>
     <li>
-      <a href="https://soundcloud.com/jimmyluo">
+      <a
+        href="https://soundcloud.com/jimmyluo">
         <img
           alt="SoundCloud"
           src={i_sc} />
       </a>
     </li>
     <li>
-      <a href="https://youtube.com/@jimbojet">
+      <a
+        href="https://youtube.com/@jimbojet">
         <img
           alt="YouTube"
           src={i_yt} />
       </a>
     </li>
     <li>
-      <a href="https://duolingo.com/profile/jimbojet">
+      <a
+        href="https://duolingo.com/profile/jimbojet">
         <img
           alt="Duolingo"
           src={i_du} />
       </a>
     </li>
     <li>
-      <a href="https://read.jimm.my">
+      <a
+        href="https://read.jimm.my">
         <img
           alt="Substack"
           src={i_su} />
       </a>
     </li>
     <li>
-      <a href="https://linkedin.com/in/jimmy-zhening-luo">
+      <a
+        href="https://linkedin.com/in/jimmy-zhening-luo">
         <img
           alt="LinkedIn"
           src={i_li} />
@@ -80,7 +90,8 @@
   </menu>
 </div>
 
-<style>
+<style
+  lang="css">
   div.socials {
     display: flex;
     justify-content: space-between;

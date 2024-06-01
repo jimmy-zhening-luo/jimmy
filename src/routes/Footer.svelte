@@ -1,11 +1,13 @@
 <footer>
-  <span class="copyright">
+  <span
+    class="copyright">
     <p>&copy; 2024 Jimmy Zhening Luo</p>
   </span>
   <span>
     <p>
       <code>
-        <a href="https://github.com/jimmy-zhening-luo/jimmy"> View Source </a>
+        <a
+          href="https://github.com/jimmy-zhening-luo/jimmy"> View Source </a>
       </code>
     </p>
   </span>
@@ -15,7 +17,8 @@
   lang="ts"
   strictEvents></script>
 
-<style>
+<style
+  lang="css">
   footer {
     display: flex;
     flex-direction: row;

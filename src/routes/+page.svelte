@@ -14,7 +14,8 @@
 
 <section>
   <h1>
-    <span class="welcome">
+    <span
+      class="welcome">
       <picture>
         <img
           alt="Jimmy"
@@ -29,7 +30,8 @@
   <Socials />
 </section>
 
-<style>
+<style
+  lang="css">
   section {
     display: flex;
     flex-direction: column;
