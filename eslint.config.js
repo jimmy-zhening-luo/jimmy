@@ -1,29 +1,23 @@
 import stylistic from "@stylistic/eslint-plugin";
-import ts from "@typescript-eslint/eslint-plugin";
-import parser from "@typescript-eslint/parser";
 import svelte from "eslint-plugin-svelte";
 import svelteParser from "svelte-eslint-parser";
 import Lint from "@jimbojet/lint";
 
 export default [
   ...new Lint(
+    stylistic,
     {
-      stylistic,
-      files: ["*.config.js"],
-    },
-    {
-      ts,
-      parser,
-      files: [
+      js: ["*.config.js"],
+      ts: [
         "*.config.ts",
         "src/**/*.ts",
       ],
+      svelte: ["src/**/*.svelte"],
     },
     { },
     {
-      svelte,
+      plugin: svelte,
       parser: svelteParser,
-      files: ["src/**/*.svelte"],
     },
   ).configs,
 ];
