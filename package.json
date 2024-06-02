@@ -1,8 +1,8 @@
 {
   "name": "jimmy",
-  "version": "9.13.27",
+  "version": "9.13.28",
   "description": "jimm.my",
-  "keywords": [ ],
+  "keywords": [],
   "type": "module",
   "private": false,
   "main": "",
