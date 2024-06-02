@@ -2,7 +2,7 @@
   "name": "jimmy",
   "version": "9.13.29",
   "description": "jimm.my",
-  "keywords": [],
+  "keywords": [ ],
   "type": "module",
   "private": false,
   "main": "",
@@ -35,7 +35,7 @@
     "dev": "vite dev"
   },
   "devDependencies": {
-    "@jimbojet/lint": "~10.1.2",
+    "@jimbojet/lint": "~10.1.4",
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.5.10",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
