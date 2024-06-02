@@ -12,7 +12,7 @@ jobs:
     environment:
       name: Production
       url: https://jimm.my
-    name: Build/Deploy [PRODUCTION] (main)
+    name: Build/Deploy (PROD/main)
     steps:
       - name: Checkout
         id: checkout
@@ -20,31 +20,38 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Install Node v18
+      - name: Install Node v20
         id: node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
       - name: Install Dependencies
         id: ci
         run: npm ci
       - name: Build SWA
         id: build
         run: npm run build
-      - name: Azure - Deploy (SKIP Build)
-        id: builddeploy
+      - name: Deploy to Azure
+        id: deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
+          # https://aka.ms/swaworkflowconfig
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_ISLAND_0245D3F10 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "build" # App source code path
-          api_location: "" # Api source code path - optional
-          ###### End of Repository/Build Configurations ######
-          ###### WORKAROUND Node 18 unsupported by Oryx: Build separately using NodeTool@0 and Npm@1; skip build & use external build in Azure SWA Deploy ######
+          ###### App Config ######
+          app_location: "build" # built app
+          api_location: "" # built api - optional
+          ###### End of App Config ######
+          #
+          ###### OVERRIDE Build ######
+          # Azure SWA workflow uses Microsoft Oryx to install Node and build SWA before deploy.
+          # Microsoft Oryx does not support Node 18+, even though Node 16 etc. is deprecated everywhere lol. Great stuff.
+          # Thankfully I'm very smart, so I have the privilege of being smart enough to hack/deploy my app to Azure SWA.
+          # Although, one would think that a deployment tool written by Microsoft, wrapped by a workflow on a Microsoft-owned service (GitHub), to build a SWA using technologies (Vite) that are ubiquitous within Node, an ecosystem whose fate is highly intertwined with that of a Microsoft programming language (TypeScript), in which the SWA source is written, to THE Microsoft service (Azure), would Just Work (trademark) and not require the user to happen to be Big Fucking Mega-Genius like I am.
+          # Pre-build SWA by installing Node using actions/setup-node@v4 and manually running build script.
+          # Skip build action in Azure SWA (this) workflow.
           skip_api_build: true
           skip_app_build: true
           is_static_export: true
-          ###### End of WORKAROUND Node 18 unsupported by Oryx ######
+          ###### End of OVERRIDE Build ######
