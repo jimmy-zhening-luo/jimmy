@@ -1,5 +1,3 @@
-import svelte from "eslint-plugin-svelte";
-import svelteParser from "svelte-eslint-parser";
 import Lint from "@jimbojet/lint";
 
 export default [
@@ -11,11 +9,6 @@ export default [
         "src/**/*.ts",
       ],
       svelte: ["src/**/*.svelte"],
-    },
-    { },
-    {
-      plugin: svelte,
-      parser: svelteParser,
     },
   ).configs,
 ];
