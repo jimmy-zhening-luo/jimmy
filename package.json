@@ -2,6 +2,7 @@
   "name": "jimmy",
   "version": "9.13.27",
   "description": "jimm.my",
+  "keywords": [ ],
   "type": "module",
   "private": false,
   "main": "",
