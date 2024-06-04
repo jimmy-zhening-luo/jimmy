@@ -9,6 +9,10 @@ export default [
         "src/**/*.ts",
       ],
       svelte: ["src/**/*.svelte"],
+      json: ["package.json"],
+      jsonc: ["tsconfig.json"],
+      yml: [".github/workflows/*.yml"],
     },
-  ).configs,
+  )
+    .configs,
 ];
