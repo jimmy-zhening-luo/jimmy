@@ -1,8 +1,12 @@
 {
   "name": "jimmy",
   "version": "9.13.34",
-  "description": "jimm.my",
-  "keywords": [],
+  "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
+  "keywords": [
+    "typescript",
+    "sveltekit",
+    "azure-static-web-apps"
+  ],
   "type": "module",
   "private": false,
   "main": "",
