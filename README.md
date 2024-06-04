@@ -1,12 +1,12 @@
-# jimm.my
+# [jimm.my](https://jimm.my/)
+
+[![Azure Deploy (PROD/main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml)
 
 ## What am I?
 
 This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this repository is continuously deployed to [jimm.my](https://jimm.my/).
 
-<br/>
-
-[![Azure Deploy (PROD/main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml)
+<br />
 
 <details>
 <summary>Dev Tools</summary>
@@ -27,7 +27,7 @@ The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
 
 </details>
 
-<br/>
+<br />
 
 <details>
 <summary>Deployment Infra</summary>
@@ -42,7 +42,6 @@ The source contained in this repository's `main` branch is continuously built an
 
 </details>
 
-<br/>
 <br/>
 <br/>
 
