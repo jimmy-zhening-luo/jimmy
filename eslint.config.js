@@ -3,9 +3,12 @@ import Lint from "@jimbojet/lint";
 export default [
   ...new Lint(
     {
-      js: ["*.config.js"],
+      js: [
+        "eslint.config.js",
+        "svelte.config.js",
+      ],
       ts: [
-        "*.config.ts",
+        "vite.config.ts",
         "src/**/*.ts",
       ],
       svelte: ["src/**/*.svelte"],
