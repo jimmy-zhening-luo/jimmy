@@ -1,15 +1,15 @@
 <script
   lang="ts"
   strictEvents>
-  import i_fb from "$lib/images/socials/0-facebook-rd.svg";
-  import i_ig from "$lib/images/socials/1-instagram-rd.svg";
-  import i_gh from "$lib/images/socials/2-github-rd.svg";
-  import i_sp from "$lib/images/socials/3-spotify-rd.svg";
-  import i_sc from "$lib/images/socials/4-soundcloud-rd.svg";
-  import i_yt from "$lib/images/socials/5-youtube-rd.svg";
-  import i_du from "$lib/images/socials/6-duolingo.svg";
-  import i_su from "$lib/images/socials/7-substack.svg";
-  import i_li from "$lib/images/socials/8-linkedin-rd.svg";
+  import i_fb from "$lib/images/socials/facebook.svg";
+  import i_ig from "$lib/images/socials/instagram.svg";
+  import i_gh from "$lib/images/socials/github.svg";
+  import i_sp from "$lib/images/socials/spotify.svg";
+  import i_sc from "$lib/images/socials/soundcloud.svg";
+  import i_yt from "$lib/images/socials/youtube.svg";
+  import i_du from "$lib/images/socials/duolingo.svg";
+  import i_su from "$lib/images/socials/substack.svg";
+  import i_li from "$lib/images/socials/linkedin.svg";
 </script>
 
 <div
