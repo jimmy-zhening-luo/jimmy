@@ -1,4 +1,4 @@
-name: Azure Deploy (PROD/main)
+name: Azure Deploy (PROD.main)
 
 on:
   push:
@@ -10,9 +10,9 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     environment:
-      name: Production
+      name: PROD.main
       url: https://jimm.my
-    name: Build/Deploy (PROD/main)
+    name: Build/Deploy (PROD.main)
     steps:
       - name: Checkout
         id: checkout
