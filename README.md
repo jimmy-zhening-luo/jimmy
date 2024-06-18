@@ -1,6 +1,6 @@
 # [jimm.my](https://jimm.my/)
 
-[![Azure Deploy (PROD.main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.gray-island.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.gray-island.yml)
+[![Azure Deploy (PROD.main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.yml)
 
 ## What am I?
 
