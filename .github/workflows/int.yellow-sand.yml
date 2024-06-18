@@ -1,0 +1,54 @@
+name: Azure Deploy (int)
+
+on:
+  push:
+    branches:
+      - int
+
+jobs:
+  deploy-int:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment:
+      name: int
+      url: https://int.jimm.my
+    name: Build/Deploy (int)
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          lfs: false
+      - name: Install Node v20
+        id: node
+        uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Install Dependencies
+        id: ci
+        run: npm ci
+      - name: Build SWA
+        id: build
+        run: npm run build
+      - name: Deploy to Azure
+        id: deploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          # https://aka.ms/swaworkflowconfig
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_YELLOW_SAND_079050310 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          # ##### App Config ######
+          app_location: build # built app
+          api_location: "" # built api - optional
+          # ##### End of App Config ######
+          #
+          # ##### OVERRIDE Build ######
+          # Azure SWA workflow uses Microsoft Oryx to install Node and build SWA before deploy.
+          # Microsoft Oryx does not support Node 18+.
+          # Pre-build SWA by installing Node using actions/setup-node@v4 and manually running build script.
+          # Skip build action in Azure SWA (this) workflow.
+          skip_api_build: true
+          skip_app_build: true
+          is_static_export: true
+          # ##### End of OVERRIDE Build ######
