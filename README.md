@@ -1,6 +1,6 @@
 # [jimm.my](https://jimm.my/)
 
-[![Azure Deploy (PROD/main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/prod-main-azswa-gray-island-0245d3f10.yml)
+[![Azure Deploy (PROD.main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.gray-island.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.gray-island.yml)
 
 ## What am I?
 
