@@ -46,14 +46,14 @@
   },
   "devDependencies": {
     "@jimbojet/lint": "~10.9.0",
-    "@sveltejs/adapter-static": "^3.0.1",
-    "@sveltejs/kit": "^2.5.10",
+    "@sveltejs/adapter-static": "^3.0.2",
+    "@sveltejs/kit": "^2.5.17",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
     "eslint": "~8.57.0",
-    "svelte-check": "^3.8.0",
+    "svelte-check": "^3.8.1",
     "tslib": "^2.6.3",
     "typescript": "^5.5.2",
-    "vite": "^5.2.13"
+    "vite": "^5.3.1"
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.0.28",
