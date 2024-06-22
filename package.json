@@ -20,32 +20,14 @@
     "url": "https://github.com/jimmy-zhening-luo/jimmy/issues"
   },
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
-  "scripts": {
-    "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
-    "lint": "npm run lint:cfg && npm run lint:src && npm run lint:ci",
-    "lint:cfg": "npm run lint:cfg:pkg && npm run lint:cfg:tsc && npm run lint:cfg:linter && npm run lint:cfg:svelte && npm run lint:cfg:vite",
-    "lint:cfg:pkg": "npm run es -- package.json",
-    "lint:cfg:tsc": "npm run es -- tsconfig.json",
-    "lint:cfg:linter": "npm run es -- eslint.config.js",
-    "lint:cfg:svelte": "npm run es -- svelte.config.js",
-    "lint:cfg:vite": "npm run es -- vite.config.ts",
-    "lint:src": "npm run lint:src:ts && npm run lint:src:svelte && npm run lint:src:html",
-    "lint:src:ts": "npm run es -- src/**/*.ts",
-    "lint:src:svelte": "npm run es -- src/**/*.svelte",
-    "lint:src:html": "npm run es -- src/**/*.html",
-    "lint:ci": "npm run lint:ci:github",
-    "lint:ci:github": "npm run es -- .github/workflows/*.yml",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "npm run check -- --watch",
-    "prebuild": "npm run check && npm run lint",
-    "build": "vite build",
-    "prepreview": "npm run build",
-    "preview": "vite preview",
-    "test": "npm run preview",
-    "dev": "vite dev"
+  "peerDependencies": {},
+  "dependencies": {
+    "@fontsource/open-sans": "^5.0.28",
+    "@fontsource/overpass-mono": "^5.0.18",
+    "@fontsource/oxygen": "^5.0.13"
   },
   "devDependencies": {
-    "@jimbojet/lint": "~10.9.0",
+    "@jimbojet/lint": "~10.10.1",
     "@sveltejs/adapter-static": "^3.0.2",
     "@sveltejs/kit": "^2.5.17",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
@@ -55,9 +37,20 @@
     "typescript": "^5.5.2",
     "vite": "^5.3.1"
   },
-  "dependencies": {
-    "@fontsource/open-sans": "^5.0.28",
-    "@fontsource/overpass-mono": "^5.0.18",
-    "@fontsource/oxygen": "^5.0.13"
+  "scripts": {
+    "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
+    "lint": "npm run lint:cfg && npm run lint:src && npm run lint:ci",
+    "lint:cfg": "npm run es -- package.json tsconfig.json eslint.config.js svelte.config.js vite.config.ts",
+    "lint:src": "npm run lint:src:svelte && npm run es -- src/**/*.ts src/**/*.html",
+    "lint:src:svelte": "npm run es -- src/**/*.svelte",
+    "lint:ci": "npm run es -- .github/workflows/*.yml",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "npm run check -- --watch",
+    "prebuild": "npm run check && npm run lint",
+    "build": "vite build",
+    "prepreview": "npm run build",
+    "preview": "vite preview",
+    "test": "npm run preview",
+    "dev": "vite dev"
   }
 }

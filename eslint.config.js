@@ -12,11 +12,13 @@ export default [
         "src/**/*.ts",
       ],
       svelte: ["src/**/*.svelte"],
+      jest: ["src/**/*.spec.ts"],
       html: ["src/**/*.html"],
       jsonc: ["tsconfig.json"],
       json: ["package.json"],
       yml: [".github/workflows/*.yml"],
     },
+    { overrideHtml: { "@html-eslint/require-title": "off" } },
   )
     .configs,
 ];
