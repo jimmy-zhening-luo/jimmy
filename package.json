@@ -11,7 +11,7 @@
   "type": "module",
   "private": false,
   "config": {
-    "PACKAGE_JSON_VERSION": "1.0.1"
+    "PACKAGE_JSON_VERSION": "1.1.0"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "@sveltejs/kit": "^2.5.17",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
     "eslint": "~8.57.0",
-    "linted": "~12.0.2",
+    "linted": "~12.1.1",
     "svelte-check": "^3.8.2",
     "tslib": "^2.6.3",
     "typescript": "^5.5.2",
@@ -48,7 +48,7 @@
   "scripts": {
     "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
     "lint": "npm run lint:cfg && npm run lint:src && npm run lint:ci",
-    "lint:cfg": "npm run es -- package.json tsconfig.json eslint.config.js svelte.config.js vite.config.ts",
+    "lint:cfg": "npm run es -- package.json tsconfig.json eslint.config.js .markdownlint.yml svelte.config.js vite.config.ts",
     "lint:src": "npm run lint:src:svelte && npm run es -- src/**/*.ts src/**/*.html",
     "lint:src:svelte": "npm run es -- src/**/*.svelte",
     "lint:ci": "npm run es -- .github/workflows/*.yml",
