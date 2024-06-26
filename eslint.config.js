@@ -18,7 +18,6 @@ export default [
       json: ["package.json"],
       yml: [".github/workflows/*.yml"],
     },
-    { overrideHtml: { "@html-eslint/require-title": "off" } },
   )
     .configs,
 ];
