@@ -16,10 +16,7 @@ export default [
       html: ["src/**/*.html"],
       jsonc: ["tsconfig.json"],
       json: ["package.json"],
-      yml: [
-        ".markdownlint.yml",
-        ".github/workflows/*.yml",
-      ],
+      yml: [".github/workflows/*.yml"],
     },
   )
     .configs,

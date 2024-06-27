@@ -11,7 +11,7 @@
   "type": "module",
   "private": false,
   "config": {
-    "PACKAGE_JSON_VERSION": "1.1.0"
+    "PACKAGE_JSON_VERSION": "1.2.0"
   },
   "repository": {
     "type": "git",
@@ -48,7 +48,7 @@
   "scripts": {
     "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
     "lint": "npm run lint:cfg && npm run lint:src && npm run lint:ci",
-    "lint:cfg": "npm run es -- package.json tsconfig.json eslint.config.js .markdownlint.yml svelte.config.js vite.config.ts",
+    "lint:cfg": "npm run es -- package.json tsconfig.json eslint.config.js svelte.config.js vite.config.ts",
     "lint:src": "npm run lint:src:svelte && npm run es -- src/**/*.ts src/**/*.html",
     "lint:src:svelte": "npm run es -- src/**/*.svelte",
     "lint:ci": "npm run es -- .github/workflows/*.yml",
