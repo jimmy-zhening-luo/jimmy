@@ -11,7 +11,7 @@
   "type": "module",
   "private": false,
   "config": {
-    "PACKAGE_JSON_VERSION": "1.3.0"
+    "PACKAGE_JSON_VERSION": "20.0.0"
   },
   "repository": {
     "type": "git",
@@ -46,15 +46,15 @@
     "vite": "^5.3.1"
   },
   "scripts": {
-    "es": "eslint --fix --cache --cache-strategy content -c eslint.config.js",
-    "lint": "(npm run lint:cfg) && (npm run lint:src) && (npm run lint:ci)",
-    "lint:cfg": "npm run es -- package.json tsconfig.json eslint.config.js svelte.config.js vite.config.ts",
-    "lint:src": "npm run lint:src:svelte && npm run es -- src/**/*.ts src/**/*.html",
-    "lint:src:svelte": "npm run es -- src/**/*.svelte",
-    "lint:ci": "npm run es -- .github/workflows/*.yml",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "e": "eslint -c eslint.config.js --cache --fix",
+    "lint": "(npm run lint:cfg) && (npm run lint:src) && (npm run --if-present lint:ci) && (npm run --if-present lint:svelte)",
+    "lint:cfg": "npm run e -- package.json tsconfig.json eslint.config.js",
+    "lint:src": "npm run e -- src/**/*.ts",
+    "lint:ci": "npm run e -- .github/workflows/*.yml",
+    "lint:svelte": "(npm run e -- svelte.config.js vite.config.ts) && (npm run e -- src/**/*.svelte src/**/*.html)",
+    "check": "(svelte-kit sync) && (svelte-check --tsconfig ./tsconfig.json)",
     "check:watch": "npm run check -- --watch",
-    "prebuild": "npm run check && npm run lint",
+    "prebuild": "(npm run check) && (npm run lint)",
     "build": "vite build",
     "prepreview": "npm run build",
     "preview": "vite preview",
