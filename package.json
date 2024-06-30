@@ -11,7 +11,7 @@
   "type": "module",
   "private": true,
   "config": {
-    "PACKAGE_JSON_VERSION": "20.1.0"
+    "PACKAGE_JSON_VERSION": "20.2.0-svelte.0"
   },
   "repository": {
     "type": "git",
@@ -61,8 +61,7 @@
     "lint:ci": "npm run e -- .github/workflows/*.yml",
     "lint:svelte": "(npm run e -- svelte.config.js vite.config.ts) && (npm run e -- src/**/*.svelte src/**/*.html)",
     "check": "(svelte-kit sync) && (svelte-check --tsconfig ./tsconfig.json)",
-    "check:watch": "npm run check -- --watch",
-    "prebuild": "(npm run check) && (npm run lint)",
+    "prebuild": "(npm run --if-present check) && (npm run lint)",
     "build": "vite build",
     "prepreview": "npm run build",
     "preview": "vite preview",
