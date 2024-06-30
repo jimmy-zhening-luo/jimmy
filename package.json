@@ -11,7 +11,7 @@
   "type": "module",
   "private": true,
   "config": {
-    "PACKAGE_JSON_VERSION": "20.2.0-svelte.0"
+    "PACKAGE_JSON_VERSION": "20.4.0-svelte.0"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
     "@sveltejs/kit": "^2.5.17",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
     "eslint": "~8.57.0",
-    "linted": "~13.0.6",
+    "linted": "~13.0.12",
     "svelte-check": "^3.8.2",
     "tslib": "^2.6.3",
     "typescript": "^5.5.2",
@@ -66,8 +66,8 @@
     "prepreview": "npm run build",
     "preview": "vite preview",
     "pretest": "npm run build",
-    "test": "(npm run test:jest) || (exit 0)",
-    "test:jest": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_NO_WARNINGS=1 jest --",
+    "test": "npm run test:jest",
+    "test:jest": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_NO_WARNINGS=1 jest --passWithNoTests --",
     "dev": "vite dev"
   }
 }
