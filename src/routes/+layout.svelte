@@ -1,9 +1,10 @@
 <script
   lang="ts"
   strictEvents>
+  import "../app.css";
+  import "./styles.css";
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import "./styles.css";
 
   type $$Slots = {
     "default": Record<string, never>;
