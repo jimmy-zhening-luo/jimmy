@@ -68,6 +68,6 @@
     "prestart": "npm test",
     "start": "(vite preview) || (node .)",
     "preaction": "npm test",
-    "action": "npm run test"
+    "action": "exit 0"
   }
 }
