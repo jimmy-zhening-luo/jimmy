@@ -1,3 +1,8 @@
+<script
+  lang="ts"
+  strictEvents>
+</script>
+
 <footer>
   <span
     class="copyright">
@@ -13,32 +18,11 @@
   </span>
 </footer>
 
-<script
-  lang="ts"
-  strictEvents></script>
-
 <style
   lang="css">
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 12px 12px 85px 12px;
-  }
+  @import "Footer.css";
 
-  footer p {
-    font-size: 0.8rem;
-  }
-
-  footer .copyright p {
+  .copyright p {
     font-weight: 600;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 12px 0 85px 0;
-    }
   }
 </style>

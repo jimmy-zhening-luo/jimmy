@@ -92,33 +92,11 @@
 
 <style
   lang="css">
-  div.socials {
+  @import "Socials.css";
+
+  .socials {
     display: flex;
     justify-content: space-between;
   }
 
-  menu {
-    list-style: none;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2.4rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    flex: 0 0 auto;
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-
-  menu img {
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
 </style>
