@@ -9,14 +9,22 @@ nav {
   --background: rgba(255, 255, 255, 0.7);
 }
 
-svg {
-  display: block;
-  width: 2em;
-  height: 3em;
+nav a {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 100%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text);
+  transition: color 0.2s linear;
 }
 
-path {
-  fill: var(--background);
+a:hover {
+  color: var(--color-theme-1);
 }
 
 ul {
@@ -49,20 +57,12 @@ li[aria-current="page"]::before {
   content: "";
 }
 
-nav a {
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
-  height: 100%;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--color-text);
-  transition: color 0.2s linear;
+svg {
+  display: block;
+  width: 2em;
+  height: 3em;
 }
 
-a:hover {
-  color: var(--color-theme-1);
+path {
+  fill: var(--background);
 }
