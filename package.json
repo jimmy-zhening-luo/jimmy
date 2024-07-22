@@ -11,7 +11,7 @@
   "type": "module",
   "private": true,
   "config": {
-    "PACKAGE_JSON_VERSION": "20.9.0"
+    "PACKAGE_JSON_VERSION": "20.10.0"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,12 @@
   },
   "main": "",
   "types": "",
+  "engines": {
+    "node": ">=20.15.0"
+  },
+  "peerDependencies": {},
   "peerDependenciesMeta": {},
+  "optionalDependencies": {},
   "dependencies": {
     "@fontsource/open-sans": "^5.0.28",
     "@fontsource/overpass-mono": "^5.0.18",
@@ -48,12 +53,6 @@
     "tslib": "^2.6.3",
     "typescript": "^5.5.3",
     "vite": "^5.3.3"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/src/"
-    ]
   },
   "scripts": {
     "build": "run-s \"build:{1}:*\" lint:built  --  svelte",
