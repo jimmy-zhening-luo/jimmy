@@ -8,28 +8,16 @@
     "azure-static-web-apps"
   ],
   "license": "MIT",
-  "type": "module",
   "private": true,
-  "config": {
-    "PACKAGE_JSON_VERSION": "20.10.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/jimmy.git"
-  },
+  "repository": "github:jimmy-zhening-luo/jimmy",
   "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
-  "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/jimmy/issues"
-  },
-  "author": {
-    "name": "Jimmy Zhening Luo",
-    "email": "1450044+jimmy-zhening-luo@users.noreply.github.com",
-    "url": "https://jimm.my"
-  },
+  "bugs": "https://github.com/jimmy-zhening-luo/jimmy/issues",
+  "type": "module",
   "main": "",
   "types": "",
   "engines": {
-    "node": ">=20.15.0"
+    "node": ">=20.15.0",
+    "npm": ">=10.7.0"
   },
   "peerDependencies": {},
   "peerDependenciesMeta": {},
@@ -73,5 +61,9 @@
     "prepublishOnly": "npm test",
     "predeploy": "npm test",
     "deploy": ""
-  }
+  },
+  "config": {
+    "PACKAGE_JSON": "20.12.0"
+  },
+  "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
