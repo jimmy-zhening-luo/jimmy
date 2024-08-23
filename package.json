@@ -1,7 +1,7 @@
 {
   "_schemaVersion": "20.16.1",
   "name": "jimmy",
-  "version": "10.1.27",
+  "version": "10.1.28",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
   "keywords": [
     "typescript",
