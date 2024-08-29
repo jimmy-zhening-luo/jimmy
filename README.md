@@ -10,6 +10,7 @@ This repository contains Jimmy Luo's personal website. As of August 31, 2022, th
 
 <details>
 <summary>Dev Tools</summary>
+
 This is a static web app built on [Node.js](https://nodejs.org/en/) using [SvelteKit](https://kit.svelte.dev), a helper that bundles [Svelte](https://svelte.dev/) and [Vite](https://vitejs.dev).
 
 - __[Svelte](https://svelte.dev/)__ enables concise, descriptive, and modular syntax for site content, routing, style, and logic.
