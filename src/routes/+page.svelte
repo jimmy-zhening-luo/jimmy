@@ -32,14 +32,6 @@
 
 <style
   lang="css">
-  section {
-    display: flex;
-    flex-direction: column;
-    flex: 0.2;
-    justify-content: center;
-    align-items: center;
-  }
-
   h1 {
     width: 100%;
   }

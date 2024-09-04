@@ -29,6 +29,14 @@ body {
     linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-weight: 600;
 }
