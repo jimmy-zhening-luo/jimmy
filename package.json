@@ -26,24 +26,24 @@
   },
   "peerDependenciesMeta": {},
   "dependencies": {
-    "@fontsource/open-sans": "^5.0.30",
-    "@fontsource/overpass-mono": "^5.0.20",
-    "@fontsource/oxygen": "^5.0.15"
+    "@fontsource/open-sans": "^5.1.0",
+    "@fontsource/overpass-mono": "^5.1.0",
+    "@fontsource/oxygen": "^5.1.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.4",
-    "@sveltejs/kit": "^2.5.26",
+    "@sveltejs/kit": "^2.5.27",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "autoprefixer": "^10.4.20",
     "eslint": "~9.10.0",
-    "linted": "~16.5.0",
+    "linted": "~16.6.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.45",
-    "svelte-check": "^4.0.1",
-    "tailwindcss": "^3.4.10",
+    "postcss": "^8.4.47",
+    "svelte-check": "^4.0.2",
+    "tailwindcss": "^3.4.11",
     "tslib": "^2.7.0",
     "typescript": "^5.6.2",
-    "vite": "^5.4.3"
+    "vite": "^5.4.5"
   },
   "scripts": {
     "build": "run-s \"build:{1}:*\" lint:built  --  svelte",
