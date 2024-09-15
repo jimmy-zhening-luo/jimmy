@@ -55,11 +55,11 @@ The source contained in this repository's `main` branch is continuously built an
 
 1. If you don't already have Node.js, [install Node.js](https://nodejs.org).
 
-1. Save this Git repository on your local machine.
+2. Save this Git repository on your local machine.
 
-1. Open a terminal at the root of the repository.
+3. Open a terminal at the root of the repository.
 
-1. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json):
+4. Run the following command to install all the required Node.js packages (specified in your project root directory by package.json):
 
    ```bash
    npm ci
