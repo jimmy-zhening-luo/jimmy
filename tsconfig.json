@@ -20,7 +20,7 @@
     "tests/**/*.ts",
     "tests/**/*.svelte",
     "typings/**/*.d.ts",
-  ] /* @OVERRIDE */,
+  ] /* @OVERRIDE: +.svelte-kit */,
   "compilerOptions": {
     /* http://aka.ms/tsconfig#quick-nav-Top%20Level */
 
