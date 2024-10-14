@@ -7,7 +7,7 @@
   // from the referenced tsconfig.json - TypeScript does not merge them in
   "display": "@jimbojet/tsc",
   "$schema": "https://json.schemastore.org/tsconfig",
-  "_version": "5.6.0",
+  "_version": "5.6.1",
   "include": [
     "*.config.ts",
     "svelte-kit/ambient.d.ts",
