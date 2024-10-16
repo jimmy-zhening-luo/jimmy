@@ -1,5 +1,5 @@
 {
-  "_schemaVersion": "20.17.10",
+  "_schemaVersion": "20.18.0",
   "name": "jimmy",
   "version": "10.4.9",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
@@ -26,7 +26,7 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": ">=20.17.0",
+    "node": ">=20.18.0",
     "npm": ">=10.8.2"
   },
   "peerDependenciesMeta": {},
@@ -38,7 +38,7 @@
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "autoprefixer": "^10.4.20",
     "eslint": "~9.12.0",
-    "linted": "~16.14.0",
+    "linted": "~16.14.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.47",
     "run-script-os": "^1.1.6",
