@@ -6,8 +6,9 @@
   // If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
   // from the referenced tsconfig.json - TypeScript does not merge them in
   "display": "@jimbojet/tsc",
+  "_version": "5.6.4",
+  "_help": "https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level",
   "$schema": "https://json.schemastore.org/tsconfig",
-  "_version": "5.6.1",
   "include": [
     "*.config.ts",
     "svelte-kit/ambient.d.ts",
@@ -22,8 +23,6 @@
     "typings/**/*.d.ts",
   ] /* @OVERRIDE: +.svelte-kit */,
   "compilerOptions": {
-    /* http://aka.ms/tsconfig#quick-nav-Top%20Level */
-
     // #region TYPE CHECKING
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -34,7 +33,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    // "noPropertyAccessFromIndexSignature": true,
+    // "noPropertyAccessFromIndexSignature": true /* @OVERRIDE */,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -48,32 +47,32 @@
 
 
     // #region MODULES
-    // "allowArbitraryExtensions": true,
+    // "allowArbitraryExtensions": true /* @OVERRIDE */,
     // "allowImportingTsExtensions": true,
     // "allowUmdGlobalAccess": true,
     // "baseUrl": "./",
     // "customConditions": [],
-    // "module": "node16",
+    // "module": "es2022" /* @OVERRIDE */,
     "moduleResolution": "bundler",
     // "moduleSuffixes": [],
     // "noResolve": true,
     // "paths": { "*": ["node_modules/*"] },
-    "resolveJsonModule": true,
+    "resolveJsonModule": true /* @OVERRIDE */,
     // "resolvePackageJsonExports": true,
     // "resolvePackageJsonImports": true,
-    // "rootDir": "src",
+    // "rootDir": "src" /* @OVERRIDE */,
     // "rootDirs": [],
     // "typeRoots": [],
     // "types": [
     //   /* {CONFIGURE} */
-    // ],
+    // ] /* @OVERRIDE */,
     // #endregion
 
 
     // #region EMIT
-    // "declaration": true,
-    // "declarationDir": "dist",
-    // "declarationMap": true,
+    // "declaration": true /* @OVERRIDE */,
+    // "declarationDir": "dist" /* @OVERRIDE */,
+    // "declarationMap": true /* @OVERRIDE */,
     // "downlevelIteration": true,
     // "emitBOM": true,
     // "emitDeclarationOnly": true,
@@ -84,11 +83,11 @@
     // "newLine": "crlf",
     // "noEmit": true,
     // "noEmitHelpers": true,
-    // "noEmitOnError": true,
-    // "outDir": "dist",
+    // "noEmitOnError": true /* @OVERRIDE */,
+    // "outDir": "dist" /* @OVERRIDE */,
     // "outFile": "./",
     // "preserveConstEnums": true,
-    // "removeComments": true,
+    // "removeComments": true /* @OVERRIDE */,
     "sourceMap": true,
     // "sourceRoot": "",
     // "stripInternal": true,
@@ -96,8 +95,8 @@
 
 
     // #region JAVASCRIPT SUPPORT
-    "allowJs": true,
-    "checkJs": true,
+    "allowJs": true /* @OVERRIDE */,
+    "checkJs": true /* @OVERRIDE */,
     // "maxNodeModuleJsDepth": 1,
     // #endregion
 
@@ -109,13 +108,13 @@
 
 
     // #region INTEROP CONSTRAINTS
-    // "allowSyntheticDefaultImports": true,
+    // "allowSyntheticDefaultImports": true /* @OVERRIDE */,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     // "isolatedDeclarations": false,
     // "isolatedModules": true,
     // "preserveSymlinks": true,
-    // "verbatimModuleSyntax": true,
+    // "verbatimModuleSyntax": true /* @OVERRIDE */,
     // #endregion
 
 
@@ -129,12 +128,12 @@
     // "lib": [
     //   "es2023",
     //   /* {CONFIGURE} */
-    // ],
+    // ] /* @OVERRIDE */,
     // "moduleDetection": "auto",
     // "noLib": true,
     // "reactNamespace": "",
-    // "target": "es2022",
-    // "useDefineForClassFields": true,
+    // "target": "es2022" /* @OVERRIDE */,
+    // "useDefineForClassFields": true /* @default: target > es2022 : true; else : false*/,
     // #endregion
 
 
@@ -155,8 +154,8 @@
     // "disableReferencedProjectLoad": true,
     // "disableSolutionSearching": true,
     // "disableSourceOfProjectReferenceRedirect": true,
-    // "incremental": true,
-    // "tsBuildInfoFile": "dist/.tsbuildinfo",
+    // "incremental": true /* @OVERRIDE */,
+    // "tsBuildInfoFile": "dist/.tsbuildinfo" /* @OVERRIDE */,
     // #endregion
 
 
@@ -168,7 +167,7 @@
 
 
     // #region COMPLETENESS
-    "skipLibCheck": true,
+    "skipLibCheck": true /* @OVERRIDE */,
     // #endregion
   },
 }
