@@ -1,6 +1,5 @@
 <script
-  lang="ts"
-  strictEvents>
+  lang="ts">
 </script>
 
 <footer>

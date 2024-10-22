@@ -1,13 +1,13 @@
 <script
-  lang="ts"
-  strictEvents>
+  lang="ts">
   import { page } from "$app/stores";
   $: ({ url } = $page);
 </script>
 
 <header>
   <div
-    class="corner" />
+    class="corner">
+  </div>
 
   <nav>
     <svg
@@ -39,7 +39,8 @@
   </nav>
 
   <div
-    class="corner" />
+    class="corner">
+  </div>
 </header>
 
 <style

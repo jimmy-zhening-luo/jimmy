@@ -1,6 +1,5 @@
 <script
-  lang="ts"
-  strictEvents>
+  lang="ts">
   import site_logo from "$lib/images/site/logo.svg";
   import Socials from "./Socials.svelte";
 </script>

@@ -1,6 +1,5 @@
 <script
-  lang="ts"
-  strictEvents>
+  lang="ts">
   import i_ig from "$lib/images/socials/instagram.svg";
   import i_fb from "$lib/images/socials/facebook.svg";
   import i_su from "$lib/images/socials/substack.svg";
