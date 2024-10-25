@@ -6,16 +6,14 @@
   // If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
   // from the referenced tsconfig.json - TypeScript does not merge them in
   "display": "@jimbojet/tsc",
-  "_version": "5.6.4",
+  "_version": "5.6.5",
   "_help": "https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level",
   "$schema": "https://json.schemastore.org/tsconfig",
   "include": [
-    // "*.config.js",
     "*.config.ts",
     "svelte-kit/ambient.d.ts",
     "svelte-kit/non-ambient.d.ts",
     "svelte-kit/types/**/$types.d.ts",
-    // "svelte-kit/tsconfig.json",
     "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.svelte",
@@ -24,6 +22,7 @@
     "tests/**/*.svelte",
     "typings/**/*.d.ts",
   ] /* @OVERRIDE: +.svelte-kit */,
+  "exclude": [],
   "compilerOptions": {
     // #region TYPE CHECKING
     "allowUnreachableCode": false,
@@ -45,7 +44,7 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
-    // #endregion
+    // #endregion TYPE CHECKING
 
 
     // #region MODULES
@@ -65,10 +64,10 @@
     // "rootDir": "src" /* @OVERRIDE */,
     // "rootDirs": [],
     // "typeRoots": [],
-    // "types": [
-    //   /* {CONFIGURE} */
-    // ] /* @OVERRIDE */,
-    // #endregion
+    "types": [
+      /* {CONFIGURE} */
+    ],
+    // #endregion MODULES
 
 
     // #region EMIT
@@ -93,20 +92,20 @@
     "sourceMap": true,
     // "sourceRoot": "",
     // "stripInternal": true,
-    // #endregion
+    // #endregion EMIT
 
 
     // #region JAVASCRIPT SUPPORT
     "allowJs": true /* @OVERRIDE */,
     "checkJs": true /* @OVERRIDE */,
     // "maxNodeModuleJsDepth": 1,
-    // #endregion
+    // #endregion JAVASCRIPT SUPPORT
 
 
     // #region EDITOR SUPPORT
     // "disableSizeLimit": false,
     // "plugins": [],
-    // #endregion
+    // #endregion EDITOR SUPPORT
 
 
     // #region INTEROP CONSTRAINTS
@@ -117,7 +116,7 @@
     // "isolatedModules": true,
     // "preserveSymlinks": true,
     // "verbatimModuleSyntax": true /* @OVERRIDE */,
-    // #endregion
+    // #endregion INTEROP CONSTRAINTS
 
 
     // #region LANGUAGE AND ENVIRONMENT
@@ -136,7 +135,7 @@
     // "reactNamespace": "",
     // "target": "es2022" /* @OVERRIDE */,
     // "useDefineForClassFields": true /* @default: target > es2022 : true; else : false*/,
-    // #endregion
+    // #endregion LANGUAGE AND ENVIRONMENT
 
 
     // #region COMPILER DIAGNOSTICS
@@ -148,7 +147,7 @@
     // "listFiles": true,
     // "noCheck": true,
     // "traceResolution": true,
-    // #endregion
+    // #endregion COMPILER DIAGNOSTICS
 
 
     // #region PROJECTS
@@ -158,18 +157,18 @@
     // "disableSourceOfProjectReferenceRedirect": true,
     // "incremental": true /* @OVERRIDE */,
     // "tsBuildInfoFile": "dist/.tsbuildinfo" /* @OVERRIDE */,
-    // #endregion
+    // #endregion PROJECTS
 
 
     // #region OUTPUT FORMATTING
     // "noErrorTruncation": true,
     // "preserveWatchOutput": true,
     // "pretty": true,
-    // #endregion
+    // #endregion OUTPUT FORMATTING
 
 
     // #region COMPLETENESS
     "skipLibCheck": true /* @OVERRIDE */,
-    // #endregion
+    // #endregion COMPLETENESS
   },
 }
