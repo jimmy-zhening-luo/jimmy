@@ -1,5 +1,5 @@
 {
-  "_schemaVersion": "20.18.0",
+  "_schemaVersion": "20.18.2",
   "name": "jimmy",
   "version": "10.5.8",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
@@ -36,9 +36,13 @@
     "@sveltejs/adapter-static": "^3.0.6",
     "@sveltejs/kit": "^2.7.3",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@types/chai": "^5.0.0",
+    "@types/mocha": "^10.0.9",
     "autoprefixer": "^10.4.20",
+    "chai": "^5.1.2",
     "eslint": "~9.13.0",
-    "linted": "~19.0.2",
+    "linted": "~19.1.2",
+    "mocha": "^10.7.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.47",
     "run-script-os": "^1.1.6",
@@ -54,7 +58,7 @@
     "build": "run-os",
     "build:default": "npm run rebuild -- $npm_package_config_language $npm_package_config_fix $npm_package_config_lint default",
     "build:windows": "npm run rebuild -- %npm_package_config_language% %npm_package_config_fix% %npm_package_config_lint% windows",
-    "rebuild": "run-s \"clean:{1}:{4}\" \"compile:{1}:*\" \"fix:{2} -- {1}\" \"lint:{3}\" --",
+    "rebuild": "run-s \"clean:{1}:{4}\" \"compile:{1}:*\" \"fix:{2} -- {1}\" \"lint:{3}\" \"test:{1}\" --",
     "clean:ts:default": "rm -rf dist",
     "clean:ts:windows": "cmd /c if exist dist rmdir /s /q dist",
     "clean:svelte:default": "rm -rf build .svelte-kit",
@@ -82,6 +86,8 @@
     "postbuild": "echo \"Build (+lint) complete.\"",
     "pretest": "npm run build",
     "test": "",
+    "test:ts": "mocha",
+    "test:svelte": "",
     "start": "run-os",
     "start:default": "npm run starter:$npm_package_config_language",
     "start:windows": "npm run starter:%npm_package_config_language%",
@@ -91,6 +97,11 @@
     "prepublishOnly": "npm test",
     "predeploy": "npm test",
     "deploy": ""
+  },
+  "mocha": {
+    "spec": [
+      "dist/**/*.spec.js"
+    ]
   },
   "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
