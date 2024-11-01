@@ -1,5 +1,5 @@
 {
-  "_schemaVersion": "22.10.0",
+  "_schemaVersion": "22.10.1",
   "name": "jimmy",
   "version": "10.5.14",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
@@ -14,7 +14,8 @@
   "license": "MIT",
   "private": true,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "next"
   },
   "type": "module",
   "main": "",
