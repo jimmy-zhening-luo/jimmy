@@ -6,7 +6,7 @@
   // If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
   // from the referenced tsconfig.json - TypeScript does not merge them in
   "display": "@jimbojet/tsc",
-  "version": "5.6.9",
+  "version": "5.7.0",
   "$help": "https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level",
   "$schema": "https://json.schemastore.org/tsconfig",
   "include": [
