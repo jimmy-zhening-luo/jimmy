@@ -1,7 +1,7 @@
 <script
   lang="ts">
   import { page } from "$app/stores";
-  $: ({ url } = $page);
+  const { url } = $page;
 </script>
 
 <header>
