@@ -1,5 +1,5 @@
 {
-  "_schemaVersion": "22.12.0",
+  "_schemaVersion": "22.12.1",
   "name": "jimmy",
   "version": "10.7.11",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
@@ -57,12 +57,6 @@
     "vite": "^6.0.3"
   },
   "scripts": {
-    "prebuild": "npm ci || run-s prebuild:reinstall:*",
-    "prebuild:reinstall:install": "npm i",
-    "prebuild:reinstall:add": "git add *",
-    "prebuild:reinstall:commit": "run-os",
-    "prebuild:reinstall:commit:default": "git commit -m \"reinstall ${npm_package_version}\"",
-    "prebuild:reinstall:commit:windows": "git commit -m \"reinstall %npm_package_version%\"",
     "build": "run-os",
     "build:default": "npm run rebuild+lint+test -- $npm_package_config_language $npm_package_config_lint default",
     "build:windows": "npm run rebuild+lint+test -- %npm_package_config_language% %npm_package_config_lint% windows",
