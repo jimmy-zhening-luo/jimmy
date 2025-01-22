@@ -16,7 +16,7 @@
   <menu>
     <li>
       <a
-        href="https://instagram.com/_jimbojet">
+        href="https://www.instagram.com/_jimbojet">
         <img
           alt="Instagram"
           src={i_ig} />
@@ -24,7 +24,7 @@
     </li>
     <li>
       <a
-        href="https://facebook.com/jimbojet">
+        href="https://www.facebook.com/jimbojet">
         <img
           alt="Facebook"
           src={i_fb} />
@@ -48,7 +48,7 @@
     </li>
     <li>
       <a
-        href="https://youtube.com/@jimbojet">
+        href="https://www.youtube.com/@jimbojet">
         <img
           alt="YouTube"
           src={i_yt} />
@@ -72,7 +72,7 @@
     </li>
     <li>
       <a
-        href="https://duolingo.com/profile/jimbojet">
+        href="https://www.duolingo.com/profile/jimbojet">
         <img
           alt="Duolingo"
           src={i_du} />
@@ -80,7 +80,7 @@
     </li>
     <li>
       <a
-        href="https://linkedin.com/in/jimmy-zhening-luo">
+        href="https://www.linkedin.com/in/jimmy-zhening-luo">
         <img
           alt="LinkedIn"
           src={i_li} />
