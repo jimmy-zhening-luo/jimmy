@@ -24,7 +24,7 @@
     </li>
     <li>
       <a
-        href="https://www.facebook.com/jimbojet">
+        href="https://www.facebook.com/jimbojet/">
         <img
           alt="Facebook"
           src={i_fb} />
