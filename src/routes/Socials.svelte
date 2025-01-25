@@ -16,7 +16,7 @@
   <menu>
     <li>
       <a
-        href="https://www.instagram.com/_jimbojet">
+        href="https://www.instagram.com/_jimbojet/">
         <img
           alt="Instagram"
           src={i_ig} />
