@@ -1,13 +1,10 @@
 <script
   lang="ts">
-
   import "../app.css";
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
 
-  type $$Slots = {
-    "default": Record<string, never>;
-  };
+  type $$Slots = { "default": Record<string, never> };
 </script>
 
 <div
