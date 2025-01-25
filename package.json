@@ -1,22 +1,11 @@
 {
-  "_schemaVersion": "22.13.1",
+  "$template": "22.13.4",
   "name": "jimmy",
   "version": "10.12.0",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
-  "keywords": [
-    "typescript",
-    "sveltekit",
-    "azure-static-web-apps"
-  ],
   "repository": "github:jimmy-zhening-luo/jimmy",
-  "homepage": "https://github.com/jimmy-zhening-luo/jimmy#readme",
-  "bugs": "https://github.com/jimmy-zhening-luo/jimmy/issues",
   "license": "MIT",
   "private": true,
-  "publishConfig": {
-    "access": "public",
-    "tag": "next"
-  },
   "type": "module",
   "main": "",
   "types": "",
@@ -43,7 +32,7 @@
     "@types/mocha": "^10.0.10",
     "chai": "^5.1.2",
     "eslint": "~9.19.0",
-    "linted": "~24.4.0",
+    "linted": "~25.0.0",
     "mocha": "^11.1.0",
     "npm-run-all": "^4.1.5",
     "run-script-os": "^1.1.6",
@@ -102,10 +91,19 @@
     "predeploy": "npm test",
     "deploy": ""
   },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
   "mocha": {
     "spec": [
       "dist/**/*.spec.js"
     ]
   },
+  "keywords": [
+    "typescript",
+    "sveltekit",
+    "azure-static-web-apps"
+  ],
   "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
