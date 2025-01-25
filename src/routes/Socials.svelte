@@ -80,7 +80,7 @@
     </li>
     <li>
       <a
-        href="https://www.linkedin.com/in/jimmy-zhening-luo">
+        href="https://www.linkedin.com/in/jimmy-zhening-luo/">
         <img
           alt="LinkedIn"
           src={i_li} />
