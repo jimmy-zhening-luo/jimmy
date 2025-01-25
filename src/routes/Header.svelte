@@ -1,8 +1,8 @@
 <script
   lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 
-  const { url } = $page;
+  const { url } = page;
 </script>
 
 <header>
