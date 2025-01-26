@@ -1,11 +1,11 @@
 declare type SocialApp = (
-  | "Instagram"
-  | "Facebook"
-  | "Substack"
-  | "GitHub"
-  | "YouTube"
-  | "Spotify"
-  | "SoundCloud"
   | "Duolingo"
+  | "Facebook"
+  | "GitHub"
+  | "Instagram"
   | "LinkedIn"
+  | "SoundCloud"
+  | "Spotify"
+  | "Substack"
+  | "YouTube"
 );
