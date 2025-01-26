@@ -2,7 +2,7 @@ import { Social } from "./Socials.Social";
 
 export default [
   new Social(
-    "instagram",
+    "Instagram",
     "www.instagram.com",
     "_jimbojet",
     {
@@ -10,48 +10,27 @@ export default [
     },
   ),
   new Social(
-    "facebook",
+    "Facebook",
     "www.facebook.com",
     "jimbojet",
     {
       post: "/",
     },
   ),
+  new Social("Substack", "read.jimm.my"),
+  new Social("GitHub", "github.com", "jimmy-zhening-luo"),
+  new Social("YouTube", "www.youtube.com", "@jimbojet"),
   new Social(
-    "substack",
-    "read.jimm.my",
-  ),
-  new Social(
-    "github",
-    "github.com",
-    "jimmy-zhening-luo",
-    {},
-    "GitHub",
-  ),
-  new Social(
-    "youtube",
-    "www.youtube.com",
-    "@jimbojet",
-    {},
-    "YouTube",
-  ),
-  new Social(
-    "spotify",
+    "Spotify",
     "open.spotify.com",
     "1215989421",
     {
       pre: "user/",
     },
   ),
+  new Social("SoundCloud", "soundcloud.com", "jimmyluo"),
   new Social(
-    "soundcloud",
-    "soundcloud.com",
-    "jimmyluo",
-    {},
-    "SoundCloud",
-  ),
-  new Social(
-    "duolingo",
+    "Duolingo",
     "www.duolingo.com",
     "jimbojet",
     {
@@ -59,13 +38,12 @@ export default [
     },
   ),
   new Social(
-    "linkedin",
+    "LinkedIn",
     "www.linkedin.com",
     "jimmy-zhening-luo",
     {
       pre: "in/",
       post: "/",
     },
-    "LinkedIn",
   ),
 ] as const;

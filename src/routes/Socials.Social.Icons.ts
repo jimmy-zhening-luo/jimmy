@@ -1,21 +1,21 @@
-import instagram from "$lib/images/socials/instagram.svg";
-import facebook from "$lib/images/socials/facebook.svg";
-import substack from "$lib/images/socials/substack.svg";
-import github from "$lib/images/socials/github.svg";
-import youtube from "$lib/images/socials/youtube.svg";
-import spotify from "$lib/images/socials/spotify.svg";
-import soundcloud from "$lib/images/socials/soundcloud.svg";
-import duolingo from "$lib/images/socials/duolingo.svg";
-import linkedin from "$lib/images/socials/linkedin.svg";
+import Instagram from "$lib/images/socials/instagram.svg";
+import Facebook from "$lib/images/socials/facebook.svg";
+import Substack from "$lib/images/socials/substack.svg";
+import GitHub from "$lib/images/socials/github.svg";
+import YouTube from "$lib/images/socials/youtube.svg";
+import Spotify from "$lib/images/socials/spotify.svg";
+import SoundCloud from "$lib/images/socials/soundcloud.svg";
+import Duolingo from "$lib/images/socials/duolingo.svg";
+import LinkedIn from "$lib/images/socials/linkedin.svg";
 
 export default {
-  instagram,
-  facebook,
-  substack,
-  github,
-  youtube,
-  spotify,
-  soundcloud,
-  duolingo,
-  linkedin,
+  Instagram,
+  Facebook,
+  Substack,
+  GitHub,
+  YouTube,
+  Spotify,
+  SoundCloud,
+  Duolingo,
+  LinkedIn,
 } as const;
