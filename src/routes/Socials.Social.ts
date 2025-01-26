@@ -14,7 +14,6 @@ export class Social {
       pre?: string;
       post?: string;
     } = {},
-    public readonly title = `${app.charAt(0).toUpperCase()}${app.slice(1)}`,
   ) {
     const _host = host.trim(),
     schemeful = _host.includes("://");
