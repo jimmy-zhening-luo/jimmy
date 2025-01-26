@@ -1,4 +1,4 @@
-import { Social } from "./Socials.Social";
+import { Social } from "./_social";
 
 export default [
   new Social(

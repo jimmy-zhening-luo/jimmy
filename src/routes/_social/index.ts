@@ -1,4 +1,4 @@
-import Icons from "./Socials.Social.Icons";
+import Icons from "./icons";
 
 export class Social {
   public readonly url: string;
