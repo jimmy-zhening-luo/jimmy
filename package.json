@@ -1,7 +1,7 @@
 {
   "$template": "22.13.5",
   "name": "jimmy",
-  "version": "10.13.0",
+  "version": "10.14.0",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
   "repository": "github:jimmy-zhening-luo/jimmy",
   "license": "MIT",
