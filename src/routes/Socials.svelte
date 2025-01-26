@@ -11,7 +11,7 @@
         <a
           href={social.url}>
           <img
-            alt={social.title}
+            alt={social.app}
             src={social.icon} />
         </a>
       </li>
