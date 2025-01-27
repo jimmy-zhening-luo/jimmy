@@ -1,4 +1,11 @@
-export default {
+export const SocialManifest: Record<
+  SocialApp,
+  {
+    host: string;
+    username?: string;
+    path?: Partial<Record<"pre" | "post", string>>;
+  }
+> = {
   Duolingo: { host: "www.duolingo.com", username: "jimbojet", path: { pre: "profile/" } },
   Facebook: { host: "www.facebook.com", username: "jimbojet", path: { post: "/" } },
   GitHub: { host: "github.com", username: "jimmy-zhening-luo" },
@@ -8,4 +15,4 @@ export default {
   Spotify: { host: "open.spotify.com", username: "1215989421", path: { pre: "user/" } },
   Substack: { host: "read.jimm.my" },
   YouTube: { host: "www.youtube.com", username: "@jimbojet" },
-} as const;
+};

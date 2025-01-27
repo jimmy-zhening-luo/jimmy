@@ -8,7 +8,7 @@ import Spotify from "$lib/images/socials/spotify.svg";
 import Substack from "$lib/images/socials/substack.svg";
 import YouTube from "$lib/images/socials/youtube.svg";
 
-export default {
+export const SocialIcons: Record<SocialApp, string> = {
   Duolingo,
   Facebook,
   GitHub,
@@ -18,4 +18,4 @@ export default {
   Spotify,
   Substack,
   YouTube,
-} as const;
+};

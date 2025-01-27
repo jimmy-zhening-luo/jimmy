@@ -1,51 +1,31 @@
-import Icons from "./icons";
+import { SocialFactory } from "./factory";
+import { SocialManifest } from "./manifest";
+import { SocialIcons } from "./lib";
 
-export class Social {
-  public readonly url: string;
+export default function (apps: readonly SocialApp[]) {
+  if (new Set(apps).size !== apps.length)
+    throw new RangeError("Duplicate social menu buttons");
 
-  constructor(
-    public readonly app: SocialApp,
-    host: string,
-    username = "",
-    {
-      pre = "",
-      post = "",
-    }: {
-      pre?: string;
-      post?: string;
-    } = {},
-  ) {
-    const _host = host.trim(),
-    schemeful = _host.includes("://");
+  function social(app: SocialApp) {
+    const {
+      host,
+      username = "",
+      path: {
+        pre = "",
+        post = "",
+      } = {},
+    } = SocialManifest[app],
+    icon = SocialIcons[app];
 
-    if (schemeful && ["https", "http"].some(prefix => _host.startsWith(`${prefix}://`)))
-      throw new SyntaxError("Host must not include scheme if https");
-    else if (_host === "")
-      throw new SyntaxError("Host cannnot be empty");
-
-    const path = [
-      pre,
+    return new SocialFactory(
+      app,
+      host,
       username,
+      pre,
       post,
-    ]
-      .map(part => part.trim())
-      .join(""),
-    url = [
-      schemeful ? "" : "https://",
-      _host,
-      path !== "" && !path.startsWith("/") ? "/" : "",
-      path,
-    ]
-      .join("")
-      .trim();
-
-    if (url === "")
-      throw new SyntaxError("Unexpected: Empty social URL generated");
-
-    this.url = url;
+      icon,
+    );
   }
 
-  public get icon() {
-    return Icons[this.app];
-  }
+  return apps.map(app => social(app));
 }
