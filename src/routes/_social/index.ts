@@ -1,4 +1,4 @@
-import { SocialFactory } from "./factory";
+import { SocialButton } from "./button";
 import { SocialManifest } from "./manifest";
 import { SocialIcons } from "./lib";
 
@@ -6,7 +6,7 @@ export default function (apps: readonly SocialApp[]) {
   if (new Set(apps).size !== apps.length)
     throw new RangeError("Duplicate social menu buttons");
 
-  function social(app: SocialApp) {
+  function assemble(app: SocialApp) {
     const {
       host,
       username = "",
@@ -17,7 +17,7 @@ export default function (apps: readonly SocialApp[]) {
     } = SocialManifest[app],
     icon = SocialIcons[app];
 
-    return new SocialFactory(
+    return new SocialButton(
       app,
       host,
       username,
@@ -27,5 +27,5 @@ export default function (apps: readonly SocialApp[]) {
     );
   }
 
-  return apps.map(app => social(app));
+  return apps.map(app => assemble(app));
 }
