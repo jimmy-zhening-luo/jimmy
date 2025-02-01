@@ -1,5 +1,6 @@
 <script
   lang="ts">
+  import "./+page.css";
   import site_logo from "$lib/images/site/logo.svg";
   import Socials from "./Socials.svelte";
 </script>
@@ -28,26 +29,3 @@
 <section>
   <Socials />
 </section>
-
-<style
-  lang="css">
-  h1 {
-    width: 100%;
-  }
-
-  .welcome {
-    position: relative;
-    display: block;
-    padding: 0 0 calc(100% * 495 / 935) 0;
-    width: 100%;
-    height: 0;
-  }
-
-  .welcome img {
-    position: absolute;
-    display: block;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

@@ -1,5 +1,6 @@
 <script
   lang="ts">
+  import "./Header.css";
   import { page } from "$app/state";
 
   const { url } = page;
@@ -7,8 +8,7 @@
 
 <header>
   <div
-    class="corner">
-  </div>
+    class="corner"></div>
 
   <nav>
     <svg
@@ -23,12 +23,16 @@
           ? "page"
           : "false"}'>
         <a
-          href="/"> Jimmy </a>
+          href="/">
+          Jimmy
+        </a>
       </li>
       <li
         aria-current="false">
         <a
-          href="https://read.jimm.my"> Essays </a>
+          href="https://read.jimm.my">
+          Essays
+        </a>
       </li>
     </ul>
     <svg
@@ -40,16 +44,5 @@
   </nav>
 
   <div
-    class="corner">
-  </div>
+    class="corner"></div>
 </header>
-
-<style
-  lang="css">
-  @import "Header.css";
-
-  .corner {
-    width: 6em;
-    height: 6em;
-  }
-</style>

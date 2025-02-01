@@ -1,5 +1,6 @@
 <script
   lang="ts">
+  import "./Socials.css";
   import socials from "./Socials";
 </script>
 
@@ -18,13 +19,3 @@
     {/each}
   </menu>
 </div>
-
-<style
-  lang="css">
-  @import "Socials.css";
-
-  .socials {
-    display: flex;
-    justify-content: space-between;
-  }
-</style>

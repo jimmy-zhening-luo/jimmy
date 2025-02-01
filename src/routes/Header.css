@@ -61,3 +61,8 @@ svg {
 path {
   fill: var(--nav-background);
 }
+
+.corner {
+  width: 6em;
+  height: 6em;
+}

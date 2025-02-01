@@ -10,15 +10,8 @@
 <div
   class="app">
   <Header />
-  <main><slot /></main>
+  <main>
+    <slot />
+  </main>
   <Footer />
 </div>
-
-<style
-  lang="css">
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-</style>

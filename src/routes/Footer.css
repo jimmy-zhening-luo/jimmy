@@ -1,3 +1,7 @@
 footer p {
   font-size: 0.8rem;
 }
+
+.copyright p {
+  font-weight: 600;
+}
