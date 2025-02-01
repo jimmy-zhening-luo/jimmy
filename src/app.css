@@ -6,6 +6,7 @@
 :root {
   font-family: var(--font-body);
   --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Open Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-header: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Open Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-mono: 'Lucida Console', 'SFMono-Regular', 'SF Mono', 'Overpass Mono', monospace;
   color: var(--color-text);
   --color-bg-0: hsl(127, 20%, 80%);
@@ -105,16 +106,4 @@ button:focus:not(:focus-visible) {
   h1 {
     font-size: 2.4rem;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: 1px;
-  height: auto;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
 }
