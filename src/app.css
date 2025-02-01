@@ -67,7 +67,9 @@ section {
 }
 
 h1 {
+  font-size: 2rem;
   font-weight: 600;
+  text-align: center;
 }
 
 @media (min-width: 720px) {
@@ -81,6 +83,10 @@ p {
   font-weight: 400;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 p {
   line-height: 1.5;
 }
@@ -92,15 +98,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1rem;
 }
 
 pre {
