@@ -1,4 +1,5 @@
 header {
+  font-family: var(--font-header);
   display: flex;
   justify-content: space-between;
 }
