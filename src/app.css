@@ -1,126 +1,30 @@
 /* @import "tailwindcss"; */
 
-@import "./app.theme.css";
-@import "./app.typography.css";
+@import "./styles/index.css";
 
 :root {
   font-family: var(--font-body);
+}
+
+:root {
   color: var(--color-text);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-size: 100vw 100vh;
+}
+
+body {
   background-attachment: fixed;
   background-color: var(--color-bg-1);
-  background-image: radial-gradient(50% 50% at 50% 50%,
+  background-image:
+    radial-gradient(50% 50% at 50% 50%,
       rgba(255, 255, 255, 0.75) 0%,
       rgba(255, 255, 255, 0) 100%),
-    linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-header {
-  font-family: var(--font-header);
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 12px 12px 85px 12px;
-}
-
-@media (min-width: 480px) {
-  footer {
-    padding: 12px 0 85px 0;
-  }
-}
-
-main {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin: 0 auto;
-  padding: 1rem;
-  width: 100%;
-  max-width: 64rem;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  flex: 0.2;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-@media (min-width: 720px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-}
-
-h2,
-p {
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
-p {
-  line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-theme-1);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-pre {
-  padding: 0.5em;
-  overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: 16px;
-  color: var(--color-text);
-  border-radius: 3px;
-  box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-  background-color: rgba(255, 255, 255, 0.45);
-}
-
-code {
-  font-family: var(--font-mono);
-}
-
-input,
-button {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-button:focus:not(:focus-visible) {
-  outline: none;
+    linear-gradient(180deg,
+      var(--color-bg-0) 0%,
+      var(--color-bg-1) 15%,
+      var(--color-bg-2) 50%);
+  background-size: 100vw 100vh;
 }

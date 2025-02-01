@@ -2,7 +2,7 @@
   lang="ts">
   import "./+page.css";
   import site_logo from "$lib/images/site/logo.svg";
-  import Socials from "./Socials.svelte";
+  import Socials from "./_social/index.svelte";
 </script>
 
 <svelte:head>
@@ -12,7 +12,8 @@
     content="Jimmy Luo's personal website" />
 </svelte:head>
 
-<section>
+<section
+  class="front-content">
   <h1>
     <span
       class="welcome">
@@ -28,6 +29,4 @@
   </h1>
 </section>
 
-<section>
-  <Socials />
-</section>
+<Socials />

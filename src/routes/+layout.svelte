@@ -1,6 +1,7 @@
 <script
   lang="ts">
   import "../app.css";
+  import "./+layout.css";
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
 

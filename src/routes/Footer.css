@@ -1,7 +1,25 @@
-footer p {
+.app footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app footer {
+  gap: 1rem;
+  padding: 12px 12px 85px 12px;
+}
+
+@media (min-width: 480px) {
+  .app footer {
+    padding: 12px 0 85px 0;
+  }
+}
+
+.app footer p {
   font-size: 0.8rem;
 }
 
-.copyright p {
+.app footer .copyright p {
   font-weight: 600;
 }

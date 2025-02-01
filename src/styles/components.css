@@ -1,0 +1,9 @@
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
