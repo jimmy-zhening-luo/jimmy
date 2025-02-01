@@ -1,21 +1,23 @@
 <script
   lang="ts">
   import "./Footer.css";
+  import Footer from "./Footer";
 </script>
 
 <footer>
   <span
     class="copyright">
     <p>
-      &copy; 2024 Jimmy Zhening Luo
+      &copy; {Footer.copyright.year} {Footer.copyright.author}
     </p>
   </span>
-  <span>
+  <span
+    class="source">
     <p>
       <code>
         <a
-          href="https://github.com/jimmy-zhening-luo/jimmy">
-          View Source
+          href={Footer.source.target}>
+          {Footer.source.label}
         </a>
       </code>
     </p>
