@@ -1,6 +1,6 @@
 <script
   lang="ts">
-  import SocialsMenu from "./index";
+  import SocialsMenu from "./Socials";
 
   const socials = SocialsMenu([
     "Instagram",
@@ -17,7 +17,7 @@
 
 <style
   lang="css">
-  @import "./index.css";
+  @import "./Socials.css";
 </style>
 
 <div
