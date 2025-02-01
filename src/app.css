@@ -6,7 +6,7 @@
 :root {
   --column-margin-top: 4rem;
   --column-width: 42rem;
-  --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Oxygen';
+  --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Open Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-mono: 'Lucida Console', 'Overpass Mono', monospace;
   font-family: var(--font-body);
   --color-text: rgba(0, 0, 0, 0.7);
