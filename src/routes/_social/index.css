@@ -3,11 +3,11 @@
   justify-content: space-between;
 }
 
-.socials menu {
+menu {
   list-style: none;
 }
 
-.socials menu {
+menu {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -16,23 +16,23 @@
   position: relative;
 }
 
-.socials menu {
+menu {
   gap: 2.4rem;
   margin: 0;
   padding: 0;
 }
 
-.socials menu li {
+menu li {
   flex: 0 0 auto;
   height: 2.4rem;
   width: 2.4rem;
 }
 
-.socials menu li img {
+menu li img {
   object-fit: cover;
 }
 
-.socials menu li img {
+menu li img {
   aspect-ratio: 1/1;
   height: 100%;
 }

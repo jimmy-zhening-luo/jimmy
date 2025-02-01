@@ -1,8 +1,12 @@
 <script
   lang="ts">
-  import "./Footer.css";
   import Footer from "./Footer";
 </script>
+
+<style
+  lang="css">
+  @import "./Footer.css";
+</style>
 
 <footer>
   <span
@@ -11,8 +15,7 @@
       &copy; {Footer.copyright.year} {Footer.copyright.author}
     </p>
   </span>
-  <span
-    class="source">
+  <span>
     <p>
       <code>
         <a

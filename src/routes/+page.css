@@ -1,28 +1,35 @@
-.front-content {
+h1 {
   width: 100%;
 }
 
-.front-content h1 {
-  width: 100%;
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.front-content .welcome {
+section {
+  flex: 0.2;
+}
+
+.welcome {
   display: block;
   position: relative;
 }
 
-.front-content .welcome {
+.welcome {
   height: 0;
   padding: 0 0 calc(100% * 495 / 935) 0;
   width: 100%;
 }
 
-.front-content .welcome img {
+.welcome img {
   display: block;
   position: absolute;
 }
 
-.front-content .welcome img {
+.welcome img {
   height: 100%;
   top: 0;
   width: 100%;

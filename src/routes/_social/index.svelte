@@ -1,6 +1,5 @@
 <script
   lang="ts">
-  import "./index.css";
   import SocialsMenu from "./index";
 
   const socials = SocialsMenu([
@@ -16,7 +15,12 @@
   ]);
 </script>
 
-<section
+<style
+  lang="css">
+  @import "./index.css";
+</style>
+
+<div
   class="socials">
   <menu>
     {#each socials as social (social.app)}
@@ -30,4 +34,4 @@
       </li>
     {/each}
   </menu>
-</section>
+</div>

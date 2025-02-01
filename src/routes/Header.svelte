@@ -1,10 +1,14 @@
 <script
   lang="ts">
-  import "./Header.css";
   import { page } from "$app/state";
 
   const { url } = page;
 </script>
+
+<style
+  lang="css">
+  @import "./Header.css";
+</style>
 
 <header>
   <div
