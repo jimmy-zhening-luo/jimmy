@@ -11,14 +11,14 @@ menu {
   padding: 0;
 }
 
-menu img {
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-li {
+menu li {
   flex: 0 0 auto;
   width: 2.4rem;
   height: 2.4rem;
+}
+
+menu li img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
