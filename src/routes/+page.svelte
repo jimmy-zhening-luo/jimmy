@@ -22,7 +22,9 @@
           src={site_logo} />
       </picture>
     </span>
-    Why does the caged bird sing?
+    <span>
+      Why does the caged bird sing?
+    </span>
   </h1>
 </section>
 
