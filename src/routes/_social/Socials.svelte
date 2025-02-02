@@ -1,18 +1,6 @@
 <script
   lang="ts">
-  import SocialsMenu from "./Socials";
-
-  const socials = SocialsMenu([
-    "Instagram",
-    "Facebook",
-    "Substack",
-    "GitHub",
-    "YouTube",
-    "Spotify",
-    "SoundCloud",
-    "Duolingo",
-    "LinkedIn",
-  ]);
+  import { socials } from "./Socials";
 </script>
 
 <style

@@ -1,4 +1,4 @@
-export class SocialButton {
+export class Button {
   public readonly url: string;
 
   constructor(

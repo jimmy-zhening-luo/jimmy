@@ -1,4 +1,6 @@
-export const SocialManifest: Record<
+export { icons } from "./lib";
+
+export const manifest: Record<
   SocialApp,
   {
     host: string;
