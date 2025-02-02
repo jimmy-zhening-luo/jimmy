@@ -1,4 +1,4 @@
-import menu from "./menu";
+import { menu } from "./menu";
 
 export const socials = menu([
   "Instagram",

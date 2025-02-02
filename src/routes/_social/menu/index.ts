@@ -13,7 +13,7 @@ export function menu(apps: readonly SocialApp[]) {
         pre = "",
         post = "",
       } = {},
-    } = manifest[app],
+    } = manifest[app];
 
     return new Button(
       app,
