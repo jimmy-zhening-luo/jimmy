@@ -5,7 +5,7 @@
 This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this repository is continuously deployed to [jimm.my](https://jimm.my/).
 
 <details>
-<summary>Dev Tools</summary>
+<summary>Development</summary>
 
 This is a static web app built on [Node.js](https://nodejs.org/en/) using [SvelteKit](https://kit.svelte.dev), a helper that bundles [Svelte](https://svelte.dev/) and [Vite](https://vitejs.dev).
 
@@ -13,23 +13,22 @@ This is a static web app built on [Node.js](https://nodejs.org/en/) using [Svelt
 - __[Vite](https://vitejs.dev)__ provides a self-contained, minimal-config test and build environment, capable of adapting Svelte code into a compact servable static bundle.
 
 The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
-| Key          | Value                                                |
-| ------------ | ---------------------------------------------------- |
-| OS           | Windows 11                                           |
-| Architecture | amd64                                                |
-| IDE          | [Visual Studio Code](https://code.visualstudio.com/) |
-| Dependencies | See `package.json`                                   |
+| Key          | Value                                                  |
+| ------------ | ------------------------------------------------------ |
+| OS           | Windows 11                                             |
+| Architecture | amd64                                                  |
+| IDE          | [Visual Studio Code](https://code.visualstudio.com/)   |
 </details><br/>
 
 <details>
-<summary>Deployment Infra</summary>
+<summary>Deploy and Host</summary>
 
 The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static) instance using [GitHub Actions](https://github.com/features/actions).
 | Key                    | Value                                                                                                    |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- |
 | Cloud Service Provider | Microsoft Azure                                                                                          |
-| Cloud App              | [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static)                             |
-| CI/CD Connector        | [GitHub Actions](https://github.com/features/actions) |
+| Cloud App              | [Azure Static Web App](<https://azure.microsoft.com/en-us/products/app-service/static>)                  |
+| CI/CD Connector        | [GitHub Actions](<https://github.com/features/actions>)                                                  |
 </details><br/>
 
 ## Build, test, and deploy this app
@@ -40,7 +39,7 @@ The source contained in this repository's `main` branch is continuously built an
 
 1. If you don't already have Node.js, [install Node.js](https://nodejs.org).
 
-1. Save this Git repository on your local machine.
+1. Clone this Git repository to your local machine.
 
 1. Open a terminal at the root of the repository.
 
