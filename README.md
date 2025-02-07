@@ -15,7 +15,7 @@ This is a static web app built on [Node.js](https://nodejs.org/en/) using [Svelt
 The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
 | Key          | Value                                                |
 | ------------ | ---------------------------------------------------- |
-| Platform     | Windows 11                                           |
+| OS           | Windows 11                                           |
 | Architecture | amd64                                                |
 | IDE          | [Visual Studio Code](https://code.visualstudio.com/) |
 | Dependencies | See `package.json`                                   |
