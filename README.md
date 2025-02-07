@@ -5,7 +5,7 @@
 This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this repository is continuously deployed to [jimm.my](https://jimm.my/).
 
 <details>
-<summary>Development</summary>
+<summary>Dev</summary>
 
 This is a static web app built on [Node.js](https://nodejs.org/en/) using [SvelteKit](https://kit.svelte.dev), a helper that bundles [Svelte](https://svelte.dev/) and [Vite](https://vitejs.dev).
 
