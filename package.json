@@ -1,5 +1,5 @@
 {
-  "$template": "22.13.10",
+  "$template": "22.14.0",
   "name": "jimmy",
   "version": "10.24.10",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
@@ -8,7 +8,7 @@
   "private": true,
   "engineStrict": true,
   "engines": {
-    "node": ">=22.13.1",
+    "node": ">=22.14.0",
     "npm": ">=10.9.0"
   },
   "peerDependenciesMeta": {},
@@ -24,11 +24,11 @@
     "@types/mocha": "^10.0.10",
     "chai": "^5.1.2",
     "eslint": "~9.20.1",
-    "linted": "~27.2.1",
+    "linted": "~27.3.0",
     "mocha": "^11.1.0",
     "npm-run-all": "^4.1.5",
     "run-script-os": "^1.1.6",
-    "svelte": "^5.19.10",
+    "svelte": "^5.20.0",
     "svelte-check": "^4.1.4",
     "ts-add-js-extension": "^1.6.5",
     "tslib": "^2.8.1",
