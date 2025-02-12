@@ -1,18 +1,15 @@
 name: Azure Deploy (dev)
-
 on:
   push:
     branches:
       - dev
-
 jobs:
   deploy-dev:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
+    name: Build/Deploy (dev)
     environment:
       name: dev
       url: https://dev.jimm.my
-    name: Build/Deploy (dev)
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         id: checkout
@@ -44,13 +41,6 @@ jobs:
           app_location: build # built app
           api_location: "" # built api - optional
           # ##### End of App Config ######
-          #
-          # ##### OVERRIDE Build ######
-          # Azure SWA workflow uses Microsoft Oryx to install Node and build SWA before deploy.
-          # Microsoft Oryx does not support Node 18+.
-          # Pre-build SWA by installing Node using actions/setup-node@v4 and manually running build script.
-          # Skip build action in Azure SWA (this) workflow.
           skip_api_build: true
           skip_app_build: true
           is_static_export: true
-          # ##### End of OVERRIDE Build ######
