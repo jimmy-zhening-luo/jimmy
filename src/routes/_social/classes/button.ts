@@ -1,8 +1,8 @@
-export class Button {
+export class SocialButton<A extends string> {
   public readonly url: string;
 
   constructor(
-    public readonly app: SocialApp,
+    public readonly app: A,
     host: string,
     username: string,
     pre: string,

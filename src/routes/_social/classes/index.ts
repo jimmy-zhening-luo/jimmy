@@ -1,11 +1,14 @@
-import { Button } from "./button";
-import { manifest, icons } from "../apps";
+import { SocialButton } from "./button";
 
-export function menu(apps: readonly SocialApp[]) {
+export function menu<A extends string>(
+  apps: readonly A[],
+  manifest: SocialAppManifest<A>,
+  icons: SocialIcons<A>,
+) {
   if (new Set(apps).size !== apps.length)
     throw new RangeError("Duplicate social menu buttons");
 
-  function assemble(app: SocialApp) {
+  function assemble(app: A) {
     const {
       host,
       username = "",
@@ -15,7 +18,7 @@ export function menu(apps: readonly SocialApp[]) {
       } = {},
     } = manifest[app];
 
-    return new Button(
+    return new SocialButton<A>(
       app,
       host,
       username,
