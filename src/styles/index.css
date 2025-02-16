@@ -1,4 +1,5 @@
-@import "./root/index.css";
+@import "./root/theme.css";
+@import "./root/typography.css";
 
 h1 {
   font-size: 2rem;
