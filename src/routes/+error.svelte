@@ -1,12 +1,14 @@
 <script
-  lang="ts">
+  lang="ts"
+>
 </script>
 
 <svelte:head>
   <title>Jimmy</title>
   <meta
     name="description"
-    content="Jimmy Luo's personal website" />
+    content="Jimmy Luo's personal website"
+  />
 </svelte:head>
 
 <section>

@@ -1,16 +1,19 @@
 <script
-  lang="ts">
+  lang="ts"
+>
   import Footer from "./Footer";
 </script>
 
 <style
-  lang="css">
+  lang="css"
+>
   @import "./Footer.css";
 </style>
 
 <footer>
   <span
-    class="copyright">
+    class="copyright"
+  >
     <p>
       &copy; {Footer.copyright.year} {Footer.copyright.author}
     </p>
@@ -19,7 +22,8 @@
     <p>
       <code>
         <a
-          href={Footer.source.target}>
+          href={Footer.source.target}
+        >
           {Footer.source.label}
         </a>
       </code>

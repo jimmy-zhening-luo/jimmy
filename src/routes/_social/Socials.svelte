@@ -1,23 +1,28 @@
 <script
-  lang="ts">
+  lang="ts"
+>
   import { socials } from "./Socials";
 </script>
 
 <style
-  lang="css">
+  lang="css"
+>
   @import "./Socials.css";
 </style>
 
 <div
-  class="socials">
+  class="socials"
+>
   <menu>
     {#each socials as social (social.app)}
       <li>
         <a
-          href={social.url}>
+          href={social.url}
+        >
           <img
             alt={social.app}
-            src={social.icon} />
+            src={social.icon}
+          />
         </a>
       </li>
     {/each}
