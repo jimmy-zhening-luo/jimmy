@@ -1,5 +1,5 @@
 /* @import "tailwindcss"; */
-@import "./styles/index.css";
+@import "./style/index.css";
 
 :root {
   font-family: var(--font-body);
