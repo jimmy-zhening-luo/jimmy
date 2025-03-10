@@ -1,7 +1,7 @@
 <script
   lang="ts"
 >
-  import site_logo from "$lib/images/site/logo.svg";
+  import site_logo from "$lib/img/site/logo.svg";
   import Socials from "./_social/Socials.svelte";
 </script>
 
