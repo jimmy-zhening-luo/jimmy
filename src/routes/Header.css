@@ -26,9 +26,9 @@ nav svg path {
 }
 
 nav ul {
-  list-style: none;
   background: var(--nav-background);
   background-size: contain;
+  list-style: none;
   align-items: center;
   display: flex;
   justify-content: center;
