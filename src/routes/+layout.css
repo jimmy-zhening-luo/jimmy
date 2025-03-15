@@ -1,22 +1,17 @@
 .app {
   display: flex;
   flex-direction: column;
-}
-
-.app {
-  min-height: 100vh;
+  min-block-size: 100vb;
 }
 
 main {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-}
-
-main {
   flex: 1;
-  margin: 0 auto;
-  max-width: 64rem;
+  flex-direction: column;
+  inline-size: 100%;
+  max-inline-size: 64rem;
+  margin-block: 0;
+  margin-inline: auto;
   padding: 1rem;
-  width: 100%;
 }

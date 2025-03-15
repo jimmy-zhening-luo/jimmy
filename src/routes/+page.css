@@ -1,36 +1,28 @@
 h1 {
-  width: 100%;
+  inline-size: 100%;
 }
 
 section {
   align-items: center;
   display: flex;
+  flex: 0.2;
   flex-direction: column;
   justify-content: center;
-}
-
-section {
-  flex: 0.2;
 }
 
 .welcome {
   display: block;
   position: relative;
-}
-
-.welcome {
-  height: 0;
-  padding: 0 0 calc(100% * 495 / 935) 0;
-  width: 100%;
+  block-size: 0;
+  inline-size: 100%;
+  padding-block: 0 calc(100% * 0.6);
+  padding-inline: 0;
 }
 
 .welcome img {
   display: block;
   position: absolute;
-}
-
-.welcome img {
-  height: 100%;
-  top: 0;
-  width: 100%;
+  block-size: 100%;
+  inline-size: 100%;
+  inset-block-start: 0;
 }

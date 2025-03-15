@@ -1,25 +1,23 @@
-footer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-footer {
-  gap: 1rem;
-  padding: 12px 12px 85px 12px;
-}
-
-@media (min-width: 480px) {
-  footer {
-    padding: 12px 0 85px 0;
-  }
-}
-
 p {
   font-size: 0.8rem;
 }
 
 .copyright p {
   font-weight: 600;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 12px 85px;
+  padding-inline: 12px;
+}
+
+@media (min-width: 480px) {
+  footer {
+    padding-inline: 0;
+  }
 }

@@ -2,16 +2,8 @@
 @import "./style/index.css";
 
 :root {
-  font-family: var(--font-body);
-}
-
-:root {
   color: var(--color-text);
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
+  font-family: var(--font-body);
 }
 
 body {
@@ -25,5 +17,7 @@ body {
       var(--color-bg-0) 0%,
       var(--color-bg-1) 15%,
       var(--color-bg-2) 50%);
-  background-size: 100vw 100vh;
+  background-size: 100vi 100vb;
+  margin: 0;
+  min-block-size: 100vb;
 }

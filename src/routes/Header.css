@@ -1,33 +1,24 @@
-header {
-  font-family: var(--font-header);
+.corner {
+  block-size: 6em;
+  inline-size: 6em;
 }
 
 header {
+  font-family: var(--font-header);
   display: flex;
   justify-content: space-between;
 }
 
-.corner {
-  width: 6em;
-  height: 6em;
-}
-
 nav {
+  --nav-background: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: center;
 }
 
-nav {
-  --nav-background: rgba(255, 255, 255, 0.7);
-}
-
 nav svg {
   display: block;
-}
-
-nav svg {
-  height: 3em;
-  width: 2em;
+  block-size: 3em;
+  inline-size: 2em;
 }
 
 nav svg path {
@@ -35,75 +26,50 @@ nav svg path {
 }
 
 nav ul {
-  align-items: center;
+  list-style: none;
+  background: var(--nav-background);
   background-size: contain;
+  align-items: center;
   display: flex;
   justify-content: center;
-  list-style: none;
   position: relative;
-}
-
-nav ul {
-  height: 3em;
+  block-size: 3em;
   margin: 0;
   padding: 0;
 }
 
-nav ul {
-  background: var(--nav-background);
-}
-
 nav ul li {
   position: relative;
-}
-
-nav ul li {
-  height: 100%;
-}
-
-nav ul li[aria-current="page"]::before {
-  content: "";
-  position: absolute;
+  block-size: 100%;
 }
 
 nav ul li[aria-current="page"]::before {
   --nav-tab-size: 6px;
-}
-
-nav ul li[aria-current="page"]::before {
-  height: 0;
-  left: calc(50% - var(--nav-tab-size));
-  top: 0;
-  width: 0;
-}
-
-nav ul li[aria-current="page"]::before {
+  content: "";
   border: var(--nav-tab-size) solid transparent;
-}
-
-nav ul li[aria-current="page"]::before {
-  border-top: var(--nav-tab-size) solid var(--color-theme-1);
-}
-
-nav ul li a {
-  align-items: center;
-  display: flex;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color 0.2s linear;
-}
-
-nav ul li a {
-  font-size: 0.8rem;
-  font-weight: 700;
-  height: 100%;
-  letter-spacing: 0.1em;
-  padding: 0 0.5rem;
+  border-block-start: var(--nav-tab-size) solid var(--color-theme-1);
+  position: absolute;
+  block-size: 0;
+  inline-size: 0;
+  inset-block-start: 0;
+  inset-inline-start: calc(50% - var(--nav-tab-size));
 }
 
 nav ul li a {
   color: var(--color-text);
+  transition: color 0.2s linear;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  block-size: 100%;
+  padding-block: 0;
+  padding-inline: 0.5rem;
 }
+
 
 nav ul li a:hover {
   color: var(--color-theme-1);

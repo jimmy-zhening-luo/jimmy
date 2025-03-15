@@ -1,9 +1,9 @@
 @import "./variables/index.css";
 
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
   text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 @media (min-width: 720px) {
@@ -25,6 +25,10 @@ p {
   line-height: 1.5;
 }
 
+code {
+  font-family: var(--font-mono);
+}
+
 a {
   color: var(--color-theme-1);
   text-decoration: none;
@@ -32,8 +36,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-code {
-  font-family: var(--font-mono);
 }
