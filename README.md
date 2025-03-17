@@ -13,22 +13,22 @@ This is a static web app built on [Node.js](https://nodejs.org/en/) using [Svelt
 - __[Vite](https://vitejs.dev)__ provides a self-contained, minimal-config test and build environment, capable of adapting Svelte code into a compact servable static bundle.
 
 The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
-| Key          | Value                                                  |
-| ------------ | ------------------------------------------------------ |
-| OS           | Windows 11                                             |
-| Architecture | amd64                                                  |
-| IDE          | [Visual Studio Code](https://code.visualstudio.com/)   |
+| Key          | Value                                                |
+| ------------ | ---------------------------------------------------- |
+| OS           | Windows 11                                           |
+| Architecture | amd64                                                |
+| IDE          | [Visual Studio Code](https://code.visualstudio.com/) |
 </details><br/>
 
 <details>
 <summary>Deploy and Host</summary>
 
 The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static) instance using [GitHub Actions](https://github.com/features/actions).
-| Key                    | Value                                                                                                    |
-| ---------------------- | -------------------------------------------------------------------------------------------------------- |
-| Cloud Service Provider | Microsoft Azure                                                                                          |
-| Cloud App              | [Azure Static Web App](<https://azure.microsoft.com/en-us/products/app-service/static>)                  |
-| CI/CD Connector        | [GitHub Actions](<https://github.com/features/actions>)                                                  |
+| Key                    | Value                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------- |
+| Cloud Service Provider | Microsoft Azure                                                                         |
+| Cloud App              | [Azure Static Web App](<https://azure.microsoft.com/en-us/products/app-service/static>) |
+| CI/CD Connector        | [GitHub Actions](<https://github.com/features/actions>)                                 |
 </details><br/>
 
 ## Build, test, and deploy this app
