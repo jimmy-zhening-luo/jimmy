@@ -1,10 +1,8 @@
 {
   "extends": "./.svelte-kit/tsconfig.json" /* @OVERRIDE */,
-  "display": "@prototypic/tsconfig",
-  "version": "5.8.0",
+  "display": "tsc@5.8.1",
   "$schema": "https://json.schemastore.org/tsconfig",
   "$help": "https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level",
-  // #region SCOPE
   "include": [
     "*.config.ts",
     "svelte-kit/ambient.d.ts",
@@ -19,9 +17,8 @@
     "typings/**/*.d.ts",
   ] /* @OVERRIDE: +.svelte-kit */,
   "exclude": [],
-  // #endregion
   "compilerOptions": {
-    // #region TYPE CHECKING
+    // #region Type Check
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "alwaysStrict": true,
@@ -42,9 +39,8 @@
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
     // #endregion
-    /*
-    */
-    // #region MODULES
+    //
+    // #region Modules
     // "allowArbitraryExtensions": true /* @OVERRIDE */,
     // "allowImportingTsExtensions": true,
     // "allowUmdGlobalAccess": true,
@@ -67,9 +63,8 @@
       /* {CONFIGURE} */
     ],
     // #endregion
-    /*
-    */
-    // #region EMIT
+    //
+    // #region Emit
     // "declaration": true /* @OVERRIDE */,
     // "declarationDir": "dist" /* @OVERRIDE */,
     // "declarationMap": true /* @OVERRIDE */,
@@ -92,22 +87,19 @@
     // "sourceRoot": "",
     // "stripInternal": true,
     // #endregion
-    /*
-    */
-    // #region JAVASCRIPT SUPPORT
+    //
+    // #region JS
     "allowJs": true /* @OVERRIDE */,
     "checkJs": true /* @OVERRIDE */,
     // "maxNodeModuleJsDepth": 1,
     // #endregion
-    /*
-    */
-    // #region EDITOR SUPPORT
+    //
+    // #region Editor
     // "disableSizeLimit": false,
     // "plugins": [],
     // #endregion
-    /*
-    */
-    // #region INTEROP CONSTRAINTS
+    //
+    // #region Interop
     // "allowSyntheticDefaultImports": true /* @OVERRIDE */,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -116,9 +108,8 @@
     // "preserveSymlinks": true,
     // "verbatimModuleSyntax": true /* @OVERRIDE */,
     // #endregion
-    /*
-    */
-    // #region LANGUAGE & ENVIRONMENT
+    //
+    //  #region Language
     // "emitDecoratorMetadata": true,
     // "experimentalDecorators": true,
     // "jsx": "preserve",
@@ -135,9 +126,8 @@
     // "target": "es2022" /* @OVERRIDE */,
     // "useDefineForClassFields": true /* @default: target > es2022 : true; else : false*/,
     // #endregion
-    /*
-    */
-    // #region COMPILER DIAGNOSTICS
+    //
+    //  #region Diagnostic
     // "diagnostics": true,
     // "explainFiles": true,
     // "extendedDiagnostics": true,
@@ -147,9 +137,8 @@
     // "noCheck": true,
     // "traceResolution": true,
     // #endregion
-    /*
-    */
-    // #region PROJECTS
+    //
+    //  #region Project
     // "composite": true,
     // "disableReferencedProjectLoad": true,
     // "disableSolutionSearching": true,
@@ -157,16 +146,14 @@
     // "incremental": true /* @OVERRIDE */,
     // "tsBuildInfoFile": "dist/.tsbuildinfo" /* @OVERRIDE */,
     // #endregion
-    /*
-    */
-    // #region OUTPUT FORMATTING
+    //
+    //  #region Print
     // "noErrorTruncation": true,
     // "preserveWatchOutput": true,
     // "pretty": true,
     // #endregion
-    /*
-    */
-    // #region COMPLETENESS
+    //
+    // #region Completeness
     "skipLibCheck": true /* @OVERRIDE */,
     // #endregion
   },
