@@ -8,10 +8,8 @@
     "svelte-kit/ambient.d.ts",
     "svelte-kit/non-ambient.d.ts",
     "svelte-kit/types/**/$types.d.ts",
-    "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.svelte",
-    "tests/**/*.js",
     "tests/**/*.ts",
     "tests/**/*.svelte",
     "typings/**/*.d.ts",
@@ -53,7 +51,7 @@
     // "noResolve": true,
     // "noUncheckedSideEffectImports": true,
     // "paths": { "*": ["node_modules/*"] },
-    "resolveJsonModule": true /* @OVERRIDE */,
+    // "resolveJsonModule": true,
     // "resolvePackageJsonExports": true,
     // "resolvePackageJsonImports": true,
     "rewriteRelativeImportExtensions": true,
@@ -92,8 +90,8 @@
     // #endregion
     //
     // #region JS
-    "allowJs": true /* @OVERRIDE */,
-    "checkJs": true /* @OVERRIDE */,
+    // "allowJs": true,
+    // "checkJs": true,
     // "maxNodeModuleJsDepth": 1,
     // #endregion
     //
