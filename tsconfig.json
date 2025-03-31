@@ -1,6 +1,6 @@
 {
   "extends": "./.svelte-kit/tsconfig.json" /* @OVERRIDE */,
-  "display": "tsc@5.8.1",
+  "display": "tsc@508.0.1",
   "$schema": "https://json.schemastore.org/tsconfig",
   "$help": "https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level",
   "include": [
@@ -18,30 +18,31 @@
   ] /* @OVERRIDE: +.svelte-kit */,
   "exclude": [],
   "compilerOptions": {
-    // #region Type Check
+    // #region Typecheck
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "alwaysStrict": true,
+    // "alwaysStrict": true /* @default true if `strict`, else false */,
     "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
+    // "noImplicitAny": true /* @default true if `strict`, else false */,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    // "noPropertyAccessFromIndexSignature": true /* @OVERRIDE */,
+    // "noImplicitThis": true /* @default true if `strict`, else false */,
+    "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "useUnknownInCatchVariables": true,
+    "strict": true /* INFO:[CONTROLS] alwaysStrict | noImplicitAny | noImplicitThis | strict.* | useUnknownInCatchVariables */,
+    // "strictBindCallApply": true /* @default true if `strict`, else false */,
+    // "strictBuiltinIteratorReturn": true /* @default true if `strict`, else false */,
+    // "strictFunctionTypes": true /* @default true if `strict`, else false */,
+    // "strictNullChecks": true /* @default true if `strict`, else false */,
+    // "strictPropertyInitialization": true /* @default true if `strict`, else false */,
+    // "useUnknownInCatchVariables": true /* @default true if `strict`, else false */,
     // #endregion
     //
     // #region Modules
-    // "allowArbitraryExtensions": true /* @OVERRIDE */,
+    "allowArbitraryExtensions": true,
     // "allowImportingTsExtensions": true,
     // "allowUmdGlobalAccess": true,
     // "baseUrl": "./",
@@ -50,11 +51,13 @@
     "moduleResolution": "bundler",
     // "moduleSuffixes": [],
     // "noResolve": true,
+    // "noUncheckedSideEffectImports": true,
     // "paths": { "*": ["node_modules/*"] },
     "resolveJsonModule": true /* @OVERRIDE */,
     // "resolvePackageJsonExports": true,
     // "resolvePackageJsonImports": true,
-    // "rootDir": "src" /* @OVERRIDE */,
+    "rewriteRelativeImportExtensions": true,
+    // "rootDir": "src",
     // "rootDirs": [],
     // "typeRoots": [],
     "types": [
@@ -66,7 +69,7 @@
     //
     // #region Emit
     // "declaration": true /* @OVERRIDE */,
-    // "declarationDir": "dist" /* @OVERRIDE */,
+    // "declarationDir": "",
     // "declarationMap": true /* @OVERRIDE */,
     // "downlevelIteration": true,
     // "emitBOM": true,
@@ -78,11 +81,11 @@
     // "newLine": "crlf",
     // "noEmit": true,
     // "noEmitHelpers": true,
-    // "noEmitOnError": true /* @OVERRIDE */,
+    "noEmitOnError": true,
     // "outDir": "dist" /* @OVERRIDE */,
     // "outFile": "./",
     // "preserveConstEnums": true,
-    // "removeComments": true /* @OVERRIDE */,
+    // "removeComments": true,
     "sourceMap": true,
     // "sourceRoot": "",
     // "stripInternal": true,
@@ -100,16 +103,17 @@
     // #endregion
     //
     // #region Interop
-    // "allowSyntheticDefaultImports": true /* @OVERRIDE */,
-    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // "erasableSyntaxOnly": true,
+    // "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     // "isolatedDeclarations": false,
     // "isolatedModules": true,
     // "preserveSymlinks": true,
-    // "verbatimModuleSyntax": true /* @OVERRIDE */,
+    "verbatimModuleSyntax": true,
     // #endregion
     //
-    //  #region Language
+    // #region Language
     // "emitDecoratorMetadata": true,
     // "experimentalDecorators": true,
     // "jsx": "preserve",
@@ -120,14 +124,15 @@
     //   "es2023",
     //   /* {CONFIGURE} */
     // ] /* @OVERRIDE */,
+    // "libReplacement": true /* @default: true | INFO: in the future, @default may become false */,
     // "moduleDetection": "auto",
     // "noLib": true,
     // "reactNamespace": "",
     // "target": "es2022" /* @OVERRIDE */,
-    // "useDefineForClassFields": true /* @default: target > es2022 : true; else : false*/,
+    // "useDefineForClassFields": true /* @default true if `target` > `es2022`, else false*/,
     // #endregion
     //
-    //  #region Diagnostic
+    // #region Diagnostic
     // "diagnostics": true,
     // "explainFiles": true,
     // "extendedDiagnostics": true,
@@ -138,22 +143,22 @@
     // "traceResolution": true,
     // #endregion
     //
-    //  #region Project
+    // #region Project
     // "composite": true,
     // "disableReferencedProjectLoad": true,
     // "disableSolutionSearching": true,
     // "disableSourceOfProjectReferenceRedirect": true,
     // "incremental": true /* @OVERRIDE */,
-    // "tsBuildInfoFile": "dist/.tsbuildinfo" /* @OVERRIDE */,
+    // "tsBuildInfoFile": "",
     // #endregion
     //
-    //  #region Print
+    // #region Print
     // "noErrorTruncation": true,
     // "preserveWatchOutput": true,
     // "pretty": true,
     // #endregion
     //
-    // #region Completeness
+    // #region Complete
     "skipLibCheck": true /* @OVERRIDE */,
     // #endregion
   },
