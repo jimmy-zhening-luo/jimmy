@@ -59,8 +59,7 @@
     // "rootDirs": [],
     // "typeRoots": [],
     "types": [
-      "mocha",
-      "chai",
+      /* @OVERRIDE: -mocha,chai */
       /* {CONFIGURE} */
     ],
     // #endregion
