@@ -9,6 +9,8 @@ jobs:
     environment:
       name: int
       url: https://int.jimm.my
+    permissions:
+      pull-requests: read # write required for Azure SWA to comment on PR
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
