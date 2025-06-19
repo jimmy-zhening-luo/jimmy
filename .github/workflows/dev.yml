@@ -10,6 +10,7 @@ jobs:
       name: dev
       url: https://dev.jimm.my
     permissions:
+      contents: read
       pull-requests: read # write required for Azure SWA to comment on PR
     runs-on: ubuntu-latest
     steps:
