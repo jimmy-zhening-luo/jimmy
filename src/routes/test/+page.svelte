@@ -1,8 +1,10 @@
 <script
   lang="ts"
 >
+  import type { PageProps } from "./$types.js";
+
   const { data } = $props(),
-  { content } = data;
+    { content } = data as PageProps["data"];
 </script>
 
 <svelte:head>
