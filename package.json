@@ -1,5 +1,5 @@
 {
-  "$pkg": "2217.4.0-alpha.0",
+  "$pkg": "2217.4.0-alpha.1",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "jimmy",
@@ -39,12 +39,7 @@
     "lint": "true"
   },
   "scripts": {
-    "clean": "run-os",
-    "clean:windows": "npm run clean:lang:%npm_package_config_language%",
-    "clean:default": "npm run clean:lang:$npm_package_config_language",
-    "clean:lang:ts:windows": "cmd /c if exist dist rmdir /s /q dist",
-    "clean:lang:ts:default": "rm -rf dist",
-    "clean:lang:svelte": "(cmd /c \"(if exist build rmdir /s /q build) & (if exist .svelte-kit rmdir /s /q .svelte-kit)\") || (rm -rf build .svelte-kit)",
+    "clean": "(cmd /c \"(if exist build rmdir /s /q build) & (if exist .svelte-kit rmdir /s /q .svelte-kit)\") || (rm -rf build .svelte-kit && echo 'I am here')",
     "clean:lint": "run-os",
     "clean:lint:windows": "cmd /c if exist .eslintcache del /f /q .eslintcache",
     "clean:lint:default": "rm -f .eslintcache",
