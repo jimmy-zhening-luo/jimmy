@@ -22,7 +22,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "eslint": "~9.33.0",
     "eslint-plugin-svelte": "~3.11.0",
-    "linted": "^30.10.0-rc.0",
+    "linted": "~30.10.0",
     "svelte": "^5.38.0",
     "svelte-check": "^4.3.1",
     "ts-add-js-extension": "^1.6.6",
