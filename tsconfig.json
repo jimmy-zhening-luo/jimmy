@@ -35,7 +35,7 @@
     // "noResolve": true,
     // "noUncheckedSideEffectImports": true,
     // "paths": {},
-    // "resolveJsonModule": true,
+    "resolveJsonModule": true /* @OVERRIDE */,
     // "resolvePackageJsonExports": true,
     // "resolvePackageJsonImports": true,
     "rewriteRelativeImportExtensions": true,
