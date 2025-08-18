@@ -13,7 +13,7 @@
     'Segoe UI Emoji',
     'Segoe UI Symbol';
   --typography-mono:
-    'Consolas',
+    Consolas,
     'Lucida Console',
     'SFMono-Regular',
     'SF Mono';
