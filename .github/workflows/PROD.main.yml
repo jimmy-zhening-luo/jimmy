@@ -1,3 +1,4 @@
+--- # PROD.main.yml
 name: Azure Deploy (PROD.main)
 on: { push: { branches: [main] } }
 jobs:
@@ -35,3 +36,5 @@ jobs:
           is_static_export: true
           skip_api_build: true
           skip_app_build: true
+
+...
