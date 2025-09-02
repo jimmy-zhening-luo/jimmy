@@ -1,10 +1,17 @@
 {
-  "$pkg": "2211.2.1",
+  "$pkg": "2211.4.0",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "jimmy",
   "version": "10.54.3",
   "repository": "github:jimmy-zhening-luo/jimmy",
+  "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
+  "keywords": [
+    "typescript",
+    "sveltekit",
+    "azure-static-web-apps"
+  ],
+  "license": "MIT",
   "private": true,
   "engineStrict": true,
   "engines": {
@@ -31,8 +38,7 @@
   "scripts": {
     "clean": "cmd --% /c \"(if exist dist rmdir /s /q dist) & (if exist build rmdir /s /q build) & (if exist .svelte-kit rmdir /s /q .svelte-kit) & (if exist .eslintcache del /f /q .eslintcache)\" || rm -rf dist build .svelte-kit .eslintcache",
     "prebuild": "npm run clean",
-    "build": "cmd --% /c \"(if exist svelte.config.js (npm run build:svelte) else (npm run build:ts))\" || npm run build-unix",
-    "build-unix": "if [ -f svelte.config.js ]; then npm run build:svelte; else npm run build:ts; fi",
+    "build": "cmd /c \"(if exist svelte.config.js (npm run build:svelte) else (npm run build:ts))\" || bash -c 'if [ -f svelte.config.js ]; then npm run build:svelte; else npm run build:ts; fi'",
     "build:ts": "tsc && ts-add-js-extension --dir=dist",
     "build:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && vite build",
     "postbuild": "npm run lint || echo \"Lint failed. Continuing...\"",
@@ -40,22 +46,11 @@
     "pretest": "npm run build",
     "test": "npm run --if-present test:mocha",
     "prestart": "npm test",
-    "start": "cmd --% /c \"(if exist svelte.config.js (npm run start:svelte) else (npm run start:ts))\" || npm run start-unix",
-    "start-unix": "if [ -f svelte.config.js ]; then npm run start:svelte; else npm run start:ts; fi",
+    "start": "cmd --% /c \"(if exist svelte.config.js (npm run start:svelte) else (npm run start:ts))\" || bash -c 'if [ -f svelte.config.js ]; then npm run start:svelte; else npm run start:ts; fi'",
     "start:ts": "node .",
     "start:svelte": "vite preview --open",
-    "prepublishOnly": "npm test",
-    "postpublish": "cmd --% /c \"for /f \"delims=-\" %a in (\"%npm_package_version%\") do if \"%a\" == \"%npm_package_version%\" npm dist-tag add \"%npm_package_name%@%npm_package_version%\" latest\" || npm run postpublish-unix",
-    "postpublish-unix": "if [ \"${npm_package_version#*-}\" = \"${npm_package_version}\" ]; then npm dist-tag add \"$npm_package_name@$npm_package_version\" latest; fi",
     "predeploy": "npm test",
     "deploy": ""
   },
-  "license": "MIT",
-  "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
-  "keywords": [
-    "typescript",
-    "sveltekit",
-    "azure-static-web-apps"
-  ],
   "author": "Jimmy Zhening Luo <jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
