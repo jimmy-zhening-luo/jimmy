@@ -3,5 +3,7 @@ import adapter from "@sveltejs/adapter-static";
 
 export default {
   preprocess: vitePreprocess(),
-  kit: { adapter: adapter({}) },
+  kit: {
+    adapter: adapter(),
+  },
 };
