@@ -5,12 +5,12 @@
 
 menu {
   list-style: none;
-  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   position: relative;
+  align-items: center;
+  justify-content: center;
   gap: 2.4rem;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ menu li {
 }
 
 menu li img {
-  aspect-ratio: 1/1;
+  display: block;
   object-fit: cover;
-  block-size: 100%;
+  aspect-ratio: 1/1;
 }
