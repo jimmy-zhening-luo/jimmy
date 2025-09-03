@@ -10,7 +10,6 @@ export const socials = menu<SocialApp>(
     "YouTube",
     "Spotify",
     "SoundCloud",
-    "Duolingo",
     "LinkedIn",
   ] as const,
   manifest,

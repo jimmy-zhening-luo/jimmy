@@ -1,12 +1,5 @@
 export { icons } from "./assets";
 export const manifest = {
-  Duolingo: {
-    host: "www.duolingo.com",
-    username: "jimbojet",
-    path: {
-      pre: "profile/",
-    },
-  },
   Facebook: {
     host: "www.facebook.com",
     username: "jimbojet",

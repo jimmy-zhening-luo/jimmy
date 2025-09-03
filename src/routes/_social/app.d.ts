@@ -1,6 +1,5 @@
 declare type SocialApp
-  = | "Duolingo"
-    | "Facebook"
+  = | "Facebook"
     | "GitHub"
     | "Instagram"
     | "LinkedIn"
