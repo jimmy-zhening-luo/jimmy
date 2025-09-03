@@ -1,14 +1,13 @@
 import { SocialButton } from "./button";
+import type { SocialAppManifest } from "./manifest";
+import type { SocialIcons } from "./icons";
 
-export function menu<A extends string>(
-  apps: readonly A[],
-  manifest: SocialAppManifest<A>,
-  icons: SocialIcons<A>,
+export function menu<App extends string>(
+  apps: readonly App[],
+  manifest: SocialAppManifest<App>,
+  icons: SocialIcons<App>,
 ) {
-  if (new Set(apps).size !== apps.length)
-    throw new RangeError("Duplicate social menu buttons");
-
-  function assemble(app: A) {
+  function assemble(app: App) {
     const {
       host,
       username = "",
@@ -18,7 +17,7 @@ export function menu<A extends string>(
       } = {},
     } = manifest[app];
 
-    return new SocialButton<A>(
+    return new SocialButton<App>(
       app,
       host,
       username,

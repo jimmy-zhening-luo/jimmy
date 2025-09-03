@@ -17,7 +17,7 @@
     {#each socials as social (social.app)}
       <li>
         <a
-          href={social.url}
+          href="https://{social.url}"
         >
           <img
             alt={social.app}

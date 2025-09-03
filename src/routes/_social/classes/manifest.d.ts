@@ -1,5 +1,5 @@
-declare type SocialAppManifest<A extends string> = Record<
-  A,
+export type SocialAppManifest<App extends string> = Record<
+  App,
   {
     host: string;
     username?: string;
