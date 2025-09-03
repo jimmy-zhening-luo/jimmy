@@ -2,6 +2,7 @@
   lang="ts"
 >
   import { page } from "$app/state";
+  import { resolve } from "$app/paths";
 
   const { url } = page;
 </script>
@@ -33,7 +34,7 @@
           : "false"}'
       >
         <a
-          href="/"
+          href='{resolve("/", {})}'
         >
           Jimmy
         </a>

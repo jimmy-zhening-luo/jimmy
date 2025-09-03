@@ -5,6 +5,6 @@ export default {
   } as const,
   source: {
     label: "View Source",
-    target: "https://github.com/jimmy-zhening-luo/jimmy",
+    target: "github.com/jimmy-zhening-luo/jimmy",
   } as const,
 } as const;

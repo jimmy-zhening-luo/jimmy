@@ -22,7 +22,7 @@
     <p>
       <code>
         <a
-          href={Footer.source.target}
+          href="https://{Footer.source.target}"
         >
           {Footer.source.label}
         </a>
