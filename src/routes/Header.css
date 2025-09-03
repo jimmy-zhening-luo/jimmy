@@ -29,10 +29,10 @@ nav ul {
   background: var(--nav-background);
   background-size: contain;
   list-style: none;
-  align-items: center;
   display: flex;
-  justify-content: center;
   position: relative;
+  align-items: center;
+  justify-content: center;
   block-size: 3em;
   margin: 0;
   padding: 0;
@@ -45,14 +45,14 @@ nav ul li {
 
 nav ul li[aria-current="page"]::before {
   --nav-tab-size: 6px;
-  content: "";
-  border: var(--nav-tab-size) solid transparent;
-  border-block-start: var(--nav-tab-size) solid var(--color-theme-1);
   position: absolute;
+  content: "";
   block-size: 0;
   inline-size: 0;
   inset-block-start: 0;
   inset-inline-start: calc(50% - var(--nav-tab-size));
+  border: var(--nav-tab-size) solid transparent;
+  border-block-start: var(--nav-tab-size) solid var(--color-theme-1);
 }
 
 nav ul li a {
@@ -63,8 +63,8 @@ nav ul li a {
   letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
-  align-items: center;
   display: flex;
+  align-items: center;
   block-size: 100%;
   padding-block: 0;
   padding-inline: 0.5rem;
