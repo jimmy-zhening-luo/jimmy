@@ -9,16 +9,16 @@ export class SocialButton<App extends string> {
     post: string,
     public readonly icon: string,
   ) {
-    const path = pre + username + post;
+    const path = pre.concat(
+      username,
+      post,
+    );
 
-    this.url = [
-      host,
+    this.url = host.concat(
+      path === "" || path.startsWith("/")
+        ? ""
+        : "/",
       path,
-    ]
-      .join(
-        path === "" || path.startsWith("/")
-          ? ""
-          : "/",
-      );
+    );
   }
 }
