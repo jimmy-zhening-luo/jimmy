@@ -20,7 +20,7 @@
           href="https://{social.url}"
         >
           <img
-            alt={social.app}
+            alt="{social.app}, Jimmy Luo"
             src={social.icon}
           />
         </a>
