@@ -1,5 +1,4 @@
-export { icons } from "./assets";
-export const manifest = {
+export const SocialManifest = {
   Facebook: {
     host: "www.facebook.com",
     username: "jimbojet",

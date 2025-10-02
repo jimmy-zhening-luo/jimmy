@@ -4,7 +4,15 @@
   import { page } from "$app/state";
   import { resolve } from "$app/paths";
 
-  const { url } = page;
+  const { url } = $state(page),
+    {
+      outlink,
+    }: { outlink: Record<"href" | "anchor", string> } = $props(),
+    {
+      href,
+      anchor,
+    } = outlink;
+
 </script>
 
 <style
@@ -43,9 +51,9 @@
         aria-current="false"
       >
         <a
-          href="https://read.jimm.my"
+          href="https://{href}"
         >
-          Essays
+          {anchor}
         </a>
       </li>
     </ul>

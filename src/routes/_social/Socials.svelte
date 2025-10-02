@@ -14,7 +14,7 @@
   class="socials"
 >
   <menu>
-    {#each socials as social (social.app)}
+    {#snippet button(social: typeof socials[number])}
       <li>
         <a
           href="https://{social.url}"
@@ -25,6 +25,10 @@
           />
         </a>
       </li>
+    {/snippet}
+
+    {#each socials as social (social.app)}
+      {@render button(social)}
     {/each}
   </menu>
 </div>

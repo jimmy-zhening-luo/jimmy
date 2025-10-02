@@ -7,7 +7,7 @@ import Spotify from "$lib/img/socials/spotify.svg";
 import Substack from "$lib/img/socials/substack.svg";
 import YouTube from "$lib/img/socials/youtube.svg";
 
-export const icons = {
+export const SocialIcons = {
   Facebook,
   GitHub,
   Instagram,

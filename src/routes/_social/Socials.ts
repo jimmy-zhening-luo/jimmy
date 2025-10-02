@@ -1,7 +1,8 @@
-import { menu } from "./classes";
-import { manifest, icons } from "./manifest";
+import { SocialFactory } from "./factory";
+import { SocialIcons, SocialManifest } from "./assets";
+import type { Social } from "./Social";
 
-export const socials = menu<SocialApp>(
+export const socials = SocialFactory<Social>(
   [
     "Instagram",
     "Facebook",
@@ -12,6 +13,6 @@ export const socials = menu<SocialApp>(
     "Spotify",
     "SoundCloud",
   ] as const,
-  manifest,
-  icons,
+  SocialIcons,
+  SocialManifest,
 );

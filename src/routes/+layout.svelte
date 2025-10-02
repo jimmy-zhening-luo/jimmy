@@ -2,12 +2,13 @@
   lang="ts"
 >
   import "../app.css";
-  import Header from "./Header.svelte";
-  import Footer from "./Footer.svelte";
+  import Header from "./_layout/Header.svelte";
+  import Footer from "./_layout/Footer.svelte";
+  import type { Snippet } from "svelte";
 
-  type $$Slots = {
-    "default": Record<string, never>;
-  };
+  const { children }: {
+    children: Snippet;
+  } = $props();
 </script>
 
 <style
@@ -19,9 +20,17 @@
 <div
   class="app"
 >
-  <Header/>
+  <Header
+    outlink={{
+      href: "read.jimm.my",
+      anchor: "Essays",
+    }}
+  />
   <main>
-    <slot></slot>
+    {@render children()}
   </main>
-  <Footer/>
+  <Footer
+    copyright={{ author: "Jimmy Zhening Luo" }}
+    viewSource={{ href: "github.com/jimmy-zhening-luo/jimmy" }}
+  />
 </div>

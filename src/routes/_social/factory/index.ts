@@ -1,11 +1,16 @@
 import { SocialButton } from "./button";
-import type { SocialAppManifest } from "./manifest";
-import type { SocialIcons } from "./icons";
 
-export function menu<App extends string>(
+export function SocialFactory<App extends string>(
   apps: readonly App[],
-  manifest: SocialAppManifest<App>,
-  icons: SocialIcons<App>,
+  icons: Record<App, string>,
+  manifest: Record<
+    App,
+    {
+      host: string;
+      username?: string;
+      path?: Partial<Record<"pre" | "post", string>>;
+    }
+  >,
 ) {
   function assemble(app: App) {
     const {

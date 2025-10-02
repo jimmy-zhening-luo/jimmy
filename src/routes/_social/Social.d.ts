@@ -1,4 +1,4 @@
-declare type SocialApp
+export type Social
 = | "Facebook"
   | "GitHub"
   | "Instagram"
@@ -6,5 +6,4 @@ declare type SocialApp
   | "SoundCloud"
   | "Spotify"
   | "Substack"
-  | "YouTube"
-;
+  | "YouTube";

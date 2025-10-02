@@ -1,8 +1,10 @@
 <script
   lang="ts"
 >
-  import src from "$lib/img/site/logo.svg";
+  import logo from "$lib/img/site/logo.svg";
   import Socials from "./_social/Socials.svelte";
+
+  const src = $state(logo);
 </script>
 
 <style
