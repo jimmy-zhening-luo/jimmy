@@ -7,9 +7,7 @@
     "src/**/*.svelte" /* @OVERRIDE */,
     "typings/**/*.d.ts",
     // @OVERRIDE: +dist/tsconfig.json/include:
-    "dist/ambient.d.ts",
-    "dist/non-ambient.d.ts",
-    "dist/types/**/$types.d.ts",
+    "dist/**/*.d.ts",
   ],
   "compilerOptions": {
     "allowUnreachableCode": false,
