@@ -34,7 +34,7 @@
           : "false"}'
       >
         <a
-          href='{resolve("/", {})}'
+          href='{resolve("/")}'
         >
           Jimmy
         </a>
