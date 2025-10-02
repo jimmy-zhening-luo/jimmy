@@ -4,10 +4,10 @@
 </script>
 
 <svelte:head>
-  <title>Jimmy</title>
+  <title>Jimmy | 404</title>
   <meta
     name="description"
-    content="Jimmy Luo's personal website"
+    content="Jimmy Luo's personal website | 404"
   />
 </svelte:head>
 
@@ -15,7 +15,4 @@
   <h1>
     404
   </h1>
-  <code>
-    Page Not Found
-  </code>
 </section>
