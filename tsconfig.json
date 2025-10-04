@@ -1,8 +1,7 @@
 {
-  "display": "tsc@509.2.0",
+  "display": "tsc@509.2.1",
   "extends": "./dist/tsconfig.json" /* @OVERRIDE */,
   "include": [
-    "*.config.ts",
     "src/**/*.ts",
     "src/**/*.svelte" /* @OVERRIDE */,
     "typings/**/*.d.ts",
