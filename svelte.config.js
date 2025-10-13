@@ -6,6 +6,11 @@ export default {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter(),
+    csp: {
+      directives: {
+        "default-src": ["self"],
+      },
+    },
     outDir: "dist",
   },
 };
