@@ -8,7 +8,8 @@ export default {
     adapter: adapter(),
     csp: {
       directives: {
-        "default-src": ["self"],
+        "default-src": ["none"],
+        "style-src": ["self"],
         "img-src": [
           "self",
           "data:",
