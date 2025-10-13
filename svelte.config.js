@@ -9,6 +9,10 @@ export default {
     csp: {
       directives: {
         "default-src": ["self"],
+        "img-src": [
+          "self",
+          "data:",
+        ],
       },
     },
     outDir: "dist",
