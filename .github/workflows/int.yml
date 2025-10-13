@@ -25,6 +25,9 @@ jobs:
       - name: Build SWA
         id: build
         run: npm run deploy
+      - name: Copy Azure SWA Config
+        id: config
+        run: cp staticwebapp.config.json build
       - name: Deploy to Azure
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
