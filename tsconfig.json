@@ -46,8 +46,8 @@
     // "outDir": "dist" /* @OVERRIDE */,
     // "removeComments": true /* @OVERRIDE */,
     "sourceMap": true,
-    "allowJs": true /* @OVERRIDE */,
-    "checkJs": true /* @OVERRIDE */,
+    // "allowJs": true,
+    // "checkJs": true,
     // "isolatedDeclarations": false,
     "verbatimModuleSyntax": true,
     // "lib": [
