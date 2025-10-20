@@ -1,6 +1,6 @@
 --- # PROD.main.yml
 name: Azure Deploy (PROD.main)
-on: { push: { branches: [main] } }
+on: {push: {branches: [main]} }
 jobs:
   deploy-prod-main:
     name: Build/Deploy (PROD.main)
@@ -18,7 +18,7 @@ jobs:
       - name: Install Node
         id: node
         uses: actions/setup-node@v4
-        with: { node-version: 22 }
+        with: {node-version: 22}
       - name: Install Dependencies
         id: ci
         run: npm ci --loglevel=error --fund=false
