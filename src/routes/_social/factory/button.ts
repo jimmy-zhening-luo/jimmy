@@ -12,11 +12,11 @@ export class SocialButton<App extends string> {
     const path = pre + username + post;
 
     this.url = host
-    + (
-      path === "" || path.startsWith("/")
-        ? ""
-        : "/"
-    )
-    + path;
+      + (
+        path === "" || path.startsWith("/")
+          ? ""
+          : "/"
+      )
+      + path;
   }
 }
