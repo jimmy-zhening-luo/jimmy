@@ -1,5 +1,6 @@
 {
   "display": "tsc@509.3.0",
+  "extends": "./dist/tsconfig.json" /* @OVERRIDE */,
   "include": [
     "src/**/*.ts",
     "typings/**/*.d.ts",
@@ -9,7 +10,6 @@
     "dist/non-ambient.d.ts",
     "dist/types/**/$types.d.ts",
   ],
-  "extends": "./dist/tsconfig.json" /* @OVERRIDE */,
   "compilerOptions": {
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
