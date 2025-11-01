@@ -16,7 +16,7 @@
       /* @OVERRIDE */
       /* {CONFIGURE} */
     ],
-    // "declaration": true,
+    "declaration": true /* @OVERRIDE */,
     // "sourceMap": false,
     "verbatimModuleSyntax": true /* @OVERRIDE */,
     // "lib": [
