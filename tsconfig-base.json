@@ -1,5 +1,5 @@
 {
-  "display": "tsc@509.4.0",
+  "display": "tsc@509.6.0",
   "$help": "https://aka.ms/tsconfig/#quick-nav-Top%20Level",
   "extends": "./dist/tsconfig.json" /* @OVERRIDE */,
   "compilerOptions": {
@@ -18,11 +18,21 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "rewriteRelativeImportExtensions": true,
+    "types": [
+      /* @OVERRIDE */
+      /* {CONFIGURE} */
+    ],
+    "declaration": true,
     "declarationMap": true,
     "noEmitOnError": true,
     "removeComments": true,
     "sourceMap": true,
+    "verbatimModuleSyntax": true /* @OVERRIDE */,
+    // "lib": [
+    //   "esnext",
+    //   /* {CONFIGURE} */
+    // ] /* @OVERRIDE */,
     "target": "esnext",
-    "composite": true,
+    "skipLibCheck": true /* @OVERRIDE */,
   },
 }

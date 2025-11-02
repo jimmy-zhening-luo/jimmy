@@ -1,5 +1,4 @@
 {
-  "files": [],
   "extends": "./tsconfig-base.json",
   "include": [
     "src/**/*",
@@ -9,19 +8,4 @@
     "dist/non-ambient.d.ts",
     "dist/types/**/$types.d.ts",
   ],
-  "compilerOptions": {
-    "types": [
-      /* @OVERRIDE */
-      /* {CONFIGURE} */
-    ],
-    "declaration": true /* @OVERRIDE */,
-    // "sourceMap": false,
-    "verbatimModuleSyntax": true /* @OVERRIDE */,
-    // "lib": [
-    //   "esnext",
-    //   /* {CONFIGURE} */
-    // ] /* @OVERRIDE */,
-    "composite": false /* @OVERRIDE */,
-    "skipLibCheck": true /* @OVERRIDE */,
-  },
 }

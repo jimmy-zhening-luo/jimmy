@@ -1,5 +1,5 @@
 {
-  "$pkg": "2411.4.2",
+  "$pkg": "2411.6.1",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "jimmy",
@@ -26,14 +26,14 @@
     "@sveltejs/kit": "^2.48.4",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "eslint-plugin-svelte": "~3.13.0",
-    "linted": "33.4.2",
+    "linted": "33.4.7",
     "svelte-check": "^4.3.3",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
     "vite": "^7.1.12"
   },
   "scripts": {
-    "clean": "cmd --% /c \"for %G in (types dist dist-tests build packed) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist dist-tests build packed .eslintcache",
+    "clean": "cmd --% /c \"for %G in (types dist build packed) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .eslintcache",
     "build": "npm run build:svelte",
     "build:svelte": "svelte-kit sync && svelte-check && vite build",
     "postbuild": "npm run lint || exit 0",
