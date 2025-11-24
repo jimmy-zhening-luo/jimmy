@@ -1,12 +1,12 @@
 import linted from "linted";
-import sveltePlugin from "eslint-plugin-svelte";
-import svelteParser from "svelte-eslint-parser";
+import plugin from "eslint-plugin-svelte";
+import parser from "svelte-eslint-parser";
 
 export default linted(
   {
     svelte: {
-      plugin: sveltePlugin,
-      parser: svelteParser,
+      plugin,
+      parser,
     },
   },
 );
