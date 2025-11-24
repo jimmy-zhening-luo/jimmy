@@ -19,6 +19,6 @@ export default {
         "upgrade-insecure-requests": true,
       },
     },
-    outDir: "build",
+    outDir: "dist",
   },
 };
