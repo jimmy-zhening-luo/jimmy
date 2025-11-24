@@ -35,7 +35,7 @@ jobs:
           # https://aka.ms/swaworkflowconfig
           action: upload
           azure_static_web_apps_api_token: ${{secrets.AZ_SWA_API_TOKEN}}
-          app_location: dist
+          app_location: build
           is_static_export: true
           skip_api_build: true
           skip_app_build: true
