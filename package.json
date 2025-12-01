@@ -30,7 +30,7 @@
     "svelte-check": "^4.3.4",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
-    "vite": "^7.2.4"
+    "vite": "^7.2.6"
   },
   "scripts": {
     "clean": "cmd --% /c \"for %G in (types dist build packed) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .eslintcache",
