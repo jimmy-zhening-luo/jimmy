@@ -1,7 +1,6 @@
 {
   "display": "tsc@509.6.0",
   "$help": "https://aka.ms/tsconfig/#quick-nav-Top%20Level",
-  "extends": "./dist/tsconfig.json" /* @OVERRIDE */,
   "compilerOptions": {
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
