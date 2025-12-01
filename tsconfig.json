@@ -1,7 +1,7 @@
 {
   "extends": [
     "./tsconfig-base",
-    "./dist",
+    "./dist/tsconfig",
   ],
   "include": [
     "src/**/*",
