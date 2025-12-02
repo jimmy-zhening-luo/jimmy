@@ -13,12 +13,13 @@
       href: string;
     };
   } = $props(),
+    copy = () => copyright,
     {
       author,
       year = new Date()
         .getFullYear()
         .toFixed(0),
-    } = copyright;
+    } = copy();
 </script>
 
 <style
