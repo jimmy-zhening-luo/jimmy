@@ -8,10 +8,11 @@
     {
       outlink,
     }: { outlink: Record<"href" | "anchor", string> } = $props(),
+    out = () => outlink,
     {
       href,
       anchor,
-    } = outlink;
+    } = out();
 
 </script>
 
