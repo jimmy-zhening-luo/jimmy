@@ -26,11 +26,11 @@
     "@sveltejs/kit": "^2.49.2",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "eslint-plugin-svelte": "3.13.1",
-    "linted": "35.4.3",
+    "linted": "35.5.1",
     "svelte-check": "^4.3.4",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
-    "vite": "^7.2.7"
+    "vite": "^7.3.0"
   },
   "scripts": {
     "clean": "cmd --% /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
