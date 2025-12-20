@@ -1,6 +1,8 @@
 --- # PROD.main.yml
 name: Azure Deploy (PROD.main)
-on: {push: {branches: [main]} }
+on:
+  push:
+    branches: [main]
 jobs:
   deploy-prod-main:
     name: Build/Deploy (PROD.main)
