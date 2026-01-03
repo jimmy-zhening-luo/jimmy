@@ -1,7 +1,9 @@
 # [jimm.my](https://jimm.my/)
+
 [![Azure Deploy (PROD.main)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.yml/badge.svg)](https://github.com/jimmy-zhening-luo/jimmy/actions/workflows/PROD.main.yml)
 
 ## What am I?
+
 This repository contains Jimmy Luo's personal website. As of August 31, 2022, the `main` branch of this repository is continuously deployed to [jimm.my](https://jimm.my/).
 
 <details>
@@ -27,17 +29,18 @@ The source is written in [TypeScript](https://typescriptlang.org/) and Svelte.
 
 The source contained in this repository's `main` branch is continuously built and deployed to an [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static) instance using [GitHub Actions](https://github.com/features/actions).
 
-| Key                    | Value                                                                                   |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| Cloud Service Provider | Microsoft Azure                                                                         |
-| Cloud App              | [Azure Static Web App](<https://azure.microsoft.com/en-us/products/app-service/static>) |
-| CI/CD Connector        | [GitHub Actions](<https://github.com/features/actions>)                                 |
+| Key                    | Value                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------- |
+| Cloud Service Provider | Microsoft Azure                                                                       |
+| Cloud App              | [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static) |
+| CI/CD Connector        | [GitHub Actions](https://github.com/features/actions)                                 |
 
 </details><br/>
 
 ## Build, test, and deploy this app
 
 ### Local testing
+
 <details>
 <summary>Step 1: Prepare your development environment.</summary>
 
@@ -70,11 +73,14 @@ npm start
 ```
 
 If you make changes to the site code, you need to run `npm start` again.
+
 </details><br/>
 
 ### Deploying to production
+
 <details>
 <summary>TBD</summary>
 
 TBD some point in the future.
+
 </details>

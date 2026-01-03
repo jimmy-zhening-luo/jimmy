@@ -1,6 +1,4 @@
-<script
-  lang="ts"
->
+<script lang="ts">
 </script>
 
 <svelte:head>

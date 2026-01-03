@@ -1,24 +1,16 @@
-<script
-  lang="ts"
->
+<script lang="ts">
   import { socials } from "./Socials";
 </script>
 
-<style
-  lang="css"
->
+<style lang="css">
   @import "./Socials.css";
 </style>
 
-<div
-  class="socials"
->
+<div class="socials">
   <menu>
     {#snippet button(social: typeof socials[number])}
       <li>
-        <a
-          href="https://{social.url}"
-        >
+        <a href="https://{social.url}">
           <img
             alt="{social.app}, Jimmy Luo"
             src={social.icon}

@@ -1,15 +1,11 @@
-<script
-  lang="ts"
->
+<script lang="ts">
   import logo from "$lib/img/site/logo.svg";
   import Socials from "./_social/Socials.svelte";
 
   const src = $state(logo);
 </script>
 
-<style
-  lang="css"
->
+<style lang="css">
   @import "./+page.css";
 </style>
 
@@ -23,9 +19,7 @@
 
 <section>
   <h1>
-    <span
-      class="welcome"
-    >
+    <span class="welcome">
       <picture>
         <img
           alt="Jimmy"
@@ -40,5 +34,5 @@
 </section>
 
 <section>
-  <Socials/>
+  <Socials />
 </section>

@@ -1,6 +1,4 @@
-<script
-  lang="ts"
->
+<script lang="ts">
   import "../app.css";
   import Header from "./_layout/Header.svelte";
   import Footer from "./_layout/Footer.svelte";
@@ -11,15 +9,11 @@
   } = $props();
 </script>
 
-<style
-  lang="css"
->
+<style lang="css">
   @import "./+layout.css";
 </style>
 
-<div
-  class="app"
->
+<div class="app">
   <Header
     outlink={{
       href: "read.jimm.my",

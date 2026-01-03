@@ -1,36 +1,15 @@
-@import '@fontsource/open-sans';
-@import '@fontsource/overpass-mono/500.css';
+@import "@fontsource/open-sans";
+@import "@fontsource/overpass-mono/500.css";
 
 :root {
-  --typography-sans:
-    'Segoe UI',
-    -apple-system,
-    BlinkMacSystemFont;
-  --typography-sans-fallback:
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --typography-mono:
-    Consolas,
-    'Lucida Console',
-    'SFMono-Regular',
-    'SF Mono';
-  --typography-mono-fallback:
-    monospace;
+  --typography-sans: "Segoe UI", -apple-system, BlinkMacSystemFont;
+  --typography-sans-fallback: Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --typography-mono: Consolas, "Lucida Console", "SFMono-Regular", "SF Mono";
+  --typography-mono-fallback: monospace;
 }
 
 :root {
-  --font-body:
-    var(--typography-sans),
-    'Open Sans',
-    var(--typography-sans-fallback);
-  --font-header:
-    var(--typography-sans),
-    var(--typography-sans-fallback);
-  --font-mono:
-    var(--typography-mono),
-    'Overpass Mono',
-    var(--typography-mono-fallback);
+  --font-body: var(--typography-sans), "Open Sans", var(--typography-sans-fallback);
+  --font-header: var(--typography-sans), var(--typography-sans-fallback);
+  --font-mono: var(--typography-mono), "Overpass Mono", var(--typography-mono-fallback);
 }

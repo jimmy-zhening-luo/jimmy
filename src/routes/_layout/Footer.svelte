@@ -1,18 +1,16 @@
-<script
-  lang="ts"
->
+<script lang="ts">
   const {
-    copyright,
-    viewSource,
-  }: {
-    copyright: {
-      author: string;
-      year?: string;
-    };
-    viewSource: {
-      href: string;
-    };
-  } = $props(),
+      copyright,
+      viewSource,
+    }: {
+      copyright: {
+        author: string;
+        year?: string;
+      };
+      viewSource: {
+        href: string;
+      };
+    } = $props(),
     copy = () => copyright,
     {
       author,
@@ -22,16 +20,12 @@
     } = copy();
 </script>
 
-<style
-  lang="css"
->
+<style lang="css">
   @import "./Footer.css";
 </style>
 
 <footer>
-  <span
-    class="copyright"
-  >
+  <span class="copyright">
     <p>
       &copy; {year} {author}
     </p>
@@ -39,9 +33,7 @@
   <span>
     <p>
       <code>
-        <a
-          href="https://{viewSource.href}"
-        >
+        <a href="https://{viewSource.href}">
           View Source
         </a>
       </code>
