@@ -20,7 +20,7 @@
   },
   "type": "module",
   "overrides": {
-    "cookie": "^0.7.2"
+    "cookie": "^1.1.1"
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.2.7",
