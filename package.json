@@ -19,6 +19,9 @@
     "npm": "^11"
   },
   "type": "module",
+  "overrides": {
+    "cookie": "^0.7.2"
+  },
   "devDependencies": {
     "@fontsource/open-sans": "^5.2.7",
     "@fontsource/overpass-mono": "^5.2.8",
