@@ -1,22 +1,10 @@
-<script lang="ts">
+<script lang="ts" generics="Link extends { href: string; anchor: string; }">
   import { page } from "$app/state";
   import { resolve } from "$app/paths";
 
   const { url } = $state(page),
-    {
-      outlink,
-    }: {
-      outlink: Record<
-        | "href"
-        | "anchor",
-        string
-      >;
-    } = $props(),
-    out = () => outlink,
-    {
-      href,
-      anchor,
-    } = out();
+  { outlink }: { outlink: Link } = $props(),
+  out = () => outlink;
 </script>
 
 <style lang="css">
@@ -44,8 +32,8 @@
         </a>
       </li>
       <li aria-current="false">
-        <a href="https://{href}">
-          {anchor}
+        <a href="https://{out().href}">
+          {out().anchor}
         </a>
       </li>
     </ul>

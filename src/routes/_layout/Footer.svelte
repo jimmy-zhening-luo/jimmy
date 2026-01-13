@@ -1,23 +1,25 @@
 <script lang="ts">
+  interface Props {
+    copyright: {
+      author: string;
+      year?: string;
+    };
+    viewSource: {
+      href: string;
+    };
+  }
+
   const {
-      copyright,
-      viewSource,
-    }: {
-      copyright: {
-        author: string;
-        year?: string;
-      };
-      viewSource: {
-        href: string;
-      };
-    } = $props(),
-    copy = () => copyright,
-    {
-      author,
-      year = new Date()
-        .getFullYear()
-        .toFixed(0),
-    } = copy();
+    copyright,
+    viewSource,
+  }: Props = $props(),
+  copy = () => copyright,
+  {
+    author,
+    year = new Date()
+      .getFullYear()
+      .toFixed(0),
+  } = copy();
 </script>
 
 <style lang="css">
