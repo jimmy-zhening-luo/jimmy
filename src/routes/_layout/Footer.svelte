@@ -10,16 +10,16 @@
   }
 
   const {
-    copyright,
-    viewSource,
-  }: Props = $props(),
-  copy = () => copyright,
-  {
-    author,
-    year = new Date()
-      .getFullYear()
-      .toFixed(0),
-  } = copy();
+      copyright,
+      viewSource,
+    }: Props = $props(),
+    copy = () => copyright,
+    {
+      author,
+      year = new Date()
+        .getFullYear()
+        .toFixed(0),
+    } = copy();
 </script>
 
 <style lang="css">
