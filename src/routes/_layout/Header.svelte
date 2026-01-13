@@ -1,4 +1,7 @@
-<script lang="ts" generics="Link extends { href: string; anchor: string; }">
+<script lang="ts" generics="Link extends {
+ href: string;
+anchor: string; 
+}">
   import { page } from "$app/state";
   import { resolve } from "$app/paths";
 
