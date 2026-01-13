@@ -1,13 +1,5 @@
 <script lang="ts">
-  interface Props {
-    copyright: {
-      author: string;
-      year?: string;
-    };
-    viewSource: {
-      href: string;
-    };
-  }
+  import type Props from "./Footer";
 
   const {
       copyright,
