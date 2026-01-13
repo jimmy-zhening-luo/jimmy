@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type Props from "./Footer";
+  import type { Props } from "./Footer";
 
   const {
       copyright,
