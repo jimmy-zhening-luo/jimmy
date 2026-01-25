@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
   background-color: var(--color-bg-1);
   background-image:
-    radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(50% 50% at 50% 50%, hsl(0 0% 100% / 0.75) 0%, hsl(0 0% 100% / 0) 100%),
     linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
   background-size: 100vi 100vb;
   min-block-size: 100vb;
