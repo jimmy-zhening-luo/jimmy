@@ -1,5 +1,5 @@
 {
-  "$pkg": "2412.0.0",
+  "$pkg": "2413.0.0",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "jimmy",
@@ -36,16 +36,16 @@
     "vite": "^7.3.1"
   },
   "scripts": {
-    "clean": "cmd --% /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
+    "clean": "cmd /q /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
     "build": "npm run build:svelte",
     "build:svelte": "svelte-kit sync && svelte-check && vite build",
-    "postbuild": "npm run lint || exit 0",
-    "lint": "eslint --cache --fix",
-    "pretest": "npm run build",
-    "test": "npm run --if-present test:suite",
     "prestart": "npm run build",
     "start": "npm run start:svelte",
     "start:svelte": "vite preview --open",
+    "lint": "eslint --cache --fix",
+    "pretest": "npm run build",
+    "test": "",
+    "posttest": "npm run lint || exit 0",
     "predeploy": "npm run clean && npm test",
     "deploy": ""
   },
