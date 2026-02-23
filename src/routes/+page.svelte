@@ -10,11 +10,11 @@
 </style>
 
 <svelte:head>
-  <title>Jimmy</title>
   <meta
     name="description"
     content="Jimmy Luo's personal website"
   />
+  <title>Jimmy</title>
 </svelte:head>
 
 <section>
