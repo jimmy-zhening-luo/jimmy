@@ -2,11 +2,11 @@
 </script>
 
 <svelte:head>
-  <title>Jimmy | 404</title>
   <meta
     name="description"
     content="Jimmy Luo's personal website | 404"
   />
+  <title>Jimmy | 404</title>
 </svelte:head>
 
 <section>
