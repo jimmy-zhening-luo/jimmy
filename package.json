@@ -28,7 +28,7 @@
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.55.0",
     "eslint-plugin-svelte": "3.15.2",
-    "linted": "40.5.1",
+    "linted": "40.5.2",
     "svelte-check": "^4.4.5",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
