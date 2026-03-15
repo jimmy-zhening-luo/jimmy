@@ -3,13 +3,16 @@
 
   const {
       copyright,
-      viewSource,
+      source,
     }: Props = $props(),
-    copy = () => copyright,
     {
       author,
       year,
-    } = copy();
+    } = () => copyright,
+    {
+      href,
+      string = "View Source",
+    } = () => source,
 </script>
 
 <style lang="css">
@@ -25,8 +28,8 @@
   <span>
     <p>
       <code>
-        <a href="https://{viewSource.href}">
-          View Source
+        <a href="https://{href}">
+          { string }
         </a>
       </code>
     </p>

@@ -3,7 +3,8 @@ export interface Props {
     author: string;
     year: string;
   };
-  viewSource: {
+  source: {
     href: string;
+    string?: string;
   };
 }
