@@ -24,7 +24,7 @@
     {@render children()}
   </main>
   <Footer
-    copyright={{ author: "Jimmy Zhening Luo" }}
+    copyright={{ author: "Jimmy Zhening Luo", year: "2024" }}
     viewSource={{ href: "github.com/jimmy-zhening-luo/jimmy" }}
   />
 </div>

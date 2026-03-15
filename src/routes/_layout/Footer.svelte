@@ -8,9 +8,7 @@
     copy = () => copyright,
     {
       author,
-      year = new Date()
-        .getFullYear()
-        .toFixed(0),
+      year,
     } = copy();
 </script>
 
