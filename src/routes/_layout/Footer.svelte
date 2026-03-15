@@ -12,7 +12,7 @@
     {
       href,
       string = "View Source",
-    } = () => source,
+    } = () => source;
 </script>
 
 <style lang="css">
