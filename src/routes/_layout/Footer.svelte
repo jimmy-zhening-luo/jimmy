@@ -29,7 +29,7 @@
     <p>
       <code>
         <a href="https://{href}">
-          { string }
+          {string}
         </a>
       </code>
     </p>

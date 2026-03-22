@@ -25,9 +25,9 @@
   </main>
   <Footer
     copyright={{
- author: "Jimmy Zhening Luo",
-year: "2024", 
-}}
+     author: "Jimmy Zhening Luo",
+    year: "2024", 
+    }}
     source={{ href: "github.com/jimmy-zhening-luo/jimmy" }}
   />
 </div>
