@@ -32,7 +32,7 @@
     "svelte-check": "^4.4.5",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
-    "vite": "^8.0.1"
+    "vite": "^8.0.2"
   },
   "scripts": {
     "clean": "cmd /q /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
