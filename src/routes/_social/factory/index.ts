@@ -22,7 +22,7 @@ export function SocialFactory<App extends string>(
       } = {},
     } = manifest[app];
 
-    return new SocialButton<App>(
+    return new SocialButton(
       app,
       host,
       username,
