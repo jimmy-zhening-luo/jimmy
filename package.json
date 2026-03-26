@@ -31,7 +31,7 @@
     "linted": "41.0.1",
     "svelte-check": "^4.4.5",
     "typescript": "^5.9.3",
-    "vite": "^8.0.2"
+    "vite": "^8.0.3"
   },
   "scripts": {
     "clean": "cmd /q /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
