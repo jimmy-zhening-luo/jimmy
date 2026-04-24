@@ -3,7 +3,7 @@
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "$schema": "https://json.schemastore.org/package",
   "name": "jimmy",
-  "version": "11.11.18",
+  "version": "11.11.19",
   "repository": "github:jimmy-zhening-luo/jimmy",
   "description": "This repository contains Jimmy Luo's personal website. As of August 31, 2022, the main branch of this repository is continuously deployed to https://jimm.my.",
   "keywords": [
