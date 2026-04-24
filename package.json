@@ -26,12 +26,12 @@
     "@fontsource/open-sans": "^5.2.7",
     "@fontsource/overpass-mono": "^5.2.8",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.57.1",
+    "@sveltejs/kit": "^2.58.0",
     "eslint-plugin-svelte": "3.17.1",
     "linted": "41.4.1",
     "svelte-check": "^4.4.6",
     "typescript": "^6.0.3",
-    "vite": "^8.0.9"
+    "vite": "^8.0.10"
   },
   "scripts": {
     "clean": "cmd /q /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
