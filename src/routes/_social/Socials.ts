@@ -4,10 +4,10 @@ import type { Social } from "./Social";
 
 export const socials = SocialFactory<Social>(
   [
-    "Instagram",
-    "Facebook",
     "GitHub",
     "LinkedIn",
+    "Instagram",
+    "Facebook",
     "Substack",
     "YouTube",
     "Spotify",
