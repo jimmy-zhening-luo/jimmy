@@ -9,8 +9,7 @@
   import { resolve } from "$app/paths";
 
   const { url } = $state(page),
-    { outlink }: { outlink: Link; } = $props(),
-    out = () => outlink;
+    { outlinks }: { outlinks: Link[]; } = $props();
 </script>
 
 <style lang="css">
@@ -37,11 +36,17 @@
           Jimmy
         </a>
       </li>
-      <li aria-current="false">
-        <a href="https://{out().href}">
-          {out().anchor}
-        </a>
-      </li>
+      {#snippet button(outlink: Link)}
+        <li aria-current="false">
+          <a href="https://{outlink.href}">
+            {outlink.anchor}
+          </a>
+        </li>
+      {/snippet}
+
+      {#each outlinks as outlink (outlink.anchor)}
+        {@render button(outlink)}
+      {/each}
     </ul>
     <svg
       aria-hidden="true"

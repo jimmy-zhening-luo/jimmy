@@ -15,10 +15,16 @@
 
 <div class="app">
   <Header
-    outlink={{
-      href: "read.jimm.my",
-      anchor: "Essays",
-    }}
+    outlinks={[
+      {
+        href: "github.com/jimmy-zhening-luo/agent?tab=readme-ov-file#xfinity-ai-support-agent",
+        anchor: "Projects",
+      },
+      {
+        href: "read.jimm.my",
+        anchor: "Essays",
+      },
+    ]}
   />
   <main>
     {@render children()}
