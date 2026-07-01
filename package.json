@@ -26,9 +26,9 @@
     "@fontsource/open-sans": "^5.2.7",
     "@fontsource/overpass-mono": "^5.2.8",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.68.0",
+    "@sveltejs/kit": "^2.69.0",
     "eslint-plugin-svelte": "3.20.0",
-    "linted": "41.13.1",
+    "linted": "41.13.2",
     "svelte-check": "^4.7.1",
     "typescript": "^6.0.3",
     "vite": "^8.1.2"
