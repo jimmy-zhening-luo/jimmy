@@ -27,11 +27,11 @@
     "@fontsource/overpass-mono": "^5.3.0",
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.70.3",
-    "eslint-plugin-svelte": "3.23.0",
-    "linted": "42.2.0",
-    "svelte-check": "^4.7.6",
+    "eslint-plugin-svelte": "3.23.1",
+    "linted": "42.3.0",
+    "svelte-check": "^4.7.7",
     "typescript": "^6.0.3",
-    "vite": "^8.3.0"
+    "vite": "^8.3.4"
   },
   "scripts": {
     "clean": "cmd /q /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
